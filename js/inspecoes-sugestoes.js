@@ -24,15 +24,7 @@
     pessoas: 'pages.inspections.sugTipoPessoas',
     arte: 'pages.inspections.sugTipoArte',
     filmografia: 'pages.inspections.sugTipoFilmografia',
-    expressao: 'pages.inspections.sugTipoExpressao',
-    objeto: 'pages.inspections.sugTipoObjeto',
-    jogo: 'pages.inspections.sugTipoJogo',
-    animal: 'pages.inspections.sugTipoAnimal',
-    planta: 'pages.inspections.sugTipoPlanta',
-    conto: 'pages.inspections.sugTipoConto',
-    guia: 'pages.inspections.sugTipoGuia',
-    formacao: 'pages.inspections.sugTipoFormacao',
-    personagem: 'pages.inspections.sugTipoPersonagem'
+    expressao: 'pages.inspections.sugTipoExpressao'
   };
   var STATUS_I18N = {
     ideia: 'pages.inspections.sugStatusIdeia',
@@ -172,15 +164,7 @@
       pessoas: 'Pessoas',
       arte: 'Arte',
       filmografia: 'Filmografia',
-      expressao: 'Expressão',
-      objeto: 'Objeto',
-      jogo: 'Caderno de jogo',
-      animal: 'Animal',
-      planta: 'Planta',
-      conto: 'Conto',
-      guia: 'Guia',
-      formacao: 'Formação',
-      personagem: 'Personagem'
+      expressao: 'Expressão'
     };
     return key ? t(key, fallbacks[tipo] || tipo) : tipo;
   }

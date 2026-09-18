@@ -1,6 +1,6 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '359';
-const CACHE_NAME = 'budganja-v' + APP_VERSION + '-index';
+const APP_VERSION = '360';
+const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
     '/index.html',

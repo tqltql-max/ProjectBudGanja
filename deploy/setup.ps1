@@ -1,7 +1,10 @@
 # Setup inicial — Inspetor BudGanja + inspetorbudganja.com.br
-# Execute no PowerShell:  cd deploy; .\setup.ps1
+# Execute na raiz:  powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\setup.ps1
 
 $ErrorActionPreference = "Stop"
+if (Get-Variable -Name PSNativeCommandUseErrorActionPreference -ErrorAction SilentlyContinue) {
+  $PSNativeCommandUseErrorActionPreference = $false
+}
 $Root = Split-Path -Parent $PSScriptRoot
 $Domain = "inspetorbudganja.com.br"
 
@@ -24,7 +27,13 @@ Test-Cmd cloudflared
 Set-Location $Root
 if (-not (Test-Path "node_modules")) {
   Write-Host "Instalando dependencias..." -ForegroundColor Cyan
+  $ErrorActionPreference = "Continue"
   npm install
+  $ErrorActionPreference = "Stop"
+  if ($LASTEXITCODE -ne 0) {
+    Write-Host "npm install falhou (codigo $LASTEXITCODE)." -ForegroundColor Red
+    exit 1
+  }
 }
 
 $envFile = Join-Path $Root ".env"
@@ -35,17 +44,17 @@ if (-not (Test-Path $envFile)) {
   Write-Host ".env ja existe — mantido." -ForegroundColor Gray
 }
 
-Write-Host "`n--- Registro.br ---" -ForegroundColor Cyan
-Write-Host "1. cloudflare.com → Add site → $Domain"
-Write-Host "2. registro.br → Alterar servidores DNS → use os 2 NS da Cloudflare"
-Write-Host "   (aguarde propagacao, 15 min a algumas horas)`n"
+$cfConfig = Join-Path $env:USERPROFILE ".cloudflared\config.yml"
+if (-not (Test-Path $cfConfig)) {
+  Write-Host "`nTunel Cloudflare ainda nao configurado." -ForegroundColor Yellow
+  Write-Host "1. cloudflared tunnel login"
+  Write-Host "2. cloudflared tunnel create budganja"
+  Write-Host "3. Copie deploy\cloudflared.config.example.yml para $cfConfig"
+  Write-Host "4. Ajuste o Tunnel ID e o caminho das credenciais"
+  Write-Host "5. cloudflared tunnel route dns budganja $Domain"
+  Write-Host "   cloudflared tunnel route dns budganja www.$Domain"
+  Write-Host "`nO site local sobe na mesma. O dominio publico so funciona apos o tunel.`n"
+}
 
-Write-Host "--- Túnel Cloudflare (uma vez) ---" -ForegroundColor Cyan
-Write-Host "cloudflared tunnel login"
-Write-Host "cloudflared tunnel create budganja"
-Write-Host "# Copie deploy\cloudflared.config.example.yml para %USERPROFILE%\.cloudflared\config.yml"
-Write-Host "# Troque SEU-TUNNEL-ID e SEU_USUARIO"
-Write-Host "cloudflared tunnel route dns budganja $Domain"
-Write-Host "cloudflared tunnel route dns budganja www.$Domain`n"
-
-Write-Host "Depois execute:  .\deploy\start-site.ps1`n" -ForegroundColor Green
+Write-Host "A subir o site (servidor local + tunel)..." -ForegroundColor Cyan
+& (Join-Path $PSScriptRoot "start-now.ps1")

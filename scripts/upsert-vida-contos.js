@@ -71,6 +71,7 @@ async function main() {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
     const historia = built[0];
+    const historia2 = built.find((p) => p.slug === 'inspecao-conto-vida-sementinha-jogo') || built[1];
     upsertSug(items, {
       id: 'conto-vida-laboratorio',
       title: 'Vida — O Laboratório e a Sementinha',
@@ -87,6 +88,23 @@ async function main() {
       seriesHint: 'vida-contos',
       sources: ['/vida/', 'Vida/Historia.txt', 'Vida/Personagens.txt'],
       notes: 'Hub /vida/ + fichas de personagens.'
+    });
+    upsertSug(items, {
+      id: 'conto-vida-sementinha-jogo',
+      title: 'Vida — A Sementinha e o jogo da cidade',
+      titleEn: 'Vida — The Little Seed and the city game',
+      titleEs: 'Vida — La Semillita y el juego de la ciudad',
+      tipo: 'conto',
+      priority: 1,
+      status: 'feita',
+      why: 'Segundo conto: a sementinha assiste Paulinho no GTA RP e volta ao mantra Faça o melhor.',
+      whyEn: 'Second story: the little seed watches Paulinho in GTA RP and returns to Do your best.',
+      whyEs: 'Segundo cuento: la semillita ve a Paulinho en GTA RP y vuelve a Haz lo mejor.',
+      suggestedSlug: historia2.slug,
+      doneHref: '/posts/post-' + historia2.slug + '.html',
+      seriesHint: 'vida-contos',
+      sources: ['/vida/', 'https://www.youtube.com/watch?v=CaFmTVScNjQ'],
+      notes: 'Destaque nas Últimas do laboratório (index).'
     });
     sug.items = items;
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T22:30:00.000Z",
+  "updatedAt": "2026-09-17T14:35:31.928Z",
   "title": "Duplo sentido prejudicial à originalidade",
   "titleEn": "Double meanings that harm originality",
   "titleEs": "Doble sentido que perjudica la originalidad",
@@ -146,6 +146,20 @@
       "mudancaEn": "Clinical sense of torpor loses precision; the word becomes a moral-classification weapon.",
       "mudancaEs": "El sentido clínico pierde precisión; vira arma de clasificación moral.",
       "href": null
+    },
+    {
+      "id": "craque",
+      "word": "craque",
+      "original": "Calque do inglês crack «de primeira» — estrela de ofício (futebol).",
+      "originalEn": "Calque of English crack “first-rate” — craft star (football).",
+      "originalEs": "Calco del inglés crack «de primera» — estrella de oficio (fútbol).",
+      "prejudicado": "Homofonia e grafia popular colam o jogador ao crack (droga) e à pedra-gíria.",
+      "prejudicadoEn": "Homophony and popular spelling glue the player to crack (drug) and slang pedra.",
+      "prejudicadoEs": "Homofonía y grafía popular pegan el jugador al crack (droga) y a la pedra-jerga.",
+      "mudanca": "O inglês crack parte-se em dois empréstimos BR: craque (excelência) e crack (substância). A pedra mineral (πέτρα) é terceiro mapa — gíria pega o naco, não a geologia.",
+      "mudancaEn": "English crack splits into two BR loans: craque (excellence) and crack (substance). Mineral pedra (πέτρα) is a third map — slang takes the chunk, not geology.",
+      "mudancaEs": "El inglés crack se parte en dos préstamos BR: craque (excelencia) y crack (sustancia). La pedra mineral (πέτρα) es un tercer mapa.",
+      "href": "/posts/post-inspecao-palavra-craque.html"
     }
   ]
 }

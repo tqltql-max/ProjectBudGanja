@@ -89,7 +89,7 @@ async function main() {
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-verdade.html',
         '/posts/post-inspecao-palavra-buguei.html',
-        '/posts/post-inspecao-palavra-valeu.html'
+        '/posts/post-inspecao-expressao-faca-o-melhor.html'
       ],
       notes: 'Cap. 47 — empréstimo × parece/é × correção anti-hype.'
     };
@@ -108,11 +108,11 @@ async function main() {
       id: 'multitask',
       word: 'multitask',
       simple:
-        'Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Valeu !!!',
+        'Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor!',
       simpleEn:
-        'EN→BR loan; seems “everything well at once”; craft = one with method or limited parallel; Valeu !!!',
+        'EN→BR loan; seems “everything well at once”; craft = one with method or limited parallel; Do your best!',
       simpleEs:
-        'Préstamo EN→BR; parece «todo bien a la vez»; oficio = una con método o paralelo con límites; ¡Valeu !!!',
+        'Préstamo EN→BR; parece «todo bien a la vez»; oficio = una con método o paralelo con límites; ¡Haz lo mejor!',
       group: 'lexico',
       fromTitle: false,
       href

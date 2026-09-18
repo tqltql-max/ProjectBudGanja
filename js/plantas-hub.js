@@ -6,13 +6,8 @@
   var emptyEl = document.getElementById('plantas-empty');
   if (!grid) return;
 
-  var pageKey =
-    document.body && document.body.getAttribute('data-page') === 'frutos'
-      ? 'pages.frutos'
-      : 'pages.plantas';
-
   function i18n(key, fallback) {
-    return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : fallback || '';
+    return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : (fallback || '');
   }
 
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.planta-card'));
@@ -31,15 +26,11 @@
       if (show) visible += 1;
     });
     if (countEl) {
-      var countFallback = pageKey === 'pages.frutos' ? '{n} frutos' : '{n} plantas';
-      countEl.textContent = i18n(pageKey + '.count', countFallback).replace('{n}', String(visible));
+      countEl.textContent = i18n('pages.plantas.count', '{n} plantas').replace('{n}', String(visible));
     }
     if (emptyEl) {
       emptyEl.hidden = visible > 0;
-      emptyEl.textContent = i18n(
-        pageKey + '.empty',
-        pageKey === 'pages.frutos' ? 'Nenhum fruto encontrado.' : 'Nenhuma planta encontrada.'
-      );
+      emptyEl.textContent = i18n('pages.plantas.empty', 'Nenhuma planta encontrada.');
     }
     if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
   }

@@ -40,6 +40,32 @@ function hubSvg() {
 </svg>`;
 }
 
+function jogoSvg() {
+  return `<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a2230"/>
+      <stop offset="45%" stop-color="#163428"/>
+      <stop offset="100%" stop-color="#2a3a18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="62%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="#6ee7c5" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#6ee7c5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <ellipse cx="760" cy="210" rx="360" ry="170" fill="url(#glow)"/>
+  <rect x="90" y="430" width="48" height="120" rx="6" fill="#3d6b28" opacity="0.55"/>
+  <rect x="150" y="380" width="42" height="170" rx="6" fill="#5a8f3a" opacity="0.45"/>
+  <rect x="200" y="410" width="56" height="140" rx="6" fill="#2a4a20" opacity="0.5"/>
+  <circle cx="600" cy="188" r="26" fill="#c9a227"/>
+  <ellipse cx="600" cy="252" rx="11" ry="36" fill="#6b9e3e"/>
+  <text x="600" y="340" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#c8d8a8" letter-spacing="8">VIDA · CONTO 2</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="42" font-weight="700" fill="#fef9d7">A Sementinha e o jogo da cidade</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#d8e4c8">jogo ≠ vaso · Faça o melhor!</text>
+</svg>`;
+}
+
 function charSvg(label, sub, c1, c2, accent) {
   return `<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -53,20 +79,20 @@ function charSvg(label, sub, c1, c2, accent) {
   <circle cx="140" cy="520" r="200" fill="rgba(0,0,0,0.15)"/>
   <circle cx="600" cy="200" r="48" fill="${accent}" opacity="0.85"/>
   <text x="600" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="8">VIDA · PERSONAGEM</text>
-  <text x="600" y="390" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="${label.length > 22 ? 36 : 52}" font-weight="700" fill="#ffffff">${label}</text>
+  <text x="600" y="390" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#ffffff">${label}</text>
   <text x="600" y="460" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.88)">${sub}</text>
 </svg>`;
 }
 
 async function main() {
   await jpegFromSvg(hubSvg(), 'imagens/inspecoes/vida-laboratorio-cover.jpg');
+  await jpegFromSvg(jogoSvg(), 'imagens/inspecoes/vida-sementinha-jogo-cover.jpg');
   const labels = {
     'inspecao-personagem-inspetor': ['O Inspetor', 'detetive botânico'],
     'inspecao-personagem-dona-maria': ['Dona Maria', 'mestra do solo'],
     'inspecao-personagem-dj-brisa': ['DJ Brisa', 'voz da harmonia'],
     'inspecao-personagem-joaninha-joana': ['Joaninha Joana', 'guardiã biológica'],
-    'inspecao-personagem-three-little-birds': ['Three Little Birds', 'esquadrão da alegria'],
-    'inspecao-personagem-flor-maria-jane-maria': ['Flor Maria Jane Maria', 'contacto do canal Joana e Maria']
+    'inspecao-personagem-three-little-birds': ['Three Little Birds', 'esquadrão da alegria']
   };
   for (const p of PERSONAGENS) {
     const [label, sub] = labels[p.slug] || [p.nome, ''];

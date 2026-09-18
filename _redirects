@@ -1,6 +1,6 @@
-# Página inicial: Index (ferramenta de cultivo)
-/inicio /
-/inicio/ /
+# Página inicial: index.html
+/inicio / 302
+/inicio/ / 302
 
 /calculadoras.html /calculadoras/ 301
 /luximetro.html /calculadoras/luximetro.html 301

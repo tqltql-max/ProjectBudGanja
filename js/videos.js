@@ -108,14 +108,6 @@
     williamdavismd: 'davis',
     'wheat-belly': 'davis',
     'dr-davis': 'davis',
-    dallelaste: 'dallelaste',
-    'dalle-laste': 'dallelaste',
-    'samuel-dalle-laste': 'dallelaste',
-    samueldallelaste: 'dallelaste',
-    drsamueldallelaste: 'dallelaste',
-    'dr-samuel': 'dallelaste',
-    'canal-dallelaste': 'dallelaste',
-    'divulgacao-dalle': 'dallelaste',
     all: 'all',
     todos: 'all'
   };
@@ -256,41 +248,14 @@
     aliexpress: 'gadgets',
     comida: 'comida',
     lifehacks: 'lifehacks',
-    'life-hacks': 'lifehacks',
-    'cannabis-plantas': 'cannabis-plantas',
-    dicas: 'dicas',
-    pergunte: 'pergunte',
-    podcasts: 'podcasts',
-    'jejum-ceto': 'jejum-ceto',
-    jejum: 'jejum-ceto',
-    cetogenica: 'jejum-ceto',
-    cetogênica: 'jejum-ceto',
-    intestino: 'intestino',
-    'hormonios-eixos': 'hormonios-eixos',
-    'saude-sexual': 'saude-sexual',
-    'sono-descanso': 'sono-descanso',
-    'vitaminas-minerais': 'vitaminas-minerais',
-    exames: 'exames',
-    farmacos: 'farmacos',
-    fármacos: 'farmacos',
-    'coracao-vasos': 'coracao-vasos',
-    'cerebro-humor': 'cerebro-humor',
-    'inflamacao-imune': 'inflamacao-imune',
-    'alcool-tabaco': 'alcool-tabaco',
-    álcool: 'alcool-tabaco',
-    pele: 'pele',
-    'exercicio-performance': 'exercicio-performance',
-    'nutricao-alimentos': 'nutricao-alimentos',
-    'medicina-integrativa': 'medicina-integrativa',
-    habitos: 'habitos',
-    hábitos: 'habitos'
+    'life-hacks': 'lifehacks'
   };
 
   var TOPIC_ALIASES = {
     cultivo: 'cultivo',
-    unifesp: 'ciencia',
-    'aulas-unifesp': 'ciencia',
-    aulas: 'ciencia',
+    unifesp: 'unifesp',
+    'aulas-unifesp': 'unifesp',
+    aulas: 'unifesp',
     saude: 'saude',
     saúde: 'saude',
     'saude-e-usos': 'saude',
@@ -303,10 +268,10 @@
     selvagem: 'natureza'
   };
 
-  var TOPIC_ORDER = ['cultivo', 'plantas', 'ciencia'];
+  var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia', 'desenhos', 'natureza'];
 
-  var CHANNEL_ORDER = ['inspetor'];
-  var GAMES_CHANNELS = {};
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'rasmussen', 'disneyjr', 'slivki', 'manualdomundo'];
+  var GAMES_CHANNELS = { zangado: true, paulinho: true, hopejoy: true };
 
   function isGamesChannel(id) {
     return !!GAMES_CHANNELS[id];
@@ -801,9 +766,6 @@
     }
     if (channelId === 'inspetor') return list.slice();
     return list.slice().sort(function (a, b) {
-      var fa = a.featured ? 1 : 0;
-      var fb = b.featured ? 1 : 0;
-      if (fa !== fb) return fb - fa;
       var da = a.published ? new Date(a.published).getTime() : 0;
       var db = b.published ? new Date(b.published).getTime() : 0;
       if (db !== da) return db - da;
@@ -846,7 +808,6 @@
     if (id === 'canabinall') return 'CANABinALL';
     if (id === 'lair') return 'Dr. Lair Ribeiro';
     if (id === 'davis') return 'William Davis, MD';
-    if (id === 'dallelaste') return 'Dr. Samuel Dalle Laste';
     if (id === 'disneyjr') return 'Disney Jr. Brasil';
     if (id === 'tamara') return 'Tamara Klink';
     if (id === 'amyr') return 'Amyr Klink';
@@ -877,7 +838,8 @@
 
   function topicLabel(id) {
     if (id === 'cultivo') return i18n('pages.videos.topicCultivo', 'Cultivo');
-        if (id === 'saude') return i18n('pages.videos.topicSaude', 'Saúde e usos');
+    if (id === 'unifesp') return i18n('pages.videos.topicUnifesp', 'Aulas UNIFESP');
+    if (id === 'saude') return i18n('pages.videos.topicSaude', 'Saúde e usos');
     if (id === 'plantas') return i18n('pages.videos.topicPlantas', 'Plantas');
     if (id === 'ciencia') return i18n('pages.videos.topicCiencia', 'Ciência');
     if (id === 'desenhos') return i18n('pages.videos.topicDesenhos', 'Desenhos');
@@ -1811,19 +1773,10 @@
     }
 
     var deepLink = readRequestedId();
-    var featuredOpen = '';
-    if (!deepLink && activeChannel && activeChannel !== 'all' && hub.videos) {
-      for (var fi = 0; fi < hub.videos.length; fi++) {
-        if (hub.videos[fi].channel === activeChannel && hub.videos[fi].featured) {
-          featuredOpen = hub.videos[fi].id;
-          break;
-        }
-      }
-    }
     applyView({
       replaceUrl: true,
-      requestedId: deepLink || featuredOpen,
-      openPlayer: !!(deepLink || featuredOpen),
+      requestedId: deepLink,
+      openPlayer: !!deepLink,
       autoplay: !!deepLink
     });
   }
@@ -1995,6 +1948,7 @@
                 seriesOptions: [],
                 topicOptions: [
                   { id: 'cultivo', label: 'Cultivo' },
+                  { id: 'unifesp', label: 'Aulas UNIFESP' },
                   { id: 'saude', label: 'Saúde e usos' },
                   { id: 'plantas', label: 'Plantas' },
                   { id: 'ciencia', label: 'Ciência' },

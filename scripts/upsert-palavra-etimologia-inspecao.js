@@ -125,7 +125,7 @@ const LANGS =
   'fr: "étymologie", it: "etimologia", de: "Etymologie", el: "ετυμολογία", la: "etymologia", yo: "itumo oro", sw: "asili ya neno", gez: "etymology", nl: "etymologie", pl: "etymologia", ru: "этимология", uk: "етимологія", zh: "词源学", ja: "語源学", ko: "어원학", ar: "علم أصول الكلمات", he: "אטימולוגיה", hi: "व्युत्पत्ति", tr: "etimoloji", sv: "etymologi", da: "etymologi", no: "etymologi", fi: "etymologia", cs: "etymologie", ro: "etimologie", hu: "etimologia", ca: "etimologia", gl: "etimoloxia", eu: "etimologia", gn: "ñe\'e rape", qu: "simi paqarimuynin", eo: "etimologio", vi: "tu nguyen hoc", id: "etimologi", th: "นิรุกติศาสตร์", hr: "etimologija", sk: "etymologia", ga: "feiniceolaiocht", cy: "etymoleg", ha: "ilimin asalin kalma", am: "የቃላት ምንጭ", fa: "ریشه‌شناسی", bn: "ব্যুৎপত্তি", zu: "umselo wegama"';
 
 const GLOSS_MAIN =
-  '    etimologia: { tone: "craft", gloss: "Étymon + lógos — ofício de perguntar de onde veio; étimo ≠ etimologia popular (cara+alho); método da série Palavras; Valeu !!!", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymology", es: "etimología", ' +
+  '    etimologia: { tone: "craft", gloss: "Étymon + lógos — ofício de perguntar de onde veio; étimo ≠ etimologia popular (cara+alho); método da série Palavras; Faça o melhor!", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymology", es: "etimología", ' +
   LANGS +
   ' },\n';
 
@@ -133,13 +133,13 @@ const GLOSS_ALIASES =
   '    etymology: { gloss: "EN de etimologia — o ofício da origem; ≠ folk etymology.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymology", es: "etimología" },\n' +
   '    "etimologia popular": { gloss: "História falsa que encaixa demais — fenómeno; ≠ étimo. Ex. cara+alho → trocadilho.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "folk etymology", es: "etimología popular" },\n' +
   '    "folk etymology": { gloss: "EN de etimologia popular — ver ficha etimologia / trocadilho.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "folk etymology", es: "etimología popular" },\n' +
-  '    etymon: { gloss: "EN de étimo — a peça (origem verdadeira ou melhor hipótese); ≠ etimologia; ver ficha étimo.", href: "/posts/post-inspecao-palavra-etimo.html", en: "etymon", es: "étimo" },\n';
+  '    etymon: { gloss: "EN de étimo — a origem verdadeira (ou a melhor hipótese); peça da ficha etimologia.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymon", es: "étimo" },\n';
 
 const ETIMO_LINE =
-  '    étimo: { tone: "craft", category: "Ofício", mundane: "A peça da origem — não o ofício.", gloss: "Gr. étymon; ≠ etimologia; espécime ação: lat. āctiō ← agere («fazer, impulsionar»); Valeu !!!", href: "/posts/post-inspecao-palavra-etimo.html", en: "etymon", es: "étimo", fr: "étymon", it: "etimo", de: "Etymon", yo: "orísun ọ̀rọ̀", sw: "asili ya neno", gez: "mənbäʾ qal", el: "έτυμον", la: "etymon", nl: "etymon", pl: "etymon", ru: "этимон", uk: "етимон", zh: "词源", ja: "語源", ko: "어원", ar: "أثيم", he: "אטימון", hi: "व्युत्पत्ति-मूल", tr: "etimon", sv: "etymon", da: "etymon", no: "etymon", fi: "etymon", cs: "etymon", ro: "etimon", hu: "etimon", ca: "etimon", gl: "etimo", eu: "etimo", gn: "ñe\'e rape", qu: "simi saphi", eo: "etimono", vi: "tu nguyen", id: "etimon", th: "รูปเดิม", hr: "etimon", sk: "etymon", ga: "eitimeon", cy: "etymon", ha: "asalin kalma", am: "ምንጭ ቃল", fa: "ریشه واژه", bn: "মূলশব্দ", zu: "umsuka wegama" },\n';
+  '    étimo: { tone: "craft", gloss: "Origem verdadeira da palavra (ou a melhor hipótese); ≠ etimologia popular; ver ficha etimologia.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymon", es: "étimo", fr: "étymon", it: "etimo", de: "Etymon", yo: "orísun ọ̀rọ̀", sw: "asili ya neno", gez: "mənbäʾ qal", el: "έτυμον", la: "etymon", nl: "etymon", pl: "etymon", ru: "этимон", uk: "етимон", zh: "词源", ja: "語源", ko: "어원", ar: "أثيم", he: "אטימון", hi: "व्युत्पत्ति-मूल", tr: "etimon", sv: "etymon", da: "etymon", no: "etymon", fi: "etymon", cs: "etymon", ro: "etimon", hu: "etimon", ca: "etimon", gl: "etimo", eu: "etimo", gn: "ñe\'e rape", qu: "simi saphi", eo: "etimono", vi: "tu nguyen", id: "etimon", th: "รูปเดิม", hr: "etimon", sk: "etymon", ga: "eitimeon", cy: "etymon", ha: "asalin kalma", am: "ምንጭ ቃል", fa: "ریشه واژه", bn: "মূলশব্দ", zu: "umsuka wegama" },\n';
 
 const ETIMO_ASCII =
-  '    etimo: { gloss: "Grafia sem acento de étimo — a peça da origem; espécime āctiō ← agere na ficha ação.", href: "/posts/post-inspecao-palavra-etimo.html", en: "etymon", es: "étimo" },\n';
+  '    etimo: { gloss: "Grafia sem acento de étimo — a origem; ver etimologia.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymon", es: "étimo" },\n';
 
 function upsertSug(sug, post) {
   const items = Array.isArray(sug.items) ? sug.items : [];
@@ -153,9 +153,9 @@ function upsertSug(sug, post) {
     tipo: 'palavra',
     priority: 2,
     status: 'feita',
-    why: 'Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Valeu !!!',
-    whyEn: 'Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Valeu !!!',
-    whyEs: 'Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Valeu !!!',
+    why: 'Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Faça o melhor!',
+    whyEn: 'Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Do your best!',
+    whyEs: 'Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Haz lo mejor!',
     suggestedSlug: post.slug,
     doneHref: href,
     seriesHint: 'palavras-origem',
@@ -165,7 +165,7 @@ function upsertSug(sug, post) {
       '/posts/post-inspecao-palavra-aglutinacao.html',
       '/posts/post-inspecao-palavra-polimorfismo.html',
       '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-      '/posts/post-inspecao-palavra-valeu.html'
+      '/posts/post-inspecao-expressao-faca-o-melhor.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — ficha do método da série; cita cluster cara+alho.'
   };

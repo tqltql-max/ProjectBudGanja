@@ -281,8 +281,7 @@
     },
     {
       "word": "tempo",
-      "count": 6,
-      "href": "/posts/post-inspecao-palavra-tempo.html"
+      "count": 6
     },
     {
       "word": "ainda",
@@ -386,8 +385,7 @@
     },
     {
       "word": "escrevo",
-      "count": 4,
-      "href": "/posts/post-inspecao-palavra-escrever.html"
+      "count": 4
     },
     {
       "word": "estao",
@@ -399,8 +397,7 @@
     },
     {
       "word": "ficar",
-      "count": 4,
-      "href": "/posts/post-inspecao-palavra-ficar.html"
+      "count": 4
     },
     {
       "word": "fundo",
@@ -572,8 +569,7 @@
     },
     {
       "word": "ficava",
-      "count": 3,
-      "href": "/posts/post-inspecao-palavra-ficar.html"
+      "count": 3
     },
     {
       "word": "fim",
@@ -581,8 +577,7 @@
     },
     {
       "word": "fiquei",
-      "count": 3,
-      "href": "/posts/post-inspecao-palavra-ficar.html"
+      "count": 3
     },
     {
       "word": "gelo",
@@ -698,8 +693,7 @@
     },
     {
       "word": "sol",
-      "count": 3,
-      "href": "/posts/post-inspecao-palavra-sol.html"
+      "count": 3
     },
     {
       "word": "sonhos",
@@ -803,8 +797,7 @@
     },
     {
       "word": "ceu",
-      "count": 2,
-      "href": "/posts/post-inspecao-palavra-ceu.html"
+      "count": 2
     },
     {
       "word": "ciao",
@@ -1061,8 +1054,7 @@
     },
     {
       "word": "partir",
-      "count": 2,
-      "href": "/posts/post-inspecao-palavra-partir.html"
+      "count": 2
     },
     {
       "word": "passa",
@@ -1696,17 +1688,14 @@
     },
     {
       "word": "derreter",
-      "count": 1,
-      "href": "/posts/post-inspecao-palavra-derreter.html"
+      "count": 1
     },
     {
       "word": "derreti",
-      "count": 1,
-      "href": "/posts/post-inspecao-palavra-derreter.html"
+      "count": 1
     },
     {
       "word": "derretimento",
-      "href": "/posts/post-inspecao-palavra-derreter.html",
       "count": 1
     },
     {
@@ -1879,8 +1868,7 @@
     },
     {
       "word": "escrevi",
-      "count": 1,
-      "href": "/posts/post-inspecao-palavra-escrever.html"
+      "count": 1
     },
     {
       "word": "espiritos",
@@ -2253,8 +2241,7 @@
     },
     {
       "word": "luz",
-      "count": 1,
-      "href": "/posts/post-inspecao-palavra-luz.html"
+      "count": 1
     },
     {
       "word": "mae",
@@ -4293,17 +4280,14 @@
     },
     {
       "word": "derreter",
-      "count": 1,
-      "href": "/posts/post-inspecao-palavra-derreter.html"
+      "count": 1
     },
     {
       "word": "derreti",
-      "count": 1,
-      "href": "/posts/post-inspecao-palavra-derreter.html"
+      "count": 1
     },
     {
       "word": "derretimento",
-      "href": "/posts/post-inspecao-palavra-derreter.html",
       "count": 1
     },
     {
@@ -5659,6 +5643,6 @@
       "count": 1
     }
   ],
-  "mappedAt": "2026-08-23T04:10:50.023Z",
-  "mappedCount": 31
+  "mappedAt": "2026-08-02T19:48:54.870Z",
+  "mappedCount": 21
 }

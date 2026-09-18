@@ -8,17 +8,20 @@
 const fs = require('fs');
 const path = require('path');
 const {
+  buildLeitePost,
   buildCaseinaPost,
   buildGlutenPost,
   buildChocolatePost,
   buildAnaliseDanosVideosPost
 } = require('../lib/produtos-nocivos-inspecoes-posts.js');
-const { buildLeiteLaticiniosPost } = require('../lib/leite-laticinios-inspecao-post.js');
+
+const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
 const I18N_FILE = path.join(ROOT, 'content', 'post-i18n.json');
 const SUG_FILE = path.join(ROOT, 'content', 'inspecoes-sugestoes.json');
+const GUIA_FILE = path.join(ROOT, 'content', 'guia-palavras.json');
 const ANIMAIS_FILE = path.join(ROOT, 'content', 'animais.json');
 const PLANTAS_FILE = path.join(ROOT, 'content', 'plantas.json');
 
@@ -64,9 +67,19 @@ function upsertSug(items, entry) {
   else items.push(entry);
 }
 
+function writeHtml(post) {
+  if (!post) return;
+  const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+  const [normalized] = normalizePosts([post]);
+  const out = path.join(ROOT, normalized.filename);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildPostHtml(normalized), 'utf8');
+  console.log('HTML escrito', normalized.filename);
+}
+
 async function main() {
   const built = [
-    buildLeiteLaticiniosPost(),
+    buildLeitePost(),
     buildCaseinaPost(),
     buildGlutenPost(),
     buildChocolatePost(),
@@ -75,56 +88,68 @@ async function main() {
 
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   built.forEach((post) => upsertPost(posts, post));
-  fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
+  writeFileRetrySync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));
   built.forEach((post) => writeI18n(i18n, post));
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
+
+  writeHtml(built.find((p) => p.slug === 'inspecao-derivado-leite'));
+  writeHtml(built.find((p) => p.slug === 'inspecao-derivado-caseina'));
+  writeHtml(built.find((p) => p.slug === 'inspecao-derivado-gluten'));
+
+  try {
+    const { publishStaticAssets } = require('../lib/publish-static.js');
+    publishStaticAssets(ROOT);
+    console.log('posts-public.json actualizado');
+  } catch (e) {
+    console.warn('Aviso publishStatic:', e && e.message ? e.message : e);
+  }
 
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
     upsertSug(items, {
       id: 'derivado-leite',
-      title: 'Leite e laticínios — da ordenha à prateleira industrial',
-      titleEn: 'Milk and dairy — from milking to the industrial shelf',
-      titleEs: 'Leche y lácteos — del ordeño al estante industrial',
+      title: 'Leite e derivados — da ordenha à prateleira e o mal à saúde',
+      titleEn: 'Milk and derivatives — from milking to the shelf and harm to health',
+      titleEs: 'Leche y derivados — del ordeño al estante y el daño a la salud',
       tipo: 'derivado',
       priority: 1,
       status: 'feita',
-      why: 'Hub Produtos nocivos: leite/laticínios — UHT, pó, queijo, iogurte adoçado e bebidas lácteas; proteína na caseína.',
-      whyEn: 'Harmful-products hub: milk/dairy — UHT, powder, cheese, sweetened yogurt and dairy drinks; protein on the casein sheet.',
-      whyEs: 'Hub Productos nocivos: leche/lácteos — UHT, polvo, queso, yogur azucarado y bebidas lácteas; proteína en caseína.',
+      why: 'Pesquisa completa: hub leite e derivados × 9.798 vídeos. Irmão da caseína; distinto da carne processada da vaca.',
+      whyEn: 'Full research: milk-and-derivatives hub × 9,798 videos. Sibling of casein; distinct from processed cattle meat.',
+      whyEs: 'Investigación completa: hub leche y derivados × 9.798 vídeos. Hermana de la caseína.',
       suggestedSlug: 'inspecao-derivado-leite',
       doneHref: '/posts/post-inspecao-derivado-leite.html',
       seriesHint: 'animais-derivados-risco'
     });
     upsertSug(items, {
       id: 'derivado-caseina',
-      title: 'Caseína — leite bovino e proteína nociva',
-      titleEn: 'Casein — cow’s milk and harmful protein',
-      titleEs: 'Caseína — leche bovina y proteína nociva',
+      title: 'Caseína — a cola do leite e o mal à saúde',
+      titleEn: 'Casein — milk’s glue and harm to health',
+      titleEs: 'Caseína — la cola de la leche y el daño a la salud',
       tipo: 'derivado',
       priority: 1,
       status: 'feita',
-      why: 'Produto nocivo: caseína / leite — A1, BCM-7 e ultraprocessados lácteos.',
-      whyEn: 'Harmful product: casein / milk — A1, BCM-7 and ultra-processed dairy.',
-      whyEs: 'Producto nocivo: caseína / leche — A1, BCM-7 y lácteos ultraprocesados.',
+      why: 'Pesquisa completa: caseína × saúde × 9.798 vídeos (0 títulos com a palavra caseína; Lair leite/lactose, Manual cola de leite).',
+      whyEn: 'Full research: casein × health × 9,798 videos (0 titles name casein; Lair milk/lactose, Manual milk glue).',
+      whyEs: 'Investigación completa: caseína × salud × 9.798 vídeos (0 títulos nombran caseína).',
       suggestedSlug: 'inspecao-derivado-caseina',
       doneHref: '/posts/post-inspecao-derivado-caseina.html',
       seriesHint: 'animais-derivados-risco'
     });
     upsertSug(items, {
       id: 'derivado-gluten',
-      title: 'Glúten — trigo e proteína nociva',
-      titleEn: 'Gluten — wheat and harmful protein',
-      titleEs: 'Gluten — trigo y proteína nociva',
+      title: 'Glúten — a cola invisível e o mal à saúde',
+      titleEn: 'Gluten — the invisible glue and harm to health',
+      titleEs: 'Gluten — la cola invisible y el daño a la salud',
       tipo: 'derivado',
       priority: 1,
       status: 'feita',
-      why: 'Produto nocivo: glúten — celíaca, sensibilidade e ultraprocessados de farinha.',
-      whyEn: 'Harmful product: gluten — celiac, sensitivity and ultra-processed flour.',
-      whyEs: 'Producto nocivo: gluten — celiaquía, sensibilidad y ultraprocesados de harina.',
+      why: 'Pesquisa completa: glúten × saúde × 9.798 vídeos (Davis, Lair, Manual do Mundo).',
+      whyEn: 'Full research: gluten × health × 9,798 videos (Davis, Lair, Manual do Mundo).',
+      whyEs: 'Investigación completa: gluten × salud × 9.798 vídeos (Davis, Lair, Manual do Mundo).',
       suggestedSlug: 'inspecao-derivado-gluten',
       doneHref: '/posts/post-inspecao-derivado-gluten.html',
       seriesHint: 'plantas-derivados-risco'
@@ -165,6 +190,35 @@ async function main() {
     console.log('Sugestões actualizadas');
   }
 
+  if (fs.existsSync(GUIA_FILE)) {
+    const guia = JSON.parse(fs.readFileSync(GUIA_FILE, 'utf8'));
+    const items = Array.isArray(guia.items) ? guia.items : [];
+    const entry = {
+      id: 'leite',
+      word: 'Leite',
+      simple:
+        'Do latim lac, lactis: fluido da ordenha e família de derivados. Pesquisa — da ordenha à prateleira e o mal à saúde — cruzada com os vídeos do projecto. Não é dieta prescrita.',
+      simpleEn:
+        'From Latin lac, lactis: milking fluid and derivative family. Research — from milking to the shelf and harm to health — crossed with project videos. Not a prescribed diet.',
+      simpleEs:
+        'Del latín lac, lactis: fluido del ordeño y familia de derivados. Investigación — del ordeño al estante y el daño a la salud — cruzada con los vídeos. No es dieta prescrita.',
+      group: 'tecnico',
+      fromTitle: true,
+      href: '/posts/post-inspecao-derivado-leite.html'
+    };
+    const gi = items.findIndex((x) => x.id === 'leite' || x.word === 'Leite');
+    if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
+    else {
+      const after = items.findIndex((x) => x.id === 'lei-11-343' || x.id === 'caseina');
+      if (after >= 0) items.splice(after + 1, 0, entry);
+      else items.push(entry);
+    }
+    guia.items = items;
+    guia.updatedAt = new Date().toISOString();
+    fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
+    console.log('Guia de palavras actualizado (leite)');
+  }
+
   if (fs.existsSync(ANIMAIS_FILE)) {
     const catalog = JSON.parse(fs.readFileSync(ANIMAIS_FILE, 'utf8'));
     const animals = Array.isArray(catalog.animals) ? catalog.animals : [];
@@ -172,16 +226,22 @@ async function main() {
     if (vaca) {
       vaca.relatedInspections = [
         {
+          href: '/posts/post-inspecao-expressao-virou-carne-de-vaca.html',
+          label: 'Inspeção: Virou carne de vaca — ficou comum pra nós',
+          labelEn: 'Inspection: Virou carne de vaca — it became ordinary for us',
+          labelEs: 'Inspección: Virou carne de vaca — se volvió común para nosotros'
+        },
+        {
           href: '/posts/post-inspecao-derivado-leite.html',
-          label: 'Inspeção: Leite e laticínios — da ordenha à prateleira industrial',
-          labelEn: 'Inspection: Milk and dairy — from milking to the industrial shelf',
-          labelEs: 'Inspección: Leche y lácteos — del ordeño al estante industrial'
+          label: 'Inspeção: Leite e derivados — da ordenha à prateleira e o mal à saúde',
+          labelEn: 'Inspection: Milk and derivatives — from milking to the shelf and harm to health',
+          labelEs: 'Inspección: Leche y derivados — del ordeño al estante y el daño a la salud'
         },
         {
           href: '/posts/post-inspecao-derivado-caseina.html',
-          label: 'Inspeção: Caseína — leite bovino e proteína nociva ao organismo',
-          labelEn: 'Inspection: Casein — cow’s milk and a protein harmful to the body',
-          labelEs: 'Inspección: Caseína — leche bovina y proteína nociva para el organismo'
+          label: 'Inspeção: Caseína — a cola do leite e o mal à saúde',
+          labelEn: 'Inspection: Casein — milk’s glue and harm to health',
+          labelEs: 'Inspección: Caseína — la cola de la leche y el daño a la salud'
         },
         {
           href: '/posts/post-inspecao-derivado-vaca.html',
@@ -221,10 +281,16 @@ async function main() {
           labelEs: 'Inspección: Gluten / harina'
         },
         {
+          href: '/posts/post-inspecao-derivado-leite.html',
+          label: 'Inspeção: Leite e derivados',
+          labelEn: 'Inspection: Milk and derivatives',
+          labelEs: 'Inspección: Leche y derivados'
+        },
+        {
           href: '/posts/post-inspecao-derivado-caseina.html',
-          label: 'Inspeção: Caseína / leite',
-          labelEn: 'Inspection: Casein / milk',
-          labelEs: 'Inspección: Caseína / leche'
+          label: 'Inspeção: Caseína / cola do leite',
+          labelEn: 'Inspection: Casein / milk’s glue',
+          labelEs: 'Inspección: Caseína / cola de la leche'
         }
       ];
       cacau.cautions =

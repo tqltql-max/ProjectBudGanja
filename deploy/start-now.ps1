@@ -1,4 +1,17 @@
 # Arranca site + tunel sem PM2 (duas janelas minimas)
+# Uso:
+#   .\deploy\start-now.ps1
+#   .\deploy\start-now.ps1 -SkipBuild
+
+param(
+  [switch]$SkipBuild
+)
+
+$ErrorActionPreference = "Continue"
+if (Get-Variable -Name PSNativeCommandUseErrorActionPreference -ErrorAction SilentlyContinue) {
+  $PSNativeCommandUseErrorActionPreference = $false
+}
+
 $Root = Split-Path -Parent $PSScriptRoot
 Set-Location $Root
 
@@ -41,22 +54,23 @@ Stop-ExistingSite
 
 Write-Host 'Migracao base de dados...' -ForegroundColor Cyan
 npm run db:migrate
-
-Write-Host 'Build...' -ForegroundColor Cyan
-npm run build
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "db:migrate falhou (codigo $LASTEXITCODE)." -ForegroundColor Red
+  exit 1
+}
 
 $nodeJob = Start-Process -FilePath 'node' -ArgumentList 'server/index.js' -WorkingDirectory $Root -WindowStyle Minimized -PassThru
 Start-Sleep -Seconds 2
-$tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja' -WindowStyle Minimized -PassThru
+$tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja' -WorkingDirectory $Root -WindowStyle Minimized -PassThru
 Start-Sleep -Seconds 4
 
 Write-Host ''
-Write-Host 'Site local: http://localhost:' $env:PORT -ForegroundColor Green
-Write-Host 'Publico:    ' $env:SITE_URL -ForegroundColor Green
-Write-Host 'Admin:      ' $env:SITE_URL '/login.html'
+Write-Host ('Site local: http://localhost:' + $env:PORT) -ForegroundColor Green
+Write-Host ('Publico:    ' + $env:SITE_URL) -ForegroundColor Green
+Write-Host ('Admin:      ' + $env:SITE_URL + '/login.html')
 Write-Host ''
-Write-Host 'Processos: node PID' $nodeJob.Id '| cloudflared PID' $tunnelJob.Id
-Write-Host 'Para parar: Stop-Process -Id' $nodeJob.Id ',' $tunnelJob.Id
+Write-Host ('Processos: node PID ' + $nodeJob.Id + ' | cloudflared PID ' + $tunnelJob.Id)
+Write-Host ('Para parar: Stop-Process -Id ' + $nodeJob.Id + ',' + $tunnelJob.Id)
 
 try {
   $local = Invoke-WebRequest -Uri ('http://localhost:' + $env:PORT + '/') -UseBasicParsing -TimeoutSec 10
@@ -65,10 +79,18 @@ try {
   Write-Host ('Local: ERRO - ' + $_.Exception.Message) -ForegroundColor Red
 }
 
-. (Join-Path $PSScriptRoot 'probe-public.ps1')
-$public = Get-PublicHttpProbe (($env:SITE_URL.TrimEnd('/')) + '/')
-$publicHost = ([Uri]$env:SITE_URL).Host
-$publicKind = Write-PublicHostResult $publicHost $public
-if ($publicKind -eq 'fail') {
-  Write-Host 'Se der 530, execute:  .\fix-dns.ps1' -ForegroundColor Yellow
+try {
+  $public = Invoke-WebRequest -Uri ($env:SITE_URL + '/') -UseBasicParsing -TimeoutSec 20
+  Write-Host ('Publico: HTTP ' + $public.StatusCode) -ForegroundColor Green
+} catch {
+  Write-Host ('Publico: ERRO - ' + $_.Exception.Message) -ForegroundColor Yellow
+  Write-Host 'Se der 503, execute:  .\deploy\fix-dns.ps1' -ForegroundColor Yellow
+}
+
+if (-not $SkipBuild) {
+  Write-Host 'Build em curso (o site ja esta no ar)...' -ForegroundColor Cyan
+  npm run build
+  if ($LASTEXITCODE -ne 0) {
+    Write-Host "Build falhou (codigo $LASTEXITCODE). O servidor continua no ar." -ForegroundColor Yellow
+  }
 }

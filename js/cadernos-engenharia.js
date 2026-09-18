@@ -34,74 +34,6 @@
     }
   }
 
-  function applyLabStudies(subject) {
-    if (!subject || !data.labStudyFor) return false;
-    var pack = data.labStudyFor(subject.id);
-    if (!pack) return false;
-    var changed = false;
-    subject.appliedLabIds = Array.isArray(subject.appliedLabIds) ? subject.appliedLabIds : [];
-    subject.lessons = Array.isArray(subject.lessons) ? subject.lessons : [];
-    if (!(subject.formulas || '').trim() && pack.formulas) {
-      subject.formulas = pack.formulas;
-      changed = true;
-    }
-    (pack.lessons || []).forEach(function (lesson) {
-      if (subject.appliedLabIds.indexOf(lesson.id) !== -1) return;
-      var exists = false;
-      var i;
-      for (i = 0; i < subject.lessons.length; i++) {
-        if (subject.lessons[i].id === lesson.id) {
-          exists = true;
-          break;
-        }
-      }
-      if (!exists) {
-        subject.lessons.unshift({
-          id: lesson.id,
-          title: lesson.title,
-          date: lesson.date || todayIso(),
-          cues: lesson.cues || '',
-          notes: lesson.notes || '',
-          questions: lesson.questions || '',
-          summary: lesson.summary || '',
-          lab: true,
-          updatedAt: new Date().toISOString()
-        });
-      }
-      subject.appliedLabIds.push(lesson.id);
-      changed = true;
-    });
-    return changed;
-  }
-
-  function applyAllLabStudies() {
-    var changed = false;
-    state.subjects.forEach(function (subject) {
-      if (applyLabStudies(subject)) changed = true;
-    });
-    return changed;
-  }
-
-  function catalogById(id) {
-    var list = data.allSubjects();
-    var i;
-    for (i = 0; i < list.length; i++) {
-      if (list[i].id === id) return list[i];
-    }
-    return null;
-  }
-
-  function ensureSubject(id) {
-    var existing = findSubject(id);
-    if (existing) {
-      if (applyLabStudies(existing)) persist(true);
-      return existing;
-    }
-    var spec = catalogById(id);
-    if (!spec) return null;
-    return addSubject(spec);
-  }
-
   function persist(immediate) {
     var write = function () {
       try {
@@ -150,11 +82,7 @@
 
   function addSubject(spec) {
     var id = spec.id || data.slugify(spec.name);
-    if (findSubject(id)) {
-      var existing = findSubject(id);
-      if (applyLabStudies(existing)) persist(true);
-      return existing;
-    }
+    if (findSubject(id)) return findSubject(id);
     var subject = {
       id: id,
       name: spec.name,
@@ -165,7 +93,6 @@
       lessons: []
     };
     state.subjects.push(subject);
-    applyLabStudies(subject);
     persist(true);
     return subject;
   }
@@ -207,19 +134,16 @@
     var subjectView = document.getElementById('ce-subject');
     if (!hub || !subjectView) return;
 
-    if (view.mode === 'subject' && view.subjectId) {
-      var opened = ensureSubject(view.subjectId);
-      if (opened) {
-        hub.hidden = true;
-        subjectView.hidden = false;
-        renderSubject(opened);
-        return;
-      }
+    if (view.mode === 'subject' && findSubject(view.subjectId)) {
+      hub.hidden = true;
+      subjectView.hidden = false;
+      renderSubject(findSubject(view.subjectId));
+    } else {
+      hub.hidden = false;
+      subjectView.hidden = true;
+      view.subjectId = '';
+      renderHub();
     }
-    hub.hidden = false;
-    subjectView.hidden = true;
-    view.subjectId = '';
-    renderHub();
   }
 
   function renderHub() {
@@ -243,28 +167,6 @@
     }).join('');
 
     if (empty) empty.hidden = state.subjects.length > 0;
-    renderLabStudies();
-  }
-
-  function renderLabStudies() {
-    var host = document.getElementById('ce-lab-grid');
-    var section = document.getElementById('ce-lab-studies');
-    if (!host || !data.listLabStudies) return;
-    var items = data.listLabStudies();
-    if (section) section.hidden = !items.length;
-    host.innerHTML = items.map(function (item) {
-      var meta = [];
-      if (item.termo) meta.push(item.termo + 'º termo');
-      meta.push(item.subjectName);
-      return (
-        '<button type="button" class="ce-card ce-card--lab" data-open-lab="' + escapeHtml(item.subjectId) + '">' +
-          '<span class="ce-card-icon" aria-hidden="true">' + escapeHtml(item.icon || '📓') + '</span>' +
-          '<p class="ce-lab-kicker">Estudo do laboratório</p>' +
-          '<h3>' + escapeHtml(item.title) + '</h3>' +
-          '<p class="ce-card-meta">' + escapeHtml(meta.join(' · ')) + '</p>' +
-        '</button>'
-      );
-    }).join('');
   }
 
   function renderSubject(subject) {
@@ -287,12 +189,10 @@
       return;
     }
     lessons.innerHTML = subject.lessons.map(function (lesson, index) {
-      var isLab = !!lesson.lab || String(lesson.id || '').indexOf('lab-') === 0;
       return (
-        '<article class="ce-lesson' + (isLab ? ' ce-lesson--lab' : '') + '" data-lesson="' + escapeHtml(lesson.id) + '">' +
+        '<article class="ce-lesson" data-lesson="' + escapeHtml(lesson.id) + '">' +
           '<div class="ce-lesson-top">' +
             '<p><label for="ce-title-' + index + '">Título da aula</label>' +
-            (isLab ? '<span class="ce-lab-badge">Estudo do lab · podes editar</span>' : '') +
             '<input id="ce-title-' + index + '" data-field="title" value="' + escapeHtml(lesson.title || '') + '"></p>' +
             '<p><label for="ce-date-' + index + '">Data</label>' +
             '<input id="ce-date-' + index + '" type="date" data-field="date" value="' + escapeHtml(lesson.date || '') + '"></p>' +
@@ -411,6 +311,15 @@
     if (picker) picker.hidden = true;
   }
 
+  function catalogById(id) {
+    var list = data.allSubjects();
+    var i;
+    for (i = 0; i < list.length; i++) {
+      if (list[i].id === id) return list[i];
+    }
+    return null;
+  }
+
   function exportJson() {
     var blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
     var a = document.createElement('a');
@@ -428,7 +337,6 @@
         var parsed = JSON.parse(String(reader.result || ''));
         if (!parsed || !Array.isArray(parsed.subjects)) throw new Error('formato');
         state = parsed;
-        applyAllLabStudies();
         persist(true);
         closeSubject();
         setStatus('Cadernos importados.');
@@ -440,11 +348,6 @@
   }
 
   function onClick(event) {
-    var openLab = event.target.closest('[data-open-lab]');
-    if (openLab) {
-      openSubject(openLab.getAttribute('data-open-lab'));
-      return;
-    }
     var open = event.target.closest('[data-open]');
     if (open) {
       openSubject(open.getAttribute('data-open'));
@@ -522,7 +425,6 @@
     document.addEventListener('click', onClick);
     document.addEventListener('input', onInput);
     window.addEventListener('hashchange', render);
-    if (applyAllLabStudies()) persist(true);
     render();
   });
 })();

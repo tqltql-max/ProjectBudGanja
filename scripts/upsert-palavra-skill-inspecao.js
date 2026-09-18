@@ -89,7 +89,7 @@ async function main() {
         '/posts/post-inspecao-palavra-multitask.html',
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-gesto.html',
-        '/posts/post-inspecao-palavra-valeu.html'
+        '/posts/post-inspecao-expressao-faca-o-melhor.html'
       ],
       notes:
         'Cap. ' +
@@ -111,11 +111,11 @@ async function main() {
       id: 'skill',
       word: 'skill',
       simple:
-        'Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Valeu !!!',
+        'Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor!',
       simpleEn:
-        'EN→BR loan; habilidade/craft with a trail; anti-LinkedIn badge; links multitask and genial; Valeu !!!',
+        'EN→BR loan; habilidade/craft with a trail; anti-LinkedIn badge; links multitask and genial; Do your best!',
       simpleEs:
-        'Préstamo EN→BR; habilidade/oficio con rastro; anti-insignia LinkedIn; vínculos multitask y genial; ¡Valeu !!!',
+        'Préstamo EN→BR; habilidade/oficio con rastro; anti-insignia LinkedIn; vínculos multitask y genial; ¡Haz lo mejor!',
       group: 'lexico',
       fromTitle: false,
       href

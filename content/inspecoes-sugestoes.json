@@ -1,21 +1,30 @@
 {
-  "updatedAt": "2026-08-26T09:59:06.477Z",
+  "updatedAt": "2026-09-18T14:19:27.878Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
-      "id": "derivado-leite",
-      "title": "Leite e derivados — da ordenha à prateleira e o mal à saúde",
-      "titleEn": "Milk and derivatives — from milking to the shelf and harm to health",
-      "titleEs": "Leche y derivados — del ordeño al estante y el daño a la salud",
-      "tipo": "derivado",
-      "priority": 1,
+      "id": "plataformas-ensino-govbr",
+      "title": "Plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
+      "titleEn": "GOV.BR learning platforms — Canal Educação, MEC Idiomas and MEC Livros",
+      "titleEs": "Plataformas de enseñanza GOV.BR — Canal Educação, MEC Idiomas y MEC Livros",
+      "tipo": "curso",
+      "priority": 2,
       "status": "feita",
-      "why": "Pesquisa completa: hub leite e derivados × 9.798 vídeos. Irmão da caseína; distinto da carne processada da vaca.",
-      "whyEn": "Full research: milk-and-derivatives hub × 9,798 videos. Sibling of casein; distinct from processed cattle meat.",
-      "whyEs": "Investigación completa: hub leche y derivados × 9.798 vídeos. Hermana de la caseína.",
-      "suggestedSlug": "inspecao-derivado-leite",
-      "doneHref": "/posts/post-inspecao-derivado-leite.html",
-      "seriesHint": "animais-derivados-risco"
+      "why": "Mapa gratuito do MEC (login gov.br): vídeos, idiomas, livros, AVAMEC e MEC Enem. Distinto do SIEX e do ICL.",
+      "whyEn": "Free MEC map (gov.br login): video, languages, books, AVAMEC and MEC Enem. Distinct from SIEX and ICL.",
+      "whyEs": "Mapa gratuito del MEC (login gov.br): vídeo, idiomas, libros, AVAMEC y MEC Enem. Distinto del SIEX y del ICL.",
+      "suggestedSlug": "inspecao-plataformas-ensino-govbr",
+      "doneHref": "/posts/post-inspecao-plataformas-ensino-govbr.html",
+      "seriesHint": "formacao-academica",
+      "sources": [
+        "https://www.gov.br/mec/pt-br",
+        "https://meclivros.mec.gov.br/",
+        "https://www.gov.br/mec/pt-br/acesso-a-informacao/perguntas-frequentes/mec-idiomas",
+        "https://www.youtube.com/@canaleducacaobr",
+        "https://avamec.mec.gov.br/",
+        "https://app.mecenem.mec.gov.br"
+      ],
+      "notes": "Sem afiliação. Catalogar ≠ endosso político. Canal Educação fora do hub /videos/ de cultivo."
     },
     {
       "id": "patinete-eletrico-criancas",
@@ -60,1068 +69,6 @@
         "https://www.sbp.com.br/",
         "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15100.htm"
       ]
-    },
-    {
-      "id": "derivado-cana-de-acucar",
-      "title": "Cana-de-açúcar — origem e açúcar refinado",
-      "titleEn": "Sugarcane — origin and refined sugar",
-      "titleEs": "Caña de azúcar — origen y azúcar refinado",
-      "tipo": "derivado",
-      "priority": 2,
-      "status": "feita",
-      "why": "Ficha fundadora da série Derivados de risco: origem botânica vs produto industrial.",
-      "whyEn": "Founding sheet of Risk derivatives: botanical origin vs industrial product.",
-      "whyEs": "Ficha fundadora de Derivados de riesgo: origen botánico vs producto industrial.",
-      "suggestedSlug": "inspecao-derivado-cana-de-acucar",
-      "doneHref": "/posts/post-inspecao-derivado-cana-de-acucar.html",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://www.who.int/publications/i/item/9789241549028"
-      ]
-    },
-    {
-      "id": "derivado-tabaco",
-      "title": "Tabaco — origem da planta e produtos industriais",
-      "titleEn": "Tobacco — plant origin and industrial products",
-      "titleEs": "Tabaco — origen de la planta y productos industriales",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Próximo candidato Derivados de risco: *Nicotiana tabacum* → cigarro industrial.",
-      "whyEn": "Next Risk derivatives candidate: *Nicotiana tabacum* → industrial cigarette.",
-      "whyEs": "Siguiente candidato Derivados de riesgo: *Nicotiana tabacum* → cigarrillo industrial.",
-      "suggestedSlug": "inspecao-derivado-tabaco",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [],
-      "notes": "Separar planta/etnobotânica de indústria do tabaco; sem romantizar nicotina."
-    },
-    {
-      "id": "derivado-abacate",
-      "title": "Derivados do abacate — açúcar, aditivos e química industrial",
-      "titleEn": "Avocado derivatives — sugar, additives and industrial chemistry",
-      "titleEs": "Derivados del aguacate — azúcar, aditivos y química industrial",
-      "tipo": "derivado",
-      "priority": 2,
-      "status": "feita",
-      "why": "Derivados de risco: abacate inteiro vs ultraprocessado com açúcar e aditivos; mapa químico + elo planta.",
-      "whyEn": "Risk derivatives: whole avocado vs ultra-processed sugar/additives matrix; chemical map + plant link.",
-      "whyEs": "Derivados de riesgo: aguacate entero vs ultraprocesado con azúcar y aditivos; mapa químico + vínculo planta.",
-      "suggestedSlug": "inspecao-derivado-abacate",
-      "doneHref": "/posts/post-inspecao-derivado-abacate.html",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Abacate",
-        "/posts/post-inspecao-planta-abacate.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
-      ],
-      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose."
-    },
-    {
-      "id": "objeto-automovel",
-      "title": "Automóvel — o objecto que se move a si",
-      "titleEn": "Automóvel — the object that moves itself",
-      "titleEs": "Automóvel — el objeto que se mueve a sí",
-      "tipo": "objeto",
-      "priority": 1,
-      "status": "sugerida",
-      "why": "Objecto: automóvel (auto + móvel); gatilho altomovel; pulso bateria; catálogo Objetos.",
-      "whyEn": "Object: automóvel (self + mobile); trigger altomovel; battery pulse; Objects catalog.",
-      "whyEs": "Objeto: automóvel (auto + móvil); gatillo altomovel; pulso batería; catálogo Objetos.",
-      "suggestedSlug": "inspecao-palavra-automovel",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "/posts/post-inspecao-palavra-automovel.html",
-        "https://pt.wiktionary.org/wiki/autom%C3%B3vel",
-        "/posts/post-inspecao-palavra-estrada.html",
-        "/posts/post-inspecao-palavra-bateria.html"
-      ],
-      "notes": "Pedido de campo altomovel."
-    },
-    {
-      "id": "objeto-bateria",
-      "title": "Bateria — pulso do automóvel",
-      "titleEn": "Bateria — the car’s pulse",
-      "titleEs": "Bateria — el pulso del automóvil",
-      "tipo": "objeto",
-      "priority": 1,
-      "status": "sugerida",
-      "why": "Objecto: bateria (fr. batterie); lema = célula do carro; salas tambor/canhão nomeadas.",
-      "whyEn": "Object: bateria (Fr. batterie); lemma = car cell; drum/cannon rooms named.",
-      "whyEs": "Objeto: bateria (fr. batterie); lema = celda del auto; salas tambor/cañón nombradas.",
-      "suggestedSlug": "inspecao-palavra-bateria",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "/posts/post-inspecao-palavra-bateria.html",
-        "https://pt.wiktionary.org/wiki/bateria",
-        "/posts/post-inspecao-palavra-automovel.html",
-        "/posts/post-inspecao-palavra-estrada.html"
-      ],
-      "notes": "Pulso ≠ alma."
-    },
-    {
-      "id": "derivado-coco",
-      "title": "Derivados do coco — açúcar, óleo e química industrial",
-      "titleEn": "Coconut derivatives — sugar, oil and industrial chemistry",
-      "titleEs": "Derivados del coco — azúcar, aceite y química industrial",
-      "tipo": "derivado",
-      "priority": 2,
-      "status": "feita",
-      "why": "Derivados de risco: coco inteiro / água fresca vs ultraprocessado adoçado e óleo refinado; mapa químico + elo fruto.",
-      "whyEn": "Risk derivatives: whole coconut / fresh water vs sweetened ultra-processed and refined oil; chemical map + fruit link.",
-      "whyEs": "Derivados de riesgo: coco entero / agua fresca vs ultraprocesado endulzado y aceite refinado; mapa químico + vínculo fruto.",
-      "suggestedSlug": "inspecao-derivado-coco",
-      "doneHref": "/posts/post-inspecao-derivado-coco.html",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Coco",
-        "/posts/post-inspecao-planta-coco.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/posts/post-inspecao-derivado-abacate.html"
-      ],
-      "notes": "Palmeira ≠ vilã; foco em açúcar × óleo × aditivos × dose."
-    },
-    {
-      "id": "fruto-coco",
-      "title": "Coco — fruto vs indústria",
-      "titleEn": "Coconut — fruit vs industry",
-      "titleEs": "Coco — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 2,
-      "status": "feita",
-      "why": "Frutos: Coco no hub — crédito ao fruto inteiro; sofrimento industrial = água adoçada, leite UHT, óleo refinado/MCT, coco ralado açucarado.",
-      "whyEn": "Fruits: Coconut on hub — credit whole fruit; industrial path = sweetened water, UHT milk, refined/MCT oil, sweetened shreds.",
-      "whyEs": "Frutos: Coco en el hub — crédito al fruto entero; vía industrial = agua endulzada, leche UHT, aceite refinado/MCT, rallado azucarado.",
-      "suggestedSlug": "inspecao-planta-coco",
-      "doneHref": "/posts/post-inspecao-planta-coco.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Coco",
-        "/plantas/coco/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "fruto-abacate",
-      "title": "Abacate — fruto vs indústria",
-      "titleEn": "Avocado — fruit vs industry",
-      "titleEs": "Aguacate — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 2,
-      "status": "feita",
-      "why": "Frutos: Abacate no hub — crédito ao fruto inteiro; sofrimento industrial = óleo refinado, guacamole de prateleira, batidos e sobremesas com açúcar.",
-      "whyEn": "Fruits: Avocado on hub — credit whole fruit; industrial path = refined oil, shelf guacamole, sugary shakes and desserts.",
-      "whyEs": "Frutos: Aguacate en el hub — crédito al fruto entero; vía industrial = aceite refinado, guacamole de estantería, batidos y postres con azúcar.",
-      "suggestedSlug": "inspecao-planta-abacate",
-      "doneHref": "/posts/post-inspecao-planta-abacate.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Abacate",
-        "/plantas/abacate/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "fruto-laranja",
-      "title": "Laranja — fruto vs indústria",
-      "titleEn": "Orange — fruit vs industry",
-      "titleEs": "Naranja — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Laranja no hub — crédito ao fruto inteiro; sofrimento industrial = suco concentrado, néctar, refrigerante, aromas e corantes.",
-      "whyEn": "Fruits: Orange on hub — credit whole fruit; industrial path = concentrate juice, nectar, soft drinks, flavours and colours.",
-      "whyEs": "Frutos: Naranja en el hub — crédito al fruto entero; vía industrial = jugo concentrado, néctar, refrescos, aromas y colorantes.",
-      "suggestedSlug": "inspecao-planta-laranja",
-      "doneHref": "/posts/post-inspecao-planta-laranja.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Laranja",
-        "/plantas/laranja/"
-      ],
-      "notes": "hubCategory: fruto; Cap. 3; notas Cap + elos melancia/mamão/goiaba."
-    },
-    {
-      "id": "derivado-laranja",
-      "title": "Derivados do Laranja — suco concentrado, néctar, refrigerante, aromas e corantes",
-      "titleEn": "Orange derivatives — concentrate juice, nectar, soft drinks, flavours and colours",
-      "titleEs": "Derivados de Naranja — jugo concentrado, néctar, refrescos, aromas y colorantes",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Laranja inteiro vs matriz industrial (suco concentrado, néctar, refrigerante, aromas e corantes); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Orange vs industrial matrix (concentrate juice, nectar, soft drinks, flavours and colours); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Naranja entero vs matriz industrial (jugo concentrado, néctar, refrescos, aromas y colorantes); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-laranja",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Laranja",
-        "/posts/post-inspecao-planta-laranja.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~3"
-    },
-    {
-      "id": "fruto-acai",
-      "title": "Açaí — fruto vs indústria",
-      "titleEn": "Açaí — fruit vs industry",
-      "titleEs": "Açaí — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Açaí no hub — crédito ao fruto inteiro; sofrimento industrial = polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí».",
-      "whyEn": "Fruits: Açaí on hub — credit whole fruit; industrial path = pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks.",
-      "whyEs": "Frutos: Açaí en el hub — crédito al fruto entero; vía industrial = pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí».",
-      "suggestedSlug": "inspecao-planta-acai",
-      "doneHref": "/posts/post-inspecao-planta-acai.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/A%C3%A7a%C3%AD",
-        "/plantas/acai/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-acai",
-      "title": "Derivados do Açaí — polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí»",
-      "titleEn": "Açaí derivatives — pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks",
-      "titleEs": "Derivados de Açaí — pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí»",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Açaí inteiro vs matriz industrial (polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí»); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Açaí vs industrial matrix (pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Açaí entero vs matriz industrial (pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí»); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-acai",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/A%C3%A7a%C3%AD",
-        "/posts/post-inspecao-planta-acai.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~4"
-    },
-    {
-      "id": "fruto-manga",
-      "title": "Manga — fruto vs indústria",
-      "titleEn": "Mango — fruit vs industry",
-      "titleEs": "Mango — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Manga no hub — crédito ao fruto inteiro; sofrimento industrial = néctar, polpa adoçada, doce, chips.",
-      "whyEn": "Fruits: Mango on hub — credit whole fruit; industrial path = nectar, sweetened pulp, sweets, chips.",
-      "whyEs": "Frutos: Mango en el hub — crédito al fruto entero; vía industrial = néctar, pulpa endulzada, dulce, chips.",
-      "suggestedSlug": "inspecao-planta-manga",
-      "doneHref": "/posts/post-inspecao-planta-manga.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Manga",
-        "/plantas/manga/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-manga",
-      "title": "Derivados do Manga — néctar, polpa adoçada, doce, chips",
-      "titleEn": "Mango derivatives — nectar, sweetened pulp, sweets, chips",
-      "titleEs": "Derivados de Mango — néctar, pulpa endulzada, dulce, chips",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Manga inteiro vs matriz industrial (néctar, polpa adoçada, doce, chips); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Mango vs industrial matrix (nectar, sweetened pulp, sweets, chips); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Mango entero vs matriz industrial (néctar, pulpa endulzada, dulce, chips); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-manga",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Manga",
-        "/posts/post-inspecao-planta-manga.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~5"
-    },
-    {
-      "id": "fruto-banana",
-      "title": "Banana — fruto vs indústria",
-      "titleEn": "Banana — fruit vs industry",
-      "titleEs": "Plátano / banana — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Banana no hub — crédito ao fruto inteiro; sofrimento industrial = chips, farinha, snacks e sobremesas ultraprocessadas.",
-      "whyEn": "Fruits: Banana on hub — credit whole fruit; industrial path = chips, flour, snacks and ultra-processed desserts.",
-      "whyEs": "Frutos: Plátano / banana en el hub — crédito al fruto entero; vía industrial = chips, harina, snacks y postres ultraprocesados.",
-      "suggestedSlug": "inspecao-planta-banana",
-      "doneHref": "/posts/post-inspecao-planta-banana.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Banana",
-        "/plantas/banana/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-banana",
-      "title": "Derivados do Banana — chips, farinha, snacks e sobremesas ultraprocessadas",
-      "titleEn": "Banana derivatives — chips, flour, snacks and ultra-processed desserts",
-      "titleEs": "Derivados de Plátano / banana — chips, harina, snacks y postres ultraprocesados",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Banana inteiro vs matriz industrial (chips, farinha, snacks e sobremesas ultraprocessadas); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Banana vs industrial matrix (chips, flour, snacks and ultra-processed desserts); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Plátano / banana entero vs matriz industrial (chips, harina, snacks y postres ultraprocesados); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-banana",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Banana",
-        "/posts/post-inspecao-planta-banana.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~6"
-    },
-    {
-      "id": "fruto-maca",
-      "title": "Maçã — fruto vs indústria",
-      "titleEn": "Apple — fruit vs industry",
-      "titleEs": "Manzana — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Maçã no hub — crédito ao fruto inteiro; sofrimento industrial = suco concentrado, puré, chips e snacks.",
-      "whyEn": "Fruits: Apple on hub — credit whole fruit; industrial path = concentrate juice, purée, chips and snacks.",
-      "whyEs": "Frutos: Manzana en el hub — crédito al fruto entero; vía industrial = jugo concentrado, puré, chips y snacks.",
-      "suggestedSlug": "inspecao-planta-maca",
-      "doneHref": "/posts/post-inspecao-planta-maca.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3",
-        "/plantas/maca/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-maca",
-      "title": "Derivados do Maçã — suco concentrado, puré, chips e snacks",
-      "titleEn": "Apple derivatives — concentrate juice, purée, chips and snacks",
-      "titleEs": "Derivados de Manzana — jugo concentrado, puré, chips y snacks",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Maçã inteiro vs matriz industrial (suco concentrado, puré, chips e snacks); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Apple vs industrial matrix (concentrate juice, purée, chips and snacks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Manzana entero vs matriz industrial (jugo concentrado, puré, chips y snacks); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-maca",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3",
-        "/posts/post-inspecao-planta-maca.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~7"
-    },
-    {
-      "id": "fruto-abacaxi",
-      "title": "Abacaxi — fruto vs indústria",
-      "titleEn": "Pineapple — fruit vs industry",
-      "titleEs": "Piña — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Abacaxi no hub — crédito ao fruto inteiro; sofrimento industrial = lata em calda, suco, néctar, doces.",
-      "whyEn": "Fruits: Pineapple on hub — credit whole fruit; industrial path = canned in syrup, juice, nectar, sweets.",
-      "whyEs": "Frutos: Piña en el hub — crédito al fruto entero; vía industrial = lata en almíbar, jugo, néctar, dulces.",
-      "suggestedSlug": "inspecao-planta-abacaxi",
-      "doneHref": "/posts/post-inspecao-planta-abacaxi.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Abacaxi",
-        "/plantas/abacaxi/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-abacaxi",
-      "title": "Derivados do Abacaxi — lata em calda, suco, néctar, doces",
-      "titleEn": "Pineapple derivatives — canned in syrup, juice, nectar, sweets",
-      "titleEs": "Derivados de Piña — lata en almíbar, jugo, néctar, dulces",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Abacaxi inteiro vs matriz industrial (lata em calda, suco, néctar, doces); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Pineapple vs industrial matrix (canned in syrup, juice, nectar, sweets); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Piña entero vs matriz industrial (lata en almíbar, jugo, néctar, dulces); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-abacaxi",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Abacaxi",
-        "/posts/post-inspecao-planta-abacaxi.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~8"
-    },
-    {
-      "id": "fruto-goiaba",
-      "title": "Goiaba — fruto vs indústria",
-      "titleEn": "Guava — fruit vs industry",
-      "titleEs": "Guayaba — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Goiaba no hub — crédito ao fruto inteiro; sofrimento industrial = goiabada, polpa, néctar, doces de corte.",
-      "whyEn": "Fruits: Guava on hub — credit whole fruit; industrial path = guava paste, pulp, nectar, slab sweets.",
-      "whyEs": "Frutos: Guayaba en el hub — crédito al fruto entero; vía industrial = pasta de guayaba, pulpa, néctar, dulces.",
-      "suggestedSlug": "inspecao-planta-goiaba",
-      "doneHref": "/posts/post-inspecao-planta-goiaba.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Goiaba",
-        "/plantas/goiaba/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-goiaba",
-      "title": "Derivados do Goiaba — goiabada, polpa, néctar, doces de corte",
-      "titleEn": "Guava derivatives — guava paste, pulp, nectar, slab sweets",
-      "titleEs": "Derivados de Guayaba — pasta de guayaba, pulpa, néctar, dulces",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Goiaba inteiro vs matriz industrial (goiabada, polpa, néctar, doces de corte); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Guava vs industrial matrix (guava paste, pulp, nectar, slab sweets); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Guayaba entero vs matriz industrial (pasta de guayaba, pulpa, néctar, dulces); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-goiaba",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Goiaba",
-        "/posts/post-inspecao-planta-goiaba.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~9"
-    },
-    {
-      "id": "fruto-cacau",
-      "title": "Cacau — fruto vs indústria",
-      "titleEn": "Cacao — fruit vs industry",
-      "titleEs": "Cacao — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Cacau no hub — crédito ao fruto inteiro; sofrimento industrial = chocolate, cacau em pó açucarado, snacks e bebidas.",
-      "whyEn": "Fruits: Cacao on hub — credit whole fruit; industrial path = chocolate, sweetened cocoa powder, snacks and drinks.",
-      "whyEs": "Frutos: Cacao en el hub — crédito al fruto entero; vía industrial = chocolate, cacao en polvo azucarado, snacks y bebidas.",
-      "suggestedSlug": "inspecao-planta-cacau",
-      "doneHref": "/posts/post-inspecao-planta-cacau.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Cacau",
-        "/plantas/cacau/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-cacau",
-      "title": "Derivados do Cacau — chocolate, cacau em pó açucarado, snacks e bebidas",
-      "titleEn": "Cacao derivatives — chocolate, sweetened cocoa powder, snacks and drinks",
-      "titleEs": "Derivados de Cacao — chocolate, cacao en polvo azucarado, snacks y bebidas",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Cacau inteiro vs matriz industrial (chocolate, cacau em pó açucarado, snacks e bebidas); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Cacao vs industrial matrix (chocolate, sweetened cocoa powder, snacks and drinks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Cacao entero vs matriz industrial (chocolate, cacao en polvo azucarado, snacks y bebidas); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-cacau",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Cacau",
-        "/posts/post-inspecao-planta-cacau.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~10"
-    },
-    {
-      "id": "fruto-uva",
-      "title": "Uva — fruto vs indústria",
-      "titleEn": "Grape — fruit vs industry",
-      "titleEs": "Uva — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Uva no hub — crédito ao fruto inteiro; sofrimento industrial = suco concentrado, néctar, refrigerante.",
-      "whyEn": "Fruits: Grape on hub — credit whole fruit; industrial path = concentrate juice, nectar, soft drinks.",
-      "whyEs": "Frutos: Uva en el hub — crédito al fruto entero; vía industrial = jugo concentrado, néctar, refrescos.",
-      "suggestedSlug": "inspecao-planta-uva",
-      "doneHref": "/posts/post-inspecao-planta-uva.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Uva",
-        "/plantas/uva/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-uva",
-      "title": "Derivados do Uva — suco concentrado, néctar, refrigerante",
-      "titleEn": "Grape derivatives — concentrate juice, nectar, soft drinks",
-      "titleEs": "Derivados de Uva — jugo concentrado, néctar, refrescos",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Uva inteiro vs matriz industrial (suco concentrado, néctar, refrigerante); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Grape vs industrial matrix (concentrate juice, nectar, soft drinks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Uva entero vs matriz industrial (jugo concentrado, néctar, refrescos); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-uva",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Uva",
-        "/posts/post-inspecao-planta-uva.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~11"
-    },
-    {
-      "id": "fruto-morango",
-      "title": "Morango — fruto vs indústria",
-      "titleEn": "Strawberry — fruit vs industry",
-      "titleEs": "Fresa — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Morango no hub — crédito ao fruto inteiro; sofrimento industrial = iogurte, calda, aroma, geleia industrial.",
-      "whyEn": "Fruits: Strawberry on hub — credit whole fruit; industrial path = yogurt, syrup, flavour, industrial jam.",
-      "whyEs": "Frutos: Fresa en el hub — crédito al fruto entero; vía industrial = yogur, jarabe, aroma, mermelada industrial.",
-      "suggestedSlug": "inspecao-planta-morango",
-      "doneHref": "/posts/post-inspecao-planta-morango.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Morango",
-        "/plantas/morango/"
-      ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-morango",
-      "title": "Derivados do Morango — iogurte, calda, aroma, geleia industrial",
-      "titleEn": "Strawberry derivatives — yogurt, syrup, flavour, industrial jam",
-      "titleEs": "Derivados de Fresa — yogur, jarabe, aroma, mermelada industrial",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Morango inteiro vs matriz industrial (iogurte, calda, aroma, geleia industrial); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Strawberry vs industrial matrix (yogurt, syrup, flavour, industrial jam); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Fresa entero vs matriz industrial (yogur, jarabe, aroma, mermelada industrial); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-morango",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Morango",
-        "/posts/post-inspecao-planta-morango.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~12"
-    },
-    {
-      "id": "fruto-maracuja-fruta",
-      "title": "Maracujá (fruta) — fruto vs indústria",
-      "titleEn": "Passion fruit — fruit vs industry",
-      "titleEs": "Maracuyá (fruta) — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Maracujá (fruta) no hub — crédito ao fruto inteiro; sofrimento industrial = polpa pasteurizada, néctar, concentrado com açúcar.",
-      "whyEn": "Fruits: Passion fruit on hub — credit whole fruit; industrial path = pasteurized pulp, nectar, sugar concentrate.",
-      "whyEs": "Frutos: Maracuyá (fruta) en el hub — crédito al fruto entero; vía industrial = pulpa pasteurizada, néctar, concentrado con azúcar.",
-      "suggestedSlug": "inspecao-planta-maracuja-fruta",
-      "doneHref": "/posts/post-inspecao-planta-maracuja-fruta.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Passiflora_edulis",
-        "/plantas/maracuja-fruta/"
-      ],
-      "notes": "Não confundir com /plantas/maracuja/ (folhas medicinais). Aqui o objecto é o fruto comestível industrializado."
-    },
-    {
-      "id": "derivado-maracuja-fruta",
-      "title": "Derivados do Maracujá (fruta) — polpa pasteurizada, néctar, concentrado com açúcar",
-      "titleEn": "Passion fruit derivatives — pasteurized pulp, nectar, sugar concentrate",
-      "titleEs": "Derivados de Maracuyá (fruta) — pulpa pasteurizada, néctar, concentrado con azúcar",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Maracujá (fruta) inteiro vs matriz industrial (polpa pasteurizada, néctar, concentrado com açúcar); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Passion fruit vs industrial matrix (pasteurized pulp, nectar, sugar concentrate); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Maracuyá (fruta) entero vs matriz industrial (pulpa pasteurizada, néctar, concentrado con azúcar); cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-maracuja-fruta",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Passiflora_edulis",
-        "/posts/post-inspecao-planta-maracuja-fruta.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~13"
-    },
-    {
-      "id": "derivado-caseina",
-      "title": "Caseína — a cola do leite e o mal à saúde",
-      "titleEn": "Casein — milk’s glue and harm to health",
-      "titleEs": "Caseína — la cola de la leche y el daño a la salud",
-      "tipo": "derivado",
-      "priority": 1,
-      "status": "feita",
-      "why": "Pesquisa completa: caseína × saúde × 9.798 vídeos (0 títulos com a palavra caseína; Lair leite/lactose, Manual cola de leite).",
-      "whyEn": "Full research: casein × health × 9,798 videos (0 titles name casein; Lair milk/lactose, Manual milk glue).",
-      "whyEs": "Investigación completa: caseína × salud × 9.798 vídeos (0 títulos nombran caseína).",
-      "suggestedSlug": "inspecao-derivado-caseina",
-      "doneHref": "/posts/post-inspecao-derivado-caseina.html",
-      "seriesHint": "animais-derivados-risco"
-    },
-    {
-      "id": "derivado-gluten",
-      "title": "Glúten — a cola invisível e o mal à saúde",
-      "titleEn": "Gluten — the invisible glue and harm to health",
-      "titleEs": "Gluten — la cola invisible y el daño a la salud",
-      "tipo": "derivado",
-      "priority": 1,
-      "status": "feita",
-      "why": "Pesquisa completa: glúten × saúde × 9.798 vídeos (Davis, Lair, Manual do Mundo).",
-      "whyEn": "Full research: gluten × health × 9,798 videos (Davis, Lair, Manual do Mundo).",
-      "whyEs": "Investigación completa: gluten × salud × 9.798 vídeos (Davis, Lair, Manual do Mundo).",
-      "suggestedSlug": "inspecao-derivado-gluten",
-      "doneHref": "/posts/post-inspecao-derivado-gluten.html",
-      "seriesHint": "plantas-derivados-risco"
-    },
-    {
-      "id": "derivado-chocolate",
-      "title": "Chocolate industrial — cacau, açúcar, farinha e leite",
-      "titleEn": "Industrial chocolate — cacao, sugar, flour and milk",
-      "titleEs": "Chocolate industrial — cacao, azúcar, harina y leche",
-      "tipo": "derivado",
-      "priority": 1,
-      "status": "feita",
-      "why": "Hub Produtos nocivos: chocolate junta cacau, açúcar, farinha/glúten e caseína.",
-      "whyEn": "Harmful-products hub: chocolate joins cacao, sugar, flour/gluten and casein.",
-      "whyEs": "Hub Productos nocivos: el chocolate junta cacao, azúcar, harina/gluten y caseína.",
-      "suggestedSlug": "inspecao-derivado-chocolate",
-      "doneHref": "/posts/post-inspecao-derivado-chocolate.html",
-      "seriesHint": "plantas-derivados-risco"
-    },
-    {
-      "id": "derivado-analise-danos-videos",
-      "title": "Análise: danos × vídeos catalogados",
-      "titleEn": "Analysis: harms × catalogued videos",
-      "titleEs": "Análisis: daños × vídeos catalogados",
-      "tipo": "derivado",
-      "priority": 1,
-      "status": "feita",
-      "why": "Cruzar danos da rede Produtos nocivos com o acervo de vídeos do projecto.",
-      "whyEn": "Cross harmful-product harms with the project video archive.",
-      "whyEs": "Cruzar daños de Productos nocivos con el acervo de vídeos del proyecto.",
-      "suggestedSlug": "inspecao-derivado-analise-danos-videos",
-      "doneHref": "/posts/post-inspecao-derivado-analise-danos-videos.html",
-      "seriesHint": "plantas-derivados-risco"
-    },
-    {
-      "id": "fruto-mamao",
-      "title": "Mamão — fruto vs indústria",
-      "titleEn": "Papaya — fruit vs industry",
-      "titleEs": "Papaya / mamón — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Mamão no hub — crédito ao fruto inteiro; sofrimento industrial = néctar, polpa adoçada, doce, snacks «papaya»; elo papaína/UNIFESP.",
-      "whyEn": "Fruits: Papaya on hub — credit whole fruit; industrial path = nectar, sweetened pulp, sweets, papaya snacks; papain/UNIFESP link.",
-      "whyEs": "Frutos: Papaya en el hub — crédito al fruto entero; vía industrial = néctar, pulpa endulzada, dulces, snacks; vínculo papaína/UNIFESP.",
-      "suggestedSlug": "inspecao-planta-mamao",
-      "doneHref": "/posts/post-inspecao-planta-mamao.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
-        "/plantas/mamao/"
-      ],
-      "notes": "Não confundir com mamona (Ricinus). hubCategory: fruto; par com Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-mamao",
-      "title": "Derivados do Mamão — néctar, polpa adoçada, doce, snacks «papaya»",
-      "titleEn": "Papaya derivatives — nectar, sweetened pulp, sweets, papaya snacks",
-      "titleEs": "Derivados de Papaya — néctar, pulpa endulzada, dulces, snacks «papaya»",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Mamão inteiro vs matriz industrial (néctar, polpa adoçada, doce, snacks); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Papaya vs industrial matrix (nectar, sweetened pulp, sweets, snacks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Papaya entera vs matriz industrial; cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-mamao",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
-        "/posts/post-inspecao-planta-mamao.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Não confundir com mamona."
-    },
-    {
-      "id": "fruto-melancia",
-      "title": "Melancia — fruto vs indústria",
-      "titleEn": "Watermelon — fruit vs industry",
-      "titleEs": "Sandía — fruto vs industria",
-      "tipo": "fruto",
-      "priority": 3,
-      "status": "feita",
-      "why": "Frutos: Melancia no hub — crédito ao fruto inteiro (polpa aquosa de verão); sofrimento industrial = sucos, néctares e ultraprocessados «watermelon».",
-      "whyEn": "Fruits: Watermelon on hub — credit whole fruit (summer watery pulp); industrial path = juices, nectars and ultra-processed «watermelon».",
-      "whyEs": "Frutos: Sandía en el hub — crédito al fruto entero; vía industrial = jugos, néctares y ultraprocesados «watermelon».",
-      "suggestedSlug": "inspecao-planta-melancia",
-      "doneHref": "/posts/post-inspecao-planta-melancia.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Melancia",
-        "/plantas/melancia/"
-      ],
-      "notes": "hubCategory: fruto; Cap. 15; elos palavra planta/fruto; par Derivados quando aplicável."
-    },
-    {
-      "id": "derivado-melancia",
-      "title": "Derivados da melancia — sucos, néctares e ultraprocessados",
-      "titleEn": "Watermelon derivatives — juices, nectars and ultra-processed",
-      "titleEs": "Derivados de la sandía — jugos, néctares y ultraprocesados",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: melancia inteira vs matriz industrial (suco, néctar, snacks «watermelon»); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole watermelon vs industrial matrix; cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: sandía entera vs matriz industrial; cruzar azúcares libres / caña.",
-      "suggestedSlug": "inspecao-derivado-melancia",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Melancia",
-        "/posts/post-inspecao-planta-melancia.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
-      ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose."
-    },
-    {
-      "id": "objeto-incineradora",
-      "title": "Incineradora — o objecto que reduz a cinza",
-      "titleEn": "Incineradora — the object that reduces to ash",
-      "titleEs": "Incineradora — el objeto que reduce a ceniza",
-      "tipo": "objeto",
-      "priority": 2,
-      "status": "sugerida",
-      "why": "Objecto: incineradora (pedido Inceneradora → canónica; in- + cinis + -dora) — forno/usina; ≠ cinzeiro ≠ fogueira ≠ away.",
-      "whyEn": "Object: incineradora (requested Inceneradora → canonical; in- + cinis + -dora) — furnace/plant; ≠ ashtray ≠ bonfire ≠ away.",
-      "whyEs": "Objeto: incineradora (pedido Inceneradora → canónica; in- + cinis + -dora) — horno/planta; ≠ cenicero ≠ hogera ≠ away.",
-      "suggestedSlug": "inspecao-palavra-incineradora",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "/posts/post-inspecao-palavra-incineradora.html",
-        "https://pt.wiktionary.org/wiki/incinerar",
-        "https://en.wiktionary.org/wiki/cinis#Latin",
-        "https://pt.wikipedia.org/wiki/Incinera%C3%A7%C3%A3o",
-        "/posts/post-inspecao-palavra-cinzeiro.html",
-        "/posts/post-inspecao-palavra-fogo.html",
-        "/posts/post-inspecao-palavra-extintor.html",
-        "/posts/post-inspecao-arte-a-historia-das-coisas.html",
-        "/objetos/",
-        "/posts/post-inspecao-palavra-valeu.html"
-      ],
-      "notes": "Cap. 310 — objecto; grafia canónica incineradora (pedido Inceneradora)."
-    },
-    {
-      "id": "aranha-rodrigo",
-      "title": "Aranha Rodrigo — saltadora nomeada do Slivki Show",
-      "titleEn": "Rodrigo the spider — named jumping spider on Slivki Show",
-      "titleEs": "Araña Rodrigo — saltadora nombrada de Slivki Show",
-      "tipo": "animal",
-      "priority": 1,
-      "status": "feita",
-      "why": "Destaque: saltadora (Salticidae) com nome próprio; aranha ≠ inseto; série encontro / muda / espelho / vs bosque.",
-      "whyEn": "Highlight: named jumping spider (Salticidae); spider ≠ insect; series meet / molt / mirror / vs forest.",
-      "whyEs": "Destaque: saltadora (Salticidae) con nombre; araña ≠ insecto; serie encuentro / muda / espejo / vs bosque.",
-      "suggestedSlug": "inspecao-animal-aranha-rodrigo",
-      "doneHref": "/posts/post-inspecao-animal-aranha-rodrigo.html",
-      "seriesHint": "animais-catalogo",
-      "sources": [
-        "https://www.youtube.com/watch?v=VEWy9VgN1cU",
-        "https://pt.wikipedia.org/wiki/Salticidae",
-        "/posts/post-inspecao-canal-slivki.html"
-      ],
-      "notes": "Ser ≠ canal. Sem protocolo de maneio. Título «smartest» ≠ paper."
-    },
-    {
-      "id": "verificacao-vivosun",
-      "title": "Equipamentos Vivosun",
-      "tipo": "equipamento",
-      "priority": 2,
-      "status": "feita",
-      "why": "Catálogo Vivosun visível no BR (revenda) — AeroLight, tendas, GrowHub; cruzar ao lab.",
-      "suggestedSlug": "inspecao-vivosun",
-      "doneHref": "/posts/post-inspecao-vivosun.html",
-      "seriesHint": "verificacao-equipamento"
-    },
-    {
-      "id": "planta-alecrim-do-campo",
-      "title": "Alecrim-do-campo — artepillina C e própolis verde",
-      "titleEn": "Field rosemary — artepillin C and green propolis",
-      "titleEs": "Alecrim-do-campo — artepilina C y propóleo verde",
-      "tipo": "planta",
-      "priority": 2,
-      "status": "feita",
-      "why": "Plantas: Alecrim-do-campo (*Baccharis dracunculifolia*) — foto de campo 21 ago 2026; distinguir do alecrim de cozinha; elo própolis verde / abelha.",
-      "whyEn": "Plants: Field rosemary (*Baccharis dracunculifolia*) — field photo 21 Aug 2026; distinguish from kitchen rosemary; green propolis / bee link.",
-      "whyEs": "Plantas: Alecrim-do-campo (*Baccharis dracunculifolia*) — foto de campo 21 ago 2026; distinguir del romero de cocina; vínculo propóleo verde / abeja.",
-      "suggestedSlug": "inspecao-planta-alecrim-do-campo",
-      "doneHref": "/posts/post-inspecao-planta-alecrim-do-campo.html",
-      "seriesHint": "plantas-medicinais",
-      "sources": [
-        "https://notebook.google.com/notebook/2b56e328-3c46-4586-b079-6d480f280267",
-        "https://doi.org/10.3389/fphar.2022.1048688",
-        "/plantas/alecrim-do-campo/",
-        "/posts/post-inspecao-planta-alecrim.html",
-        "/posts/post-inspecao-planta-carqueja.html",
-        "/posts/post-inspecao-animal-abelha.html"
-      ],
-      "notes": "Cap. 30; foto de campo do inspetor; guia terapêutico popular lido com cautela (não copiar alegações clínicas)."
-    },
-    {
-      "id": "palavra-corda",
-      "title": "Corda — o objecto onde mora o nó",
-      "titleEn": "Corda — the object where the knot lives",
-      "titleEs": "Corda — el objeto donde vive el nudo",
-      "tipo": "objeto",
-      "priority": 2,
-      "status": "feita",
-      "why": "Objecto: corda (chorda) — fio do nó; ≠ cinta ≠ codorna; catálogo Objetos.",
-      "suggestedSlug": "inspecao-palavra-corda",
-      "doneHref": "/posts/post-inspecao-palavra-corda.html",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "/objetos/",
-        "/posts/post-inspecao-palavra-no.html"
-      ],
-      "notes": "Cartão em /objetos/."
-    },
-    {
-      "id": "animal-codorna",
-      "title": "Codorna — ave, não é a corda",
-      "titleEn": "Codorna — quail, not the rope",
-      "titleEs": "Codorna — codorniz, no es la cuerda",
-      "tipo": "animal",
-      "priority": 2,
-      "status": "feita",
-      "why": "Animais: codorna (Coturnix japonica) — produção; ≠ corda (chorda); elos galinha/nó.",
-      "suggestedSlug": "inspecao-animal-codorna",
-      "doneHref": "/posts/post-inspecao-animal-codorna.html",
-      "seriesHint": "animais-producao",
-      "sources": [
-        "/animais/codorna/",
-        "/posts/post-inspecao-palavra-corda.html"
-      ],
-      "notes": "Catálogo /animais/ + inspeção gerada."
-    },
-    {
-      "id": "objeto-violao",
-      "title": "Violão — o objecto onde as cordas afinam",
-      "titleEn": "Violão — the object where the strings are tuned",
-      "titleEs": "Violão — el objeto donde se afinan las cuerdas",
-      "tipo": "objeto",
-      "priority": 2,
-      "status": "feita",
-      "why": "Objecto: violão (viola + -ão) — guitarra clássica/acústica BR; ≠ guitarra eléctrica; elos corda/tónos/gesto; catálogo Objetos.",
-      "whyEn": "Object: violão (viola + -ão) — BR classical/acoustic guitar; ≠ electric guitarra; links corda/tónos/gesture; Objects catalog.",
-      "whyEs": "Objeto: violão (viola + -ão) — guitarra clásica/acústica BR; ≠ guitarra eléctrica; vínculos corda/tónos/gesto; catálogo Objetos.",
-      "suggestedSlug": "inspecao-palavra-violao",
-      "doneHref": "/posts/post-inspecao-palavra-violao.html",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "https://pt.wiktionary.org/wiki/viol%C3%A3o",
-        "https://pt.wikipedia.org/wiki/Viol%C3%A3o",
-        "/posts/post-inspecao-palavra-afinar.html",
-        "/posts/post-inspecao-palavra-corda.html",
-        "/posts/post-inspecao-palavra-tonos.html",
-        "/objetos/",
-        "/posts/post-inspecao-palavra-valeu.html"
-      ],
-      "notes": "Cap. 183 — objecto BR; cordas no braço; ≠ eléctrica."
-    },
-    {
-      "id": "objeto-afinador",
-      "title": "Afinador — o objecto que lê a corda do violão",
-      "titleEn": "Afinador — the object that reads the guitar string",
-      "titleEs": "Afinador — el objeto que lee la cuerda del violão",
-      "tipo": "objeto",
-      "priority": 2,
-      "status": "feita",
-      "why": "Objecto: afinador (afinar + -dor) — clip / diapasão / app lê a corda do violão; tarraxa escreve tónos; muleta, não dono.",
-      "whyEn": "Object: tuner (afinar + -dor) — clip / fork / app reads the guitar string; peg writes tónos; crutch, not owner.",
-      "whyEs": "Objeto: afinador (afinar + -dor) — clip / diapasón / app lee la cuerda del violão; clavija escribe tónos; muleta, no dueño.",
-      "suggestedSlug": "inspecao-palavra-afinador",
-      "doneHref": "/posts/post-inspecao-palavra-afinador.html",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "https://pt.wiktionary.org/wiki/afinador",
-        "https://pt.wikipedia.org/wiki/Afinador",
-        "/posts/post-inspecao-palavra-afinar.html",
-        "/posts/post-inspecao-palavra-violao.html",
-        "/posts/post-inspecao-palavra-corda.html",
-        "/objetos/",
-        "/posts/post-inspecao-palavra-valeu.html"
-      ],
-      "notes": "Cap. 199 — objecto-leitor; ≠ verbo afinar ≠ tarraxa ≠ passarinho."
-    },
-    {
-      "id": "objeto-oculos",
-      "title": "Óculos — o objecto diante do olho",
-      "titleEn": "Óculos — the object in front of the eye",
-      "titleEs": "Óculos — el objeto delante del ojo",
-      "tipo": "objeto",
-      "priority": 2,
-      "status": "sugerida",
-      "why": "Objecto: óculos (plural de óculo ← lat. oculus) — lentes + armação diante do olho; ≠ órgão ≠ contacto ≠ marca.",
-      "whyEn": "Object: óculos (plural of óculo ← Lat. oculus) — lenses + frame in front of the eye; ≠ organ ≠ contacts ≠ brand.",
-      "whyEs": "Objeto: óculos (plural de óculo ← lat. oculus) — lentes + montura delante del ojo; ≠ órgano ≠ lentilla ≠ marca.",
-      "suggestedSlug": "inspecao-palavra-oculos",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "/posts/post-inspecao-palavra-oculos.html",
-        "https://pt.wiktionary.org/wiki/%C3%B3culos",
-        "https://pt.wiktionary.org/wiki/%C3%B3culo",
-        "https://pt.wikipedia.org/wiki/%C3%93culos",
-        "/posts/post-inspecao-palavra-olho.html",
-        "/posts/post-inspecao-palavra-objetos.html",
-        "/objetos/",
-        "/posts/post-inspecao-palavra-valeu.html"
-      ],
-      "notes": "Cap. 306 — objecto; mesmo oculus que olho; outra classe."
-    },
-    {
-      "id": "objeto-mola",
-      "title": "Mola — o objecto que cede e volta",
-      "titleEn": "Mola — the object that yields and returns",
-      "titleEs": "Mola — el objeto que cede y vuelve",
-      "tipo": "objeto",
-      "priority": 2,
-      "status": "sugerida",
-      "why": "Objecto: mola/molas (it. molla ← mollis) — peça elástica; ≠ mula ≠ mó; feixe da carroça; catálogo Objetos.",
-      "whyEn": "Object: mola/molas (It. molla ← mollis) — elastic piece; ≠ mule ≠ millstone; wagon leaf-spring; Objects catalog.",
-      "whyEs": "Objeto: mola/molas (it. molla ← mollis) — pieza elástica; ≠ mula ≠ muela; ballesta del carro; catálogo Objetos.",
-      "suggestedSlug": "inspecao-palavra-mola",
-      "seriesHint": "palavras-origem",
-      "sources": [
-        "/posts/post-inspecao-palavra-mola.html",
-        "https://pt.wiktionary.org/wiki/mola",
-        "https://pt.wikipedia.org/wiki/Mola_%28dispositivo%29",
-        "/posts/post-inspecao-animal-mula.html",
-        "/posts/post-inspecao-palavra-colchao.html",
-        "/objetos/",
-        "/posts/post-inspecao-palavra-valeu.html"
-      ],
-      "notes": "Cap. 325 — par mola/mula como corda/codorna."
-    },
-    {
-      "id": "animal-mula",
-      "title": "Mula — híbrido de trabalho, vizinha da mola",
-      "titleEn": "Mule — work hybrid, neighbour of the spring",
-      "titleEs": "Mula — híbrido de trabajo, vecina del muelle",
-      "tipo": "animal",
-      "priority": 2,
-      "status": "feita",
-      "why": "Animal: mula (lat. mūla) — jumento × égua; ≠ mola (peça); elo cavalo; catálogo Animais.",
-      "whyEn": "Animal: mule (Lat. mūla) — jack × mare; ≠ spring; horse link; Animals catalog.",
-      "whyEs": "Animal: mula (lat. mūla) — burro × yegua; ≠ muelle; vínculo caballo; catálogo Animales.",
-      "suggestedSlug": "inspecao-animal-mula",
-      "doneHref": "/posts/post-inspecao-animal-mula.html",
-      "seriesHint": "animais-catalogo",
-      "sources": [
-        "/posts/post-inspecao-animal-mula.html",
-        "https://pt.wiktionary.org/wiki/mula",
-        "https://pt.wikipedia.org/wiki/Mula",
-        "/posts/post-inspecao-palavra-mola.html",
-        "/animais/mula/",
-        "/posts/post-inspecao-animal-cavalo.html"
-      ],
-      "notes": "Par de método com objecto mola."
-    },
-    {
-      "id": "fruto-marolo",
-      "title": "Marolo — araticum do Cerrado vs maracujá / mamão / pinha",
-      "titleEn": "Marolo — Cerrado araticum vs passion fruit / papaya / sugar-apple",
-      "titleEs": "Marolo — araticum del Cerrado vs maracuyá / papaya / anón",
-      "tipo": "fruto",
-      "priority": 2,
-      "status": "feita",
-      "why": "Frutos: Marolo (*Annona crassiflora*) — crédito à polpa nativa; ≠ maracujá ≠ mamão ≠ pinha; Valeu !!!",
-      "whyEn": "Fruits: Marolo (*Annona crassiflora*) — credit native pulp; ≠ passion fruit ≠ papaya ≠ sugar-apple; Valeu !!!",
-      "whyEs": "Frutos: Marolo (*Annona crassiflora*) — crédito a la pulpa nativa; ≠ maracuyá ≠ papaya ≠ anón; ¡Valeu !!!",
-      "suggestedSlug": "inspecao-planta-marolo",
-      "doneHref": "/posts/post-inspecao-planta-marolo.html",
-      "seriesHint": "plantas-frutos",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Annona_crassiflora",
-        "/plantas/marolo/",
-        "/posts/post-inspecao-palavra-fruto.html"
-      ],
-      "notes": "hubCategory: fruto; Cap. 17; cola de orelha marolo × maracujá."
-    },
-    {
-      "id": "derivado-marolo",
-      "title": "Derivados do Marolo — açúcar, aditivos e química industrial",
-      "titleEn": "Marolo / araticum derivatives — sugar, additives and industrial chemistry",
-      "titleEs": "Derivados de Marolo / araticum — azúcar, aditivos y química industrial",
-      "tipo": "derivado",
-      "priority": 3,
-      "status": "feita",
-      "why": "Derivados de risco: Marolo inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
-      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
-      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
-      "suggestedSlug": "inspecao-derivado-marolo",
-      "seriesHint": "plantas-derivados-risco",
-      "sources": [
-        "https://pt.wikipedia.org/wiki/Annona_crassiflora",
-        "/posts/post-inspecao-planta-marolo.html",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
-      ],
-      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 20",
-      "doneHref": "/posts/post-inspecao-derivado-marolo.html"
-    },
-    {
-      "id": "plataformas-ensino-govbr",
-      "title": "Plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
-      "titleEn": "GOV.BR learning platforms — Canal Educação, MEC Idiomas and MEC Livros",
-      "titleEs": "Plataformas de enseñanza GOV.BR — Canal Educação, MEC Idiomas y MEC Livros",
-      "tipo": "curso",
-      "priority": 2,
-      "status": "feita",
-      "why": "Mapa gratuito do MEC (login gov.br): vídeos, idiomas, livros, AVAMEC e MEC Enem. Distinto do SIEX e do ICL.",
-      "whyEn": "Free MEC map (gov.br login): video, languages, books, AVAMEC and MEC Enem. Distinct from SIEX and ICL.",
-      "whyEs": "Mapa gratuito del MEC (login gov.br): vídeo, idiomas, libros, AVAMEC y MEC Enem. Distinto del SIEX y del ICL.",
-      "suggestedSlug": "inspecao-plataformas-ensino-govbr",
-      "doneHref": "/posts/post-inspecao-plataformas-ensino-govbr.html",
-      "seriesHint": "formacao-academica",
-      "sources": [
-        "https://www.gov.br/mec/pt-br",
-        "https://meclivros.mec.gov.br/",
-        "https://www.gov.br/mec/pt-br/acesso-a-informacao/perguntas-frequentes/mec-idiomas",
-        "https://www.youtube.com/@canaleducacaobr",
-        "https://avamec.mec.gov.br/",
-        "https://app.mecenem.mec.gov.br"
-      ],
-      "notes": "Sem afiliação. Catalogar ≠ endosso político. Canal Educação fora do hub /videos/ de cultivo."
     },
     {
       "id": "padre-ticao",
@@ -1309,6 +256,40 @@
       "seriesHint": "artigos-cientificos",
       "sources": [],
       "notes": "Preencher DOI e título quando escolheres o paper."
+    },
+    {
+      "id": "derivado-cana-de-acucar",
+      "title": "Cana-de-açúcar — origem e açúcar refinado",
+      "titleEn": "Sugarcane — origin and refined sugar",
+      "titleEs": "Caña de azúcar — origen y azúcar refinado",
+      "tipo": "derivado",
+      "priority": 2,
+      "status": "feita",
+      "why": "Ficha fundadora da série Derivados de risco: origem botânica vs produto industrial.",
+      "whyEn": "Founding sheet of Risk derivatives: botanical origin vs industrial product.",
+      "whyEs": "Ficha fundadora de Derivados de riesgo: origen botánico vs producto industrial.",
+      "suggestedSlug": "inspecao-derivado-cana-de-acucar",
+      "doneHref": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://www.who.int/publications/i/item/9789241549028"
+      ]
+    },
+    {
+      "id": "derivado-tabaco",
+      "title": "Tabaco — origem da planta e produtos industriais",
+      "titleEn": "Tobacco — plant origin and industrial products",
+      "titleEs": "Tabaco — origen de la planta y productos industriales",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Próximo candidato Derivados de risco: *Nicotiana tabacum* → cigarro industrial.",
+      "whyEn": "Next Risk derivatives candidate: *Nicotiana tabacum* → industrial cigarette.",
+      "whyEs": "Siguiente candidato Derivados de riesgo: *Nicotiana tabacum* → cigarrillo industrial.",
+      "suggestedSlug": "inspecao-derivado-tabaco",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [],
+      "notes": "Separar planta/etnobotânica de indústria do tabaco; sem romantizar nicotina."
     },
     {
       "id": "palavra-maconha",
@@ -1697,6 +678,28 @@
         "/posts/post-inspecao-filme-the-matrix.html"
       ],
       "notes": "Pessoas ≠ Legado; filme fica em Artes."
+    },
+    {
+      "id": "derivado-abacate",
+      "title": "Derivados do abacate — açúcar, aditivos e química industrial",
+      "titleEn": "Avocado derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados del aguacate — azúcar, aditivos y química industrial",
+      "tipo": "derivado",
+      "priority": 2,
+      "status": "feita",
+      "why": "Derivados de risco: abacate inteiro vs ultraprocessado com açúcar e aditivos; mapa químico + elo planta.",
+      "whyEn": "Risk derivatives: whole avocado vs ultra-processed sugar/additives matrix; chemical map + plant link.",
+      "whyEs": "Derivados de riesgo: aguacate entero vs ultraprocesado con azúcar y aditivos; mapa químico + vínculo planta.",
+      "suggestedSlug": "inspecao-derivado-abacate",
+      "doneHref": "/posts/post-inspecao-derivado-abacate.html",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Abacate",
+        "/posts/post-inspecao-planta-abacate.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
+      ],
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose."
     },
     {
       "id": "arte-alice-no-pais-das-maravilhas",
@@ -2402,6 +1405,519 @@
       "notes": "Metáfora literária ≠ protocolo; não entra no mapa duplo sentido."
     },
     {
+      "id": "derivado-coco",
+      "title": "Derivados do coco — açúcar, óleo e química industrial",
+      "titleEn": "Coconut derivatives — sugar, oil and industrial chemistry",
+      "titleEs": "Derivados del coco — azúcar, aceite y química industrial",
+      "tipo": "derivado",
+      "priority": 2,
+      "status": "feita",
+      "why": "Derivados de risco: coco inteiro / água fresca vs ultraprocessado adoçado e óleo refinado; mapa químico + elo fruto.",
+      "whyEn": "Risk derivatives: whole coconut / fresh water vs sweetened ultra-processed and refined oil; chemical map + fruit link.",
+      "whyEs": "Derivados de riesgo: coco entero / agua fresca vs ultraprocesado endulzado y aceite refinado; mapa químico + vínculo fruto.",
+      "suggestedSlug": "inspecao-derivado-coco",
+      "doneHref": "/posts/post-inspecao-derivado-coco.html",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Coco",
+        "/posts/post-inspecao-planta-coco.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/posts/post-inspecao-derivado-abacate.html"
+      ],
+      "notes": "Palmeira ≠ vilã; foco em açúcar × óleo × aditivos × dose."
+    },
+    {
+      "id": "fruto-coco",
+      "title": "Coco — fruto vs indústria",
+      "titleEn": "Coconut — fruit vs industry",
+      "titleEs": "Coco — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Frutos: Coco no hub — crédito ao fruto inteiro; sofrimento industrial = água adoçada, leite UHT, óleo refinado/MCT, coco ralado açucarado.",
+      "whyEn": "Fruits: Coconut on hub — credit whole fruit; industrial path = sweetened water, UHT milk, refined/MCT oil, sweetened shreds.",
+      "whyEs": "Frutos: Coco en el hub — crédito al fruto entero; vía industrial = agua endulzada, leche UHT, aceite refinado/MCT, rallado azucarado.",
+      "suggestedSlug": "inspecao-planta-coco",
+      "doneHref": "/posts/post-inspecao-planta-coco.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Coco",
+        "/plantas/coco/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "fruto-abacate",
+      "title": "Abacate — fruto vs indústria",
+      "titleEn": "Avocado — fruit vs industry",
+      "titleEs": "Aguacate — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Frutos: Abacate no hub — crédito ao fruto inteiro; sofrimento industrial = óleo refinado, guacamole de prateleira, batidos e sobremesas com açúcar.",
+      "whyEn": "Fruits: Avocado on hub — credit whole fruit; industrial path = refined oil, shelf guacamole, sugary shakes and desserts.",
+      "whyEs": "Frutos: Aguacate en el hub — crédito al fruto entero; vía industrial = aceite refinado, guacamole de estantería, batidos y postres con azúcar.",
+      "suggestedSlug": "inspecao-planta-abacate",
+      "doneHref": "/posts/post-inspecao-planta-abacate.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Abacate",
+        "/plantas/abacate/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "fruto-laranja",
+      "title": "Laranja — fruto vs indústria",
+      "titleEn": "Orange — fruit vs industry",
+      "titleEs": "Naranja — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Laranja no hub — crédito ao fruto inteiro; sofrimento industrial = suco concentrado, néctar, refrigerante, aromas e corantes.",
+      "whyEn": "Fruits: Orange on hub — credit whole fruit; industrial path = concentrate juice, nectar, soft drinks, flavours and colours.",
+      "whyEs": "Frutos: Naranja en el hub — crédito al fruto entero; vía industrial = jugo concentrado, néctar, refrescos, aromas y colorantes.",
+      "suggestedSlug": "inspecao-planta-laranja",
+      "doneHref": "/posts/post-inspecao-planta-laranja.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Laranja",
+        "/plantas/laranja/"
+      ],
+      "notes": "hubCategory: fruto; Cap. 3; notas Cap + elos melancia/mamão/goiaba."
+    },
+    {
+      "id": "derivado-laranja",
+      "title": "Derivados do Laranja — suco concentrado, néctar, refrigerante, aromas e corantes",
+      "titleEn": "Orange derivatives — concentrate juice, nectar, soft drinks, flavours and colours",
+      "titleEs": "Derivados de Naranja — jugo concentrado, néctar, refrescos, aromas y colorantes",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Laranja inteiro vs matriz industrial (suco concentrado, néctar, refrigerante, aromas e corantes); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Orange vs industrial matrix (concentrate juice, nectar, soft drinks, flavours and colours); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Naranja entero vs matriz industrial (jugo concentrado, néctar, refrescos, aromas y colorantes); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-laranja",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Laranja",
+        "/posts/post-inspecao-planta-laranja.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~3"
+    },
+    {
+      "id": "fruto-acai",
+      "title": "Açaí — fruto vs indústria",
+      "titleEn": "Açaí — fruit vs industry",
+      "titleEs": "Açaí — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Açaí no hub — crédito ao fruto inteiro; sofrimento industrial = polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí».",
+      "whyEn": "Fruits: Açaí on hub — credit whole fruit; industrial path = pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks.",
+      "whyEs": "Frutos: Açaí en el hub — crédito al fruto entero; vía industrial = pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí».",
+      "suggestedSlug": "inspecao-planta-acai",
+      "doneHref": "/posts/post-inspecao-planta-acai.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/A%C3%A7a%C3%AD",
+        "/plantas/acai/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-acai",
+      "title": "Derivados do Açaí — polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí»",
+      "titleEn": "Açaí derivatives — pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks",
+      "titleEs": "Derivados de Açaí — pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí»",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Açaí inteiro vs matriz industrial (polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí»); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Açaí vs industrial matrix (pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Açaí entero vs matriz industrial (pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí»); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-acai",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/A%C3%A7a%C3%AD",
+        "/posts/post-inspecao-planta-acai.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~4"
+    },
+    {
+      "id": "fruto-manga",
+      "title": "Manga — fruto vs indústria",
+      "titleEn": "Mango — fruit vs industry",
+      "titleEs": "Mango — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Manga no hub — crédito ao fruto inteiro; sofrimento industrial = néctar, polpa adoçada, doce, chips.",
+      "whyEn": "Fruits: Mango on hub — credit whole fruit; industrial path = nectar, sweetened pulp, sweets, chips.",
+      "whyEs": "Frutos: Mango en el hub — crédito al fruto entero; vía industrial = néctar, pulpa endulzada, dulce, chips.",
+      "suggestedSlug": "inspecao-planta-manga",
+      "doneHref": "/posts/post-inspecao-planta-manga.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Manga",
+        "/plantas/manga/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-manga",
+      "title": "Derivados do Manga — néctar, polpa adoçada, doce, chips",
+      "titleEn": "Mango derivatives — nectar, sweetened pulp, sweets, chips",
+      "titleEs": "Derivados de Mango — néctar, pulpa endulzada, dulce, chips",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Manga inteiro vs matriz industrial (néctar, polpa adoçada, doce, chips); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Mango vs industrial matrix (nectar, sweetened pulp, sweets, chips); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Mango entero vs matriz industrial (néctar, pulpa endulzada, dulce, chips); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-manga",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Manga",
+        "/posts/post-inspecao-planta-manga.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~5"
+    },
+    {
+      "id": "fruto-banana",
+      "title": "Banana — fruto vs indústria",
+      "titleEn": "Banana — fruit vs industry",
+      "titleEs": "Plátano / banana — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Banana no hub — crédito ao fruto inteiro; sofrimento industrial = chips, farinha, snacks e sobremesas ultraprocessadas.",
+      "whyEn": "Fruits: Banana on hub — credit whole fruit; industrial path = chips, flour, snacks and ultra-processed desserts.",
+      "whyEs": "Frutos: Plátano / banana en el hub — crédito al fruto entero; vía industrial = chips, harina, snacks y postres ultraprocesados.",
+      "suggestedSlug": "inspecao-planta-banana",
+      "doneHref": "/posts/post-inspecao-planta-banana.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Banana",
+        "/plantas/banana/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-banana",
+      "title": "Derivados do Banana — chips, farinha, snacks e sobremesas ultraprocessadas",
+      "titleEn": "Banana derivatives — chips, flour, snacks and ultra-processed desserts",
+      "titleEs": "Derivados de Plátano / banana — chips, harina, snacks y postres ultraprocesados",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Banana inteiro vs matriz industrial (chips, farinha, snacks e sobremesas ultraprocessadas); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Banana vs industrial matrix (chips, flour, snacks and ultra-processed desserts); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Plátano / banana entero vs matriz industrial (chips, harina, snacks y postres ultraprocesados); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-banana",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Banana",
+        "/posts/post-inspecao-planta-banana.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~6"
+    },
+    {
+      "id": "fruto-maca",
+      "title": "Maçã — fruto vs indústria",
+      "titleEn": "Apple — fruit vs industry",
+      "titleEs": "Manzana — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Maçã no hub — crédito ao fruto inteiro; sofrimento industrial = suco concentrado, puré, chips e snacks.",
+      "whyEn": "Fruits: Apple on hub — credit whole fruit; industrial path = concentrate juice, purée, chips and snacks.",
+      "whyEs": "Frutos: Manzana en el hub — crédito al fruto entero; vía industrial = jugo concentrado, puré, chips y snacks.",
+      "suggestedSlug": "inspecao-planta-maca",
+      "doneHref": "/posts/post-inspecao-planta-maca.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3",
+        "/plantas/maca/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-maca",
+      "title": "Derivados do Maçã — suco concentrado, puré, chips e snacks",
+      "titleEn": "Apple derivatives — concentrate juice, purée, chips and snacks",
+      "titleEs": "Derivados de Manzana — jugo concentrado, puré, chips y snacks",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Maçã inteiro vs matriz industrial (suco concentrado, puré, chips e snacks); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Apple vs industrial matrix (concentrate juice, purée, chips and snacks); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Manzana entero vs matriz industrial (jugo concentrado, puré, chips y snacks); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-maca",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3",
+        "/posts/post-inspecao-planta-maca.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~7"
+    },
+    {
+      "id": "fruto-abacaxi",
+      "title": "Abacaxi — fruto vs indústria",
+      "titleEn": "Pineapple — fruit vs industry",
+      "titleEs": "Piña — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Abacaxi no hub — crédito ao fruto inteiro; sofrimento industrial = lata em calda, suco, néctar, doces.",
+      "whyEn": "Fruits: Pineapple on hub — credit whole fruit; industrial path = canned in syrup, juice, nectar, sweets.",
+      "whyEs": "Frutos: Piña en el hub — crédito al fruto entero; vía industrial = lata en almíbar, jugo, néctar, dulces.",
+      "suggestedSlug": "inspecao-planta-abacaxi",
+      "doneHref": "/posts/post-inspecao-planta-abacaxi.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Abacaxi",
+        "/plantas/abacaxi/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-abacaxi",
+      "title": "Derivados do Abacaxi — lata em calda, suco, néctar, doces",
+      "titleEn": "Pineapple derivatives — canned in syrup, juice, nectar, sweets",
+      "titleEs": "Derivados de Piña — lata en almíbar, jugo, néctar, dulces",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Abacaxi inteiro vs matriz industrial (lata em calda, suco, néctar, doces); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Pineapple vs industrial matrix (canned in syrup, juice, nectar, sweets); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Piña entero vs matriz industrial (lata en almíbar, jugo, néctar, dulces); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-abacaxi",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Abacaxi",
+        "/posts/post-inspecao-planta-abacaxi.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~8"
+    },
+    {
+      "id": "fruto-goiaba",
+      "title": "Goiaba — fruto vs indústria",
+      "titleEn": "Guava — fruit vs industry",
+      "titleEs": "Guayaba — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Goiaba no hub — crédito ao fruto inteiro; sofrimento industrial = goiabada, polpa, néctar, doces de corte.",
+      "whyEn": "Fruits: Guava on hub — credit whole fruit; industrial path = guava paste, pulp, nectar, slab sweets.",
+      "whyEs": "Frutos: Guayaba en el hub — crédito al fruto entero; vía industrial = pasta de guayaba, pulpa, néctar, dulces.",
+      "suggestedSlug": "inspecao-planta-goiaba",
+      "doneHref": "/posts/post-inspecao-planta-goiaba.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Goiaba",
+        "/plantas/goiaba/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-goiaba",
+      "title": "Derivados do Goiaba — goiabada, polpa, néctar, doces de corte",
+      "titleEn": "Guava derivatives — guava paste, pulp, nectar, slab sweets",
+      "titleEs": "Derivados de Guayaba — pasta de guayaba, pulpa, néctar, dulces",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Goiaba inteiro vs matriz industrial (goiabada, polpa, néctar, doces de corte); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Guava vs industrial matrix (guava paste, pulp, nectar, slab sweets); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Guayaba entero vs matriz industrial (pasta de guayaba, pulpa, néctar, dulces); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-goiaba",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Goiaba",
+        "/posts/post-inspecao-planta-goiaba.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~9"
+    },
+    {
+      "id": "fruto-cacau",
+      "title": "Cacau — fruto vs indústria",
+      "titleEn": "Cacao — fruit vs industry",
+      "titleEs": "Cacao — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Cacau no hub — crédito ao fruto inteiro; sofrimento industrial = chocolate, cacau em pó açucarado, snacks e bebidas.",
+      "whyEn": "Fruits: Cacao on hub — credit whole fruit; industrial path = chocolate, sweetened cocoa powder, snacks and drinks.",
+      "whyEs": "Frutos: Cacao en el hub — crédito al fruto entero; vía industrial = chocolate, cacao en polvo azucarado, snacks y bebidas.",
+      "suggestedSlug": "inspecao-planta-cacau",
+      "doneHref": "/posts/post-inspecao-planta-cacau.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Cacau",
+        "/plantas/cacau/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-cacau",
+      "title": "Derivados do Cacau — chocolate, cacau em pó açucarado, snacks e bebidas",
+      "titleEn": "Cacao derivatives — chocolate, sweetened cocoa powder, snacks and drinks",
+      "titleEs": "Derivados de Cacao — chocolate, cacao en polvo azucarado, snacks y bebidas",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Cacau inteiro vs matriz industrial (chocolate, cacau em pó açucarado, snacks e bebidas); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Cacao vs industrial matrix (chocolate, sweetened cocoa powder, snacks and drinks); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Cacao entero vs matriz industrial (chocolate, cacao en polvo azucarado, snacks y bebidas); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-cacau",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Cacau",
+        "/posts/post-inspecao-planta-cacau.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~10"
+    },
+    {
+      "id": "fruto-uva",
+      "title": "Uva — fruto vs indústria",
+      "titleEn": "Grape — fruit vs industry",
+      "titleEs": "Uva — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Uva no hub — crédito ao fruto inteiro; sofrimento industrial = suco concentrado, néctar, refrigerante.",
+      "whyEn": "Fruits: Grape on hub — credit whole fruit; industrial path = concentrate juice, nectar, soft drinks.",
+      "whyEs": "Frutos: Uva en el hub — crédito al fruto entero; vía industrial = jugo concentrado, néctar, refrescos.",
+      "suggestedSlug": "inspecao-planta-uva",
+      "doneHref": "/posts/post-inspecao-planta-uva.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Uva",
+        "/plantas/uva/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-uva",
+      "title": "Derivados do Uva — suco concentrado, néctar, refrigerante",
+      "titleEn": "Grape derivatives — concentrate juice, nectar, soft drinks",
+      "titleEs": "Derivados de Uva — jugo concentrado, néctar, refrescos",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Uva inteiro vs matriz industrial (suco concentrado, néctar, refrigerante); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Grape vs industrial matrix (concentrate juice, nectar, soft drinks); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Uva entero vs matriz industrial (jugo concentrado, néctar, refrescos); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-uva",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Uva",
+        "/posts/post-inspecao-planta-uva.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~11"
+    },
+    {
+      "id": "fruto-morango",
+      "title": "Morango — fruto vs indústria",
+      "titleEn": "Strawberry — fruit vs industry",
+      "titleEs": "Fresa — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Morango no hub — crédito ao fruto inteiro; sofrimento industrial = iogurte, calda, aroma, geleia industrial.",
+      "whyEn": "Fruits: Strawberry on hub — credit whole fruit; industrial path = yogurt, syrup, flavour, industrial jam.",
+      "whyEs": "Frutos: Fresa en el hub — crédito al fruto entero; vía industrial = yogur, jarabe, aroma, mermelada industrial.",
+      "suggestedSlug": "inspecao-planta-morango",
+      "doneHref": "/posts/post-inspecao-planta-morango.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Morango",
+        "/plantas/morango/"
+      ],
+      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-morango",
+      "title": "Derivados do Morango — iogurte, calda, aroma, geleia industrial",
+      "titleEn": "Strawberry derivatives — yogurt, syrup, flavour, industrial jam",
+      "titleEs": "Derivados de Fresa — yogur, jarabe, aroma, mermelada industrial",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Morango inteiro vs matriz industrial (iogurte, calda, aroma, geleia industrial); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Strawberry vs industrial matrix (yogurt, syrup, flavour, industrial jam); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Fresa entero vs matriz industrial (yogur, jarabe, aroma, mermelada industrial); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-morango",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Morango",
+        "/posts/post-inspecao-planta-morango.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~12"
+    },
+    {
+      "id": "fruto-maracuja-fruta",
+      "title": "Maracujá (fruta) — fruto vs indústria",
+      "titleEn": "Passion fruit — fruit vs industry",
+      "titleEs": "Maracuyá (fruta) — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Maracujá (fruta) no hub — crédito ao fruto inteiro; sofrimento industrial = polpa pasteurizada, néctar, concentrado com açúcar.",
+      "whyEn": "Fruits: Passion fruit on hub — credit whole fruit; industrial path = pasteurized pulp, nectar, sugar concentrate.",
+      "whyEs": "Frutos: Maracuyá (fruta) en el hub — crédito al fruto entero; vía industrial = pulpa pasteurizada, néctar, concentrado con azúcar.",
+      "suggestedSlug": "inspecao-planta-maracuja-fruta",
+      "doneHref": "/posts/post-inspecao-planta-maracuja-fruta.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Passiflora_edulis",
+        "/plantas/maracuja-fruta/"
+      ],
+      "notes": "Não confundir com /plantas/maracuja/ (folhas medicinais). Aqui o objecto é o fruto comestível industrializado."
+    },
+    {
+      "id": "derivado-maracuja-fruta",
+      "title": "Derivados do Maracujá (fruta) — polpa pasteurizada, néctar, concentrado com açúcar",
+      "titleEn": "Passion fruit derivatives — pasteurized pulp, nectar, sugar concentrate",
+      "titleEs": "Derivados de Maracuyá (fruta) — pulpa pasteurizada, néctar, concentrado con azúcar",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Maracujá (fruta) inteiro vs matriz industrial (polpa pasteurizada, néctar, concentrado com açúcar); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Passion fruit vs industrial matrix (pasteurized pulp, nectar, sugar concentrate); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Maracuyá (fruta) entero vs matriz industrial (pulpa pasteurizada, néctar, concentrado con azúcar); cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-maracuja-fruta",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Passiflora_edulis",
+        "/posts/post-inspecao-planta-maracuja-fruta.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~13"
+    },
+    {
       "id": "arte-divertida-mente",
       "title": "Divertida Mente — as emoções da Riley e a mensagem que importa",
       "titleEn": "Inside Out — Riley’s emotions and the message that matters",
@@ -2623,6 +2139,66 @@
         "/posts/post-inspecao-palavra-coelho.html"
       ],
       "notes": "Palavra ≠ monografia zoológica; catálogo em /animais/."
+    },
+    {
+      "id": "derivado-caseina",
+      "title": "Caseína — a cola do leite e o mal à saúde",
+      "titleEn": "Casein — milk’s glue and harm to health",
+      "titleEs": "Caseína — la cola de la leche y el daño a la salud",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pesquisa completa: caseína × saúde × 9.798 vídeos (0 títulos com a palavra caseína; Lair leite/lactose, Manual cola de leite).",
+      "whyEn": "Full research: casein × health × 9,798 videos (0 titles name casein; Lair milk/lactose, Manual milk glue).",
+      "whyEs": "Investigación completa: caseína × salud × 9.798 vídeos (0 títulos nombran caseína).",
+      "suggestedSlug": "inspecao-derivado-caseina",
+      "doneHref": "/posts/post-inspecao-derivado-caseina.html",
+      "seriesHint": "animais-derivados-risco"
+    },
+    {
+      "id": "derivado-gluten",
+      "title": "Glúten — a cola invisível e o mal à saúde",
+      "titleEn": "Gluten — the invisible glue and harm to health",
+      "titleEs": "Gluten — la cola invisible y el daño a la salud",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pesquisa completa: glúten × saúde × 9.798 vídeos (Davis, Lair, Manual do Mundo).",
+      "whyEn": "Full research: gluten × health × 9,798 videos (Davis, Lair, Manual do Mundo).",
+      "whyEs": "Investigación completa: gluten × salud × 9.798 vídeos (Davis, Lair, Manual do Mundo).",
+      "suggestedSlug": "inspecao-derivado-gluten",
+      "doneHref": "/posts/post-inspecao-derivado-gluten.html",
+      "seriesHint": "plantas-derivados-risco"
+    },
+    {
+      "id": "derivado-chocolate",
+      "title": "Chocolate industrial — cacau, açúcar, farinha e leite",
+      "titleEn": "Industrial chocolate — cacao, sugar, flour and milk",
+      "titleEs": "Chocolate industrial — cacao, azúcar, harina y leche",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Hub Produtos nocivos: chocolate junta cacau, açúcar, farinha/glúten e caseína.",
+      "whyEn": "Harmful-products hub: chocolate joins cacao, sugar, flour/gluten and casein.",
+      "whyEs": "Hub Productos nocivos: el chocolate junta cacao, azúcar, harina/gluten y caseína.",
+      "suggestedSlug": "inspecao-derivado-chocolate",
+      "doneHref": "/posts/post-inspecao-derivado-chocolate.html",
+      "seriesHint": "plantas-derivados-risco"
+    },
+    {
+      "id": "derivado-analise-danos-videos",
+      "title": "Análise: danos × vídeos catalogados",
+      "titleEn": "Analysis: harms × catalogued videos",
+      "titleEs": "Análisis: daños × vídeos catalogados",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Cruzar danos da rede Produtos nocivos com o acervo de vídeos do projecto.",
+      "whyEn": "Cross harmful-product harms with the project video archive.",
+      "whyEs": "Cruzar daños de Productos nocivos con el acervo de vídeos del proyecto.",
+      "suggestedSlug": "inspecao-derivado-analise-danos-videos",
+      "doneHref": "/posts/post-inspecao-derivado-analise-danos-videos.html",
+      "seriesHint": "plantas-derivados-risco"
     },
     {
       "id": "arte-barriga-de-trigo",
@@ -4234,6 +3810,47 @@
       "notes": "Cap. 70 — palavra ≠ trilha /vida/ ≠ Árvore da Vida; sem sermão."
     },
     {
+      "id": "fruto-mamao",
+      "title": "Mamão — fruto vs indústria",
+      "titleEn": "Papaya — fruit vs industry",
+      "titleEs": "Papaya / mamón — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Mamão no hub — crédito ao fruto inteiro; sofrimento industrial = néctar, polpa adoçada, doce, snacks «papaya»; elo papaína/UNIFESP.",
+      "whyEn": "Fruits: Papaya on hub — credit whole fruit; industrial path = nectar, sweetened pulp, sweets, papaya snacks; papain/UNIFESP link.",
+      "whyEs": "Frutos: Papaya en el hub — crédito al fruto entero; vía industrial = néctar, pulpa endulzada, dulces, snacks; vínculo papaína/UNIFESP.",
+      "suggestedSlug": "inspecao-planta-mamao",
+      "doneHref": "/posts/post-inspecao-planta-mamao.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
+        "/plantas/mamao/"
+      ],
+      "notes": "Não confundir com mamona (Ricinus). hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-mamao",
+      "title": "Derivados do Mamão — néctar, polpa adoçada, doce, snacks «papaya»",
+      "titleEn": "Papaya derivatives — nectar, sweetened pulp, sweets, papaya snacks",
+      "titleEs": "Derivados de Papaya — néctar, pulpa endulzada, dulces, snacks «papaya»",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Mamão inteiro vs matriz industrial (néctar, polpa adoçada, doce, snacks); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Papaya vs industrial matrix (nectar, sweetened pulp, sweets, snacks); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Papaya entera vs matriz industrial; cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-mamao",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
+        "/posts/post-inspecao-planta-mamao.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Não confundir com mamona."
+    },
+    {
       "id": "palavra-magnifico",
       "title": "Magnífico — magnificus, elogio BR e Valeu !!!",
       "titleEn": "Magnífico — magnificus, BR praise and Valeu !!!",
@@ -4257,6 +3874,47 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 72 — elogio BR; rede só com slugs existentes; alt. máfia rejeitada."
+    },
+    {
+      "id": "fruto-melancia",
+      "title": "Melancia — fruto vs indústria",
+      "titleEn": "Watermelon — fruit vs industry",
+      "titleEs": "Sandía — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Melancia no hub — crédito ao fruto inteiro (polpa aquosa de verão); sofrimento industrial = sucos, néctares e ultraprocessados «watermelon».",
+      "whyEn": "Fruits: Watermelon on hub — credit whole fruit (summer watery pulp); industrial path = juices, nectars and ultra-processed «watermelon».",
+      "whyEs": "Frutos: Sandía en el hub — crédito al fruto entero; vía industrial = jugos, néctares y ultraprocesados «watermelon».",
+      "suggestedSlug": "inspecao-planta-melancia",
+      "doneHref": "/posts/post-inspecao-planta-melancia.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Melancia",
+        "/plantas/melancia/"
+      ],
+      "notes": "hubCategory: fruto; Cap. 15; elos palavra planta/fruto; par Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-melancia",
+      "title": "Derivados da melancia — sucos, néctares e ultraprocessados",
+      "titleEn": "Watermelon derivatives — juices, nectars and ultra-processed",
+      "titleEs": "Derivados de la sandía — jugos, néctares y ultraprocesados",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: melancia inteira vs matriz industrial (suco, néctar, snacks «watermelon»); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole watermelon vs industrial matrix; cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: sandía entera vs matriz industrial; cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-melancia",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Melancia",
+        "/posts/post-inspecao-planta-melancia.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose."
     },
     {
       "id": "palavra-sinal",
@@ -7304,6 +6962,27 @@
       "notes": "Inspeção especial: canal + ser nomeado. Recorte EN ≠ arquivo UA/RU. Indexar ≠ endosso."
     },
     {
+      "id": "aranha-rodrigo",
+      "title": "Aranha Rodrigo — saltadora nomeada do Slivki Show",
+      "titleEn": "Rodrigo the spider — named jumping spider on Slivki Show",
+      "titleEs": "Araña Rodrigo — saltadora nombrada de Slivki Show",
+      "tipo": "animal",
+      "priority": 1,
+      "status": "feita",
+      "why": "Destaque: saltadora (Salticidae) com nome próprio; aranha ≠ inseto; série encontro / muda / espelho / vs bosque.",
+      "whyEn": "Highlight: named jumping spider (Salticidae); spider ≠ insect; series meet / molt / mirror / vs forest.",
+      "whyEs": "Destaque: saltadora (Salticidae) con nombre; araña ≠ insecto; serie encuentro / muda / espejo / vs bosque.",
+      "suggestedSlug": "inspecao-animal-aranha-rodrigo",
+      "doneHref": "/posts/post-inspecao-animal-aranha-rodrigo.html",
+      "seriesHint": "animais-catalogo",
+      "sources": [
+        "https://www.youtube.com/watch?v=VEWy9VgN1cU",
+        "https://pt.wikipedia.org/wiki/Salticidae",
+        "/posts/post-inspecao-canal-slivki.html"
+      ],
+      "notes": "Ser ≠ canal. Sem protocolo de maneio. Título «smartest» ≠ paper."
+    },
+    {
       "id": "canal-manual-do-mundo",
       "title": "Manual do Mundo — ciência no ecrã e o Manual Maker",
       "titleEn": "Manual do Mundo — science on screen and Manual Maker",
@@ -7424,6 +7103,17 @@
       "suggestedSlug": "inspecao-palavra-vivosun",
       "doneHref": "/posts/post-inspecao-palavra-vivosun.html",
       "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "verificacao-vivosun",
+      "title": "Equipamentos Vivosun",
+      "tipo": "equipamento",
+      "priority": 2,
+      "status": "feita",
+      "why": "Catálogo Vivosun visível no BR (revenda) — AeroLight, tendas, GrowHub; cruzar ao lab.",
+      "suggestedSlug": "inspecao-vivosun",
+      "doneHref": "/posts/post-inspecao-vivosun.html",
+      "seriesHint": "verificacao-equipamento"
     },
     {
       "id": "palavra-tenda",
@@ -7664,6 +7354,30 @@
       "notes": "Cap. 172 — premere; panela = vaso; válvula = alívio; escape de motor recusado; P de Perigo se válvula presa."
     },
     {
+      "id": "planta-alecrim-do-campo",
+      "title": "Alecrim-do-campo — artepillina C e própolis verde",
+      "titleEn": "Field rosemary — artepillin C and green propolis",
+      "titleEs": "Alecrim-do-campo — artepilina C y propóleo verde",
+      "tipo": "planta",
+      "priority": 2,
+      "status": "feita",
+      "why": "Plantas: Alecrim-do-campo (*Baccharis dracunculifolia*) — foto de campo 21 ago 2026; distinguir do alecrim de cozinha; elo própolis verde / abelha.",
+      "whyEn": "Plants: Field rosemary (*Baccharis dracunculifolia*) — field photo 21 Aug 2026; distinguish from kitchen rosemary; green propolis / bee link.",
+      "whyEs": "Plantas: Alecrim-do-campo (*Baccharis dracunculifolia*) — foto de campo 21 ago 2026; distinguir del romero de cocina; vínculo propóleo verde / abeja.",
+      "suggestedSlug": "inspecao-planta-alecrim-do-campo",
+      "doneHref": "/posts/post-inspecao-planta-alecrim-do-campo.html",
+      "seriesHint": "plantas-medicinais",
+      "sources": [
+        "https://notebook.google.com/notebook/2b56e328-3c46-4586-b079-6d480f280267",
+        "https://doi.org/10.3389/fphar.2022.1048688",
+        "/plantas/alecrim-do-campo/",
+        "/posts/post-inspecao-planta-alecrim.html",
+        "/posts/post-inspecao-planta-carqueja.html",
+        "/posts/post-inspecao-animal-abelha.html"
+      ],
+      "notes": "Cap. 30; foto de campo do inspetor; guia terapêutico popular lido com cautela (não copiar alegações clínicas)."
+    },
+    {
       "id": "palavra-etimologia",
       "title": "Etimologia — o ofício de perguntar de onde veio",
       "titleEn": "Etymology — the craft of asking where it came from",
@@ -7705,6 +7419,24 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cluster nó/corda/desatar/desastre/ufa/codorna."
+    },
+    {
+      "id": "palavra-corda",
+      "title": "Corda — o objecto onde mora o nó",
+      "titleEn": "Corda — the object where the knot lives",
+      "titleEs": "Corda — el objeto donde vive el nudo",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: corda (chorda) — fio do nó; ≠ cinta ≠ codorna; catálogo Objetos.",
+      "suggestedSlug": "inspecao-palavra-corda",
+      "doneHref": "/posts/post-inspecao-palavra-corda.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/objetos/",
+        "/posts/post-inspecao-palavra-no.html"
+      ],
+      "notes": "Cartão em /objetos/."
     },
     {
       "id": "palavra-desatar",
@@ -7791,6 +7523,24 @@
         "/posts/post-inspecao-palavra-desastre.html"
       ],
       "notes": "Ditado-mãe do ofício."
+    },
+    {
+      "id": "animal-codorna",
+      "title": "Codorna — ave, não é a corda",
+      "titleEn": "Codorna — quail, not the rope",
+      "titleEs": "Codorna — codorniz, no es la cuerda",
+      "tipo": "animal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Animais: codorna (Coturnix japonica) — produção; ≠ corda (chorda); elos galinha/nó.",
+      "suggestedSlug": "inspecao-animal-codorna",
+      "doneHref": "/posts/post-inspecao-animal-codorna.html",
+      "seriesHint": "animais-producao",
+      "sources": [
+        "/animais/codorna/",
+        "/posts/post-inspecao-palavra-corda.html"
+      ],
+      "notes": "Catálogo /animais/ + inspeção gerada."
     },
     {
       "id": "figura-william-shakespeare",
@@ -8054,6 +7804,56 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 198 — violão (objecto) × passarinho assobiando (diapasão vivo)."
+    },
+    {
+      "id": "objeto-violao",
+      "title": "Violão — o objecto onde as cordas afinam",
+      "titleEn": "Violão — the object where the strings are tuned",
+      "titleEs": "Violão — el objeto donde se afinan las cuerdas",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: violão (viola + -ão) — guitarra clássica/acústica BR; ≠ guitarra eléctrica; elos corda/tónos/gesto; catálogo Objetos.",
+      "whyEn": "Object: violão (viola + -ão) — BR classical/acoustic guitar; ≠ electric guitarra; links corda/tónos/gesture; Objects catalog.",
+      "whyEs": "Objeto: violão (viola + -ão) — guitarra clásica/acústica BR; ≠ guitarra eléctrica; vínculos corda/tónos/gesto; catálogo Objetos.",
+      "suggestedSlug": "inspecao-palavra-violao",
+      "doneHref": "/posts/post-inspecao-palavra-violao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/viol%C3%A3o",
+        "https://pt.wikipedia.org/wiki/Viol%C3%A3o",
+        "/posts/post-inspecao-palavra-afinar.html",
+        "/posts/post-inspecao-palavra-corda.html",
+        "/posts/post-inspecao-palavra-tonos.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 183 — objecto BR; cordas no braço; ≠ eléctrica."
+    },
+    {
+      "id": "objeto-afinador",
+      "title": "Afinador — o objecto que lê a corda do violão",
+      "titleEn": "Afinador — the object that reads the guitar string",
+      "titleEs": "Afinador — el objeto que lee la cuerda del violão",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: afinador (afinar + -dor) — clip / diapasão / app lê a corda do violão; tarraxa escreve tónos; muleta, não dono.",
+      "whyEn": "Object: tuner (afinar + -dor) — clip / fork / app reads the guitar string; peg writes tónos; crutch, not owner.",
+      "whyEs": "Objeto: afinador (afinar + -dor) — clip / diapasón / app lee la cuerda del violão; clavija escribe tónos; muleta, no dueño.",
+      "suggestedSlug": "inspecao-palavra-afinador",
+      "doneHref": "/posts/post-inspecao-palavra-afinador.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/afinador",
+        "https://pt.wikipedia.org/wiki/Afinador",
+        "/posts/post-inspecao-palavra-afinar.html",
+        "/posts/post-inspecao-palavra-violao.html",
+        "/posts/post-inspecao-palavra-corda.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 199 — objecto-leitor; ≠ verbo afinar ≠ tarraxa ≠ passarinho."
     },
     {
       "id": "palavra-script",
@@ -8861,6 +8661,21 @@
         "https://pt.wikipedia.org/wiki/Triticum"
       ],
       "notes": "Cap. 32; mesmo padrão da soja (17 set 2026)."
+    },
+    {
+      "id": "derivado-leite",
+      "title": "Leite e derivados — da ordenha à prateleira e o mal à saúde",
+      "titleEn": "Milk and derivatives — from milking to the shelf and harm to health",
+      "titleEs": "Leche y derivados — del ordeño al estante y el daño a la salud",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pesquisa completa: hub leite e derivados × 9.798 vídeos. Irmão da caseína; distinto da carne processada da vaca.",
+      "whyEn": "Full research: milk-and-derivatives hub × 9,798 videos. Sibling of casein; distinct from processed cattle meat.",
+      "whyEs": "Investigación completa: hub leche y derivados × 9.798 vídeos. Hermana de la caseína.",
+      "suggestedSlug": "inspecao-derivado-leite",
+      "doneHref": "/posts/post-inspecao-derivado-leite.html",
+      "seriesHint": "animais-derivados-risco"
     },
     {
       "id": "expressao-virou-carne-de-vaca",

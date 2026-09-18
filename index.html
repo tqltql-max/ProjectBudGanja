@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Laboratório de inspeção. Plantas, ofício e cultura, com método.">
+    <meta name="description" content="Inspetor BudGanja — plantas medicinais do Brasil, curso UNIFESP, inspeções, ferramentas e BudGanja Radio.">
     <meta property="og:title" content="Inspetor BudGanja">
-    <meta property="og:description" content="Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.">
+    <meta property="og:description" content="Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP e cultivo responsável.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br/">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
@@ -15,22 +15,24 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Inspetor BudGanja">
-    <meta name="twitter:description" content="Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.">
+    <meta name="twitter:description" content="Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP e cultivo responsável.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="icon" href="/imagens/favicon-32.v359.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.v359.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.v359.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/imagens/icon-192.v359.png" sizes="192x192" type="image/png">
-    <link rel="shortcut icon" href="/favicon.v359.ico" sizes="any">
-    <link rel="icon" href="/favicon.v359.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v359.png">
-    <link rel="manifest" href="/manifest.json?v=358">
+    <link rel="icon" href="/imagens/favicon-32.v360.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v360.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v360.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v360.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v360.ico" sizes="any">
+    <link rel="icon" href="/favicon.v360.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v360.png">
+    <link rel="manifest" href="/manifest.json?v=352">
     <meta name="theme-color" content="#0a2230">
-    <link rel="stylesheet" href="/css/style.css?v=359">
+    <link rel="stylesheet" href="/css/style.css?v=360">
+    <link rel="preload" as="image" href="/imagens/vida/equipe.jpg" fetchpriority="high">
     <title>Início | Inspetor BudGanja</title>
 </head>
 <body data-page="home">
@@ -38,29 +40,18 @@
 
     <main id="main-content">
     <div class="lab-atmosphere" aria-hidden="true"></div>
-    <section class="hero">
-        <picture>
-            <source
-                type="image/avif"
-                srcset="/imagens/background-hero-640.avif?v=7f1482449a 640w, /imagens/background-hero-960.avif?v=7f1482449a 960w, /imagens/background-hero.avif?v=7f1482449a 1400w"
-                sizes="100vw">
-            <source
-                type="image/webp"
-                srcset="/imagens/background-hero-640.webp?v=7f1482449a 640w, /imagens/background-hero-960.webp?v=7f1482449a 960w, /imagens/background-hero.webp?v=7f1482449a 1400w"
-                sizes="100vw">
+    <section class="hero hero--lab">
+        <h1 class="visually-hidden" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
+        <figure class="hero-lab-art">
             <img
-                class="hero-media"
-                src="/imagens/background-hero.jpg?v=7f1482449a"
-                alt=""
-                width="1400"
-                height="440"
+                class="hero-cover"
+                src="/imagens/vida/equipe.jpg"
+                alt="Equipe do Laboratório BudGanja"
+                width="1600"
+                height="630"
                 decoding="async"
                 fetchpriority="high">
-        </picture>
-        <div class="hero-content">
-            <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Fitoterapia brasileira · educação e cultivo responsável</p>
-            <h1 class="hero-title" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
-        </div>
+        </figure>
     </section>
 
     <section id="home-sorteio-banner" class="home-announcement" hidden>
@@ -75,11 +66,61 @@
         </div>
     </section>
 
+    <section class="home-channels home-vida" aria-label="Vida — trilha familiar">
+        <div class="conteudo conteudo-wide">
+            <header class="home-channels-head home-vida-head">
+                <p class="home-pillar-eyebrow" data-i18n="pages.home.vidaEyebrow">Trilha familiar</p>
+                <h2 data-i18n="pages.home.vidaTitle">Vida</h2>
+                <p class="section-subtitle" data-i18n="pages.home.vidaSubtitle">Cada semente merece carinho — ciência, natureza e amizade no Laboratório BudGanja.</p>
+            </header>
+            <div class="home-channels-grid home-vida-grid">
+                <article class="home-channel home-vida-card">
+                    <a class="home-vida-cover" href="/vida/" aria-label="Abrir Vida">
+                        <img
+                            src="/imagens/vida/equipe.jpg"
+                            alt="Equipe Vida — Dona Maria, Joaninha, Inspetor BudGanja e Three Little Birds"
+                            width="1600"
+                            height="630"
+                            decoding="async">
+                    </a>
+                    <p class="home-pillar-eyebrow" data-i18n="pages.home.vidaCardEyebrow">Conto familiar</p>
+                    <h3 data-i18n="pages.home.vidaCardTitle">O Laboratório e a Sementinha</h3>
+                    <p data-i18n="pages.home.vidaCardText">O Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam o jeito certo de cuidar das plantas.</p>
+                    <div class="home-pillar-actions">
+                        <a href="/vida/#historia" class="botao botao-home" data-i18n="pages.home.vidaCtaHub">Começar Vida</a>
+                    </div>
+                </article>
+                <article class="home-channel home-vida-video">
+                    <div class="video-embed home-channel-embed yt-facade-skip home-vida-embed">
+                        <button
+                            type="button"
+                            class="yt-facade home-vida-yt-play"
+                            data-youtube-id="HNBCVM4KbUM"
+                            data-youtube-title="Bob Marley &amp; The Wailers — Three Little Birds"
+                            aria-label="Play: Three Little Birds">
+                            <img
+                                class="yt-facade-thumb"
+                                src="https://i.ytimg.com/vi/HNBCVM4KbUM/hqdefault.jpg"
+                                alt=""
+                                width="480"
+                                height="360"
+                                decoding="async">
+                            <span class="video-card-play" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <p class="home-pillar-eyebrow" data-i18n="pages.home.vidaVideoEyebrow">Trilha da inauguração</p>
+                    <h3 data-i18n="pages.home.vidaVideoTitle">Three Little Birds</h3>
+                    <p data-i18n="pages.home.vidaVideoText">A música dos pássaros do laboratório — toque play e ouça com som.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="features">
         <div class="conteudo conteudo-wide">
             <header class="features-head">
-                <h2 class="features-title" data-i18n="pages.home.areasTitle">Ferramentas de pesquisas</h2>
-                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Inspeções, pesquisas, diário e calculadoras do laboratório.</p>
+                <h2 class="features-title" data-i18n="pages.home.areasTitle">Laboratório e comunidade</h2>
+                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Biblioteca, vídeos, plantas, diário e feed da comunidade — apoios ao estudo e ao cultivo responsável.</p>
             </header>
             <div class="container-cards home-cards">
                 <article class="card home-card home-card--videos has-hover-tip" data-tip="Inspeções, tutoriais e novidades do canal no YouTube." data-i18n-tip="pages.home.cardVideosTip">
@@ -88,10 +129,22 @@
                     <p data-i18n="pages.home.cardVideosText">Conteúdo do canal @InspetorBudGanja — inspeções, tutoriais e novidades do laboratório.</p>
                     <a href="/videos/" class="botao botao-home" data-i18n="pages.home.cardVideosBtn">Ver vídeos</a>
                 </article>
-                <article class="card home-card home-card--inspecoes has-hover-tip" data-tip="Relatórios de inspeção de cultivo — plantas, frutos, animais, fungos e equipamento." data-i18n-tip="pages.home.cardInspectionsTip">
+                <article class="card home-card home-card--games has-hover-tip" data-tip="Zangado e Paulinho o LOKO — página só de jogos." data-i18n-tip="pages.home.cardGamesTip">
+                    <div class="card-icon card-icon--games" aria-hidden="true">🎮</div>
+                    <h3 data-i18n="pages.home.cardGamesTitle">Jogos</h3>
+                    <p data-i18n="pages.home.cardGamesText">Zangado e Paulinho o LOKO — catálogos na página de jogos, separados dos vídeos do laboratório.</p>
+                    <a href="/jogos/" class="botao botao-home" data-i18n="pages.home.cardGamesBtn">Abrir jogos</a>
+                </article>
+                <article class="card home-card home-card--biblioteca has-hover-tip" data-auth-only hidden data-tip="Inspeções, UNIFESP, guias, pesquisas, plantas e animais." data-i18n-tip="pages.home.cardBibliotecaTip">
+                    <div class="card-icon card-icon--biblioteca" aria-hidden="true">📚</div>
+                    <h3 data-i18n="pages.home.cardBibliotecaTitle">Biblioteca</h3>
+                    <p data-i18n="pages.home.cardBibliotecaText">Acervo do laboratório — inspeções, curso UNIFESP, Guia de Palavras, pesquisas e catálogos.</p>
+                    <a href="/biblioteca/" class="botao botao-home" data-i18n="pages.home.cardBibliotecaBtn">Abrir biblioteca</a>
+                </article>
+                <article class="card home-card home-card--inspecoes has-hover-tip" data-tip="Relatórios de inspeção, verificações de campo e formação." data-i18n-tip="pages.home.cardInspectionsTip">
                     <div class="card-icon card-icon--inspecoes" aria-hidden="true">🔍</div>
                     <h3 data-i18n="pages.home.cardInspectionsTitle">Inspeções</h3>
-                    <p data-i18n="pages.home.cardInspectionsText">Relatórios técnicos de cultivo — plantas, frutos, animais, fungos, derivados e equipamento.</p>
+                    <p data-i18n="pages.home.cardInspectionsText">Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos.</p>
                     <a href="/biblioteca/inspecoes/" class="botao botao-home" data-i18n="pages.home.cardInspectionsBtn">Ver Inspeções</a>
                 </article>
                 <article class="card home-card home-card--plantas has-hover-tip" data-tip="Fichas de espécies usadas na medicina popular brasileira." data-i18n-tip="pages.home.cardPlantasTip">
@@ -100,23 +153,23 @@
                     <p data-i18n="pages.home.cardPlantasText">Fichas curadas de espécies usadas na medicina popular brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
                     <a href="/plantas/" class="botao botao-home" data-i18n="pages.home.cardPlantasBtn">Explorar plantas</a>
                 </article>
-                <article class="card home-card home-card--pesquisas has-hover-tip" data-tip="Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação." data-i18n-tip="pages.home.cardResearchTip">
+                <article class="card home-card home-card--pesquisas has-hover-tip" data-tip="Estudos publicados pelo Inspetor BudGanja — separados do diário de cultivo." data-i18n-tip="pages.home.cardResearchTip">
                     <div class="card-icon card-icon--pesquisas" aria-hidden="true">🔬</div>
                     <h3 data-i18n="pages.home.cardResearchTitle">Pesquisas</h3>
-                    <p data-i18n="pages.home.cardResearchText">Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.</p>
+                    <p data-i18n="pages.home.cardResearchText">Estudos publicados pelo laboratório Inspetor BudGanja. O diário de cultivo fica noutro sítio.</p>
                     <a href="/biblioteca/pesquisas/" class="botao botao-home" data-i18n="pages.home.cardResearchBtn">Ver pesquisas</a>
                 </article>
-                <article class="card home-card home-card--cultivo has-hover-tip" data-tip="Diário de pesquisas — registe ciclos, notas e resultados do laboratório." data-i18n-tip="pages.home.cardCultivoTip">
+                <article class="card home-card home-card--cultivo has-hover-tip" data-tip="Documente o cultivo de qualquer planta — diário, roteiro e plano." data-i18n-tip="pages.home.cardCultivoTip">
                     <div class="card-icon card-icon--cultivo" aria-hidden="true">📓</div>
-                    <h3 data-i18n="pages.home.cardCultivoTitle">Diário de pesquisas</h3>
-                    <p data-i18n="pages.home.cardCultivoText">Registe ciclos, notas e resultados — o caderno de campo do laboratório.</p>
+                    <h3 data-i18n="pages.home.cardCultivoTitle">Diário de cultivo</h3>
+                    <p data-i18n="pages.home.cardCultivoText">Registos dia a dia, roteiro por fase e plano — o seu caderno, não as pesquisas publicadas.</p>
                     <a href="/cultivo/" class="botao botao-home" data-i18n="pages.home.cardCultivoBtn">Abrir diário</a>
                 </article>
-                <article class="card home-card home-card--calculadoras has-hover-tip" data-tip="Calculadoras e ferramentas numéricas do laboratório." data-i18n-tip="pages.home.cardToolsTip">
-                    <div class="card-icon card-icon--calculadoras" aria-hidden="true">🧮</div>
-                    <h3 data-i18n="pages.home.cardToolsTitle">Calculadoras</h3>
-                    <p data-i18n="pages.home.cardToolsText">Luxímetro, super solo, cultivo lab e outras ferramentas numéricas.</p>
-                    <a href="/calculadoras/" class="botao botao-home" data-i18n="pages.home.cardToolsBtn">Abrir ferramentas</a>
+                <article class="card home-card home-card--comunidade has-hover-tip" data-tip="Partilhe fotos do diário e peça ajuda à comunidade." data-i18n-tip="pages.home.cardCommunityTip">
+                    <div class="card-icon card-icon--comunidade" aria-hidden="true"><img src="/biblioteca/imagens/foto-comunidade.png" alt="" width="28" height="28" loading="lazy" decoding="async"></div>
+                    <h3 data-i18n="pages.home.cardCommunityTitle">Comunidade</h3>
+                    <p data-i18n="pages.home.cardCommunityText">Feed de fotos do diário, pedidos de identificação de plantas e comentários da comunidade.</p>
+                    <a href="/comunidade/" class="botao botao-home" data-i18n="pages.home.cardCommunityBtn">Abrir comunidade</a>
                 </article>
             </div>
         </div>
@@ -127,11 +180,13 @@
             <div class="home-latest-head">
                 <h2 data-i18n="pages.home.latestTitle">Últimas do laboratório</h2>
                 <p class="home-latest-nav">
-                    <a href="/biblioteca/inspecoes/" data-i18n="pages.home.latestInspections">Inspeções →</a>
-                    <span aria-hidden="true">·</span>
+                    <a href="/biblioteca/" data-auth-only hidden data-i18n="pages.home.latestBiblioteca">Biblioteca →</a>
+                    <span data-auth-only hidden aria-hidden="true">·</span>
                     <a href="/plantas/" data-i18n="pages.home.latestPlantas">Plantas →</a>
                     <span aria-hidden="true">·</span>
-                    <a href="/guia/palavras.html">Guia de Palavras →</a>
+                    <a href="/biblioteca/unifesp/" data-i18n="pages.home.latestUnifesp">UNIFESP →</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="/biblioteca/inspecoes/" data-i18n="pages.home.latestInspections">Inspeções →</a>
                 </p>
             </div>
             <ul id="home-latest-posts" class="home-latest-list">
@@ -144,14 +199,14 @@
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=359"></script>
-    <script src="/js/i18n-data.js?v=359"></script>
-    <script src="/js/page-translations-data.js?v=359"></script>
-    <script src="/js/i18n.js?v=359"></script>
-    <script src="/js/ferramentas-nav-data.js?v=359"></script>
-    <script src="/js/layout.js?v=359"></script>
-    <script src="/js/site-features.js?v=359"></script>
-    <script src="/js/home.js?v=359"></script>
+  <script src="/js/app-version-check.js?v=360"></script>
+    <script src="/js/i18n-data.js?v=360"></script>
+    <script src="/js/page-translations-data.js?v=360"></script>
+    <script src="/js/i18n.js?v=360"></script>
+    <script src="/js/ferramentas-nav-data.js?v=360"></script>
+    <script src="/js/layout.js?v=360"></script>
+    <script src="/js/site-features.js?v=360"></script>
+    <script src="/js/home.js?v=360"></script>
 
 </body>
 </html>

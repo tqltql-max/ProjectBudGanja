@@ -1,6 +1,6 @@
-# Palavras do mantra «Valeu !!! · eu amo a vida»
+# Palavras do mantra «Valeu !!!»
 # Modo Aprender — vermelhas (apropriação / silenciamento) e âmbar (ofício).
-# Alteração automática: eu amo a vida (lib/fecho-oficio.js).
+# Fonte para scripts/patch-learn-mantra-faca-o-melhor.js
 
 ## Vermelhas (perigosa)
 

@@ -99,16 +99,16 @@ body::after {
         0 18px 48px rgba(0, 16, 28, 0.4);
 }
 
-html:not([data-theme="dark"]) body::before {
+html[data-theme="light"] body::before {
     opacity: 0.42;
 }
 
-html:not([data-theme="dark"]) body::after {
+html[data-theme="light"] body::after {
     opacity: 0.32;
 }
 
-html:not([data-theme="dark"]) .lab-atmosphere,
-html:not([data-theme="dark"]) .radio-atmosphere {
+html[data-theme="light"] .lab-atmosphere,
+html[data-theme="light"] .radio-atmosphere {
     opacity: 0.08;
 }
 
@@ -132,25 +132,6 @@ body:is(
 )::after {
     opacity: 0.22;
     animation: none;
-}
-
-.site-snow {
-    position: fixed;
-    inset: 0;
-    z-index: 40;
-    pointer-events: none;
-}
-
-@media print {
-    .site-snow {
-        display: none !important;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .site-snow {
-        display: none !important;
-    }
 }
 
 @media (max-width: 700px), (prefers-reduced-motion: reduce) {

@@ -70,18 +70,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('build:livro-pdf', 'generate-catalogo-projeto-livro.js');
-  } catch (e) {
-    console.warn('Aviso build:livro-pdf:', e.message);
-  }
-
-  try {
-    runStep('build:livro-page-pdf', 'generate-livro-page-pdf.js');
-  } catch (e) {
-    console.warn('Aviso build:livro-page-pdf:', e.message);
-  }
-
-  try {
     publishStaticAssets(ROOT);
   } catch (e) {
     console.warn('Aviso publish:static:', e.message);
@@ -148,12 +136,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('build:dallelaste', 'build-drsamueldallelaste-catalog.js');
-  } catch (e) {
-    console.warn('Aviso build:dallelaste:', e.message);
-  }
-
-  try {
     runStep('build:amyr', 'build-amyr-klink-catalog.js');
   } catch (e) {
     console.warn('Aviso build:amyr:', e.message);
@@ -211,18 +193,6 @@ function runBuildSteps() {
     runStep('build:fungos', 'build-fungos.js');
   } catch (e) {
     console.warn('Aviso build:fungos:', e.message);
-  }
-
-  try {
-    runStep('build:tecnologia', 'build-tecnologia.js');
-  } catch (e) {
-    console.warn('Aviso build:tecnologia:', e.message);
-  }
-
-  try {
-    runStep('build:mitologia', 'build-mitologia.js');
-  } catch (e) {
-    console.warn('Aviso build:mitologia:', e.message);
   }
 
   try {

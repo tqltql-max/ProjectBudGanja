@@ -1,7 +1,7 @@
 /**
  * Drone de inspeção — segue o ponteiro em qualquer página, traduz a
- * palavra no texto (no idioma do Aprender ou do site) e mostra o
- * significado no popup.
+ * palavra no texto (no idioma do Aprender ou do site) e, na abdução,
+ * mostra a etimologia no popup em vez de copiar a palavra.
  */
 (function (global) {
   'use strict';
@@ -63,7 +63,10 @@
     padToggle: null,
     cargo: [],
     cargoDraft: '',
-    padOpen: false
+    padOpen: false,
+    etymPinned: false,
+    etymReq: 0,
+    etymCache: {}
   };
 
   var BUTTON_SEL = 'a.botao, .botao, .botao-home';
@@ -268,58 +271,108 @@
       state.tip.hidden = true;
       state.tip.innerHTML = '';
       state.tip.removeAttribute('data-emotion');
+      state.tip.classList.remove('is-etym');
       return;
     }
     var langName = LANG_NAMES[info.lang] || info.lang;
     var emotion = info.emotion || emotionOf(info.src) || '';
     var emotionName = emotionLabel(emotion);
     state.tip.setAttribute('data-emotion', emotion);
+    state.tip.classList.toggle('is-etym', !!info.etymMode);
     var parts = [];
     parts.push('<p class="site-drone-tip-word">' + escapeHtml(info.src) + '</p>');
     if (emotionName) {
       parts.push('<p class="site-drone-tip-emotion">' + escapeHtml(emotionName) + '</p>');
     }
-    if (info.translation) {
+    if (info.etymMode) {
+      if (info.etymology) {
+        parts.push(
+          '<p class="site-drone-tip-etym"><span>' +
+          escapeHtml(t('common.droneEtymology', 'Etimologia')) +
+          '</span> ' + escapeHtml(info.etymology) + '</p>'
+        );
+        if (info.etymologyLoading) {
+          parts.push(
+            '<p class="site-drone-tip-missing">' +
+            escapeHtml(t('common.droneEtymologyLoading', 'A buscar o étimo…')) +
+            '</p>'
+          );
+        }
+      } else if (info.etymologyLoading) {
+        parts.push(
+          '<p class="site-drone-tip-etym is-loading"><span>' +
+          escapeHtml(t('common.droneEtymology', 'Etimologia')) +
+          '</span> ' +
+          escapeHtml(t('common.droneEtymologyLoading', 'A buscar o étimo…')) +
+          '</p>'
+        );
+      } else {
+        parts.push(
+          '<p class="site-drone-tip-missing">' +
+          escapeHtml(t('common.droneNoEtymology', 'Ainda sem étimo para esta palavra.')) +
+          '</p>'
+        );
+      }
+      if (info.href) {
+        parts.push(
+          '<a class="site-drone-tip-link" href="' + escapeHtml(info.href) + '">' +
+          escapeHtml(t('common.droneOpenFicha', 'Abrir ficha')) + '</a>'
+        );
+      }
+      if (info.etymologyHref) {
+        parts.push(
+          '<a class="site-drone-tip-link" href="' + escapeHtml(info.etymologyHref) +
+          '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(t('common.droneOpenWiktionary', 'Abrir no Wikcionário')) + '</a>'
+        );
+      }
       parts.push(
-        '<p class="site-drone-tip-tr"><span>' + escapeHtml(langName) + '</span> ' +
-        escapeHtml(info.translation) + '</p>'
+        '<button type="button" class="site-drone-tip-close" data-drone-tip-close>' +
+        escapeHtml(t('common.droneCloseTip', 'Fechar')) + '</button>'
       );
-    } else if (!isPt(info.lang)) {
-      parts.push(
-        '<p class="site-drone-tip-missing">' +
-        escapeHtml(t('common.droneNoTranslation', 'Sem tradução neste idioma — fica o sentido em português.')) +
-        '</p>'
-      );
-    }
-    if (info.category) {
-      parts.push('<p class="site-drone-tip-cat">' + escapeHtml(info.category) + '</p>');
-    }
-    if (info.mundane) {
-      parts.push(
-        '<p class="site-drone-tip-mundane"><span>' +
-        escapeHtml(t('pages.vida.learnMundane', 'Comum')) +
-        '</span> ' + escapeHtml(info.mundane) + '</p>'
-      );
-    }
-    if (info.gloss) {
-      parts.push(
-        '<p class="site-drone-tip-gloss"><span>' +
-        escapeHtml(info.mundane ? t('pages.vida.learnLabGloss', 'BudGanja') : t('common.droneMeaning', 'Significado')) +
-        '</span> ' + escapeHtml(info.gloss) + '</p>'
-      );
-    }
-    if (!info.translation && !info.gloss && !info.mundane) {
-      parts.push(
-        '<p class="site-drone-tip-missing">' +
-        escapeHtml(t('common.droneNoMeaning', 'Ainda não há ficha para esta palavra.')) +
-        '</p>'
-      );
-    }
-    if (info.href) {
-      parts.push(
-        '<a class="site-drone-tip-link" href="' + escapeHtml(info.href) + '">' +
-        escapeHtml(t('common.droneOpenFicha', 'Abrir ficha')) + '</a>'
-      );
+    } else {
+      if (info.translation) {
+        parts.push(
+          '<p class="site-drone-tip-tr"><span>' + escapeHtml(langName) + '</span> ' +
+          escapeHtml(info.translation) + '</p>'
+        );
+      } else if (!isPt(info.lang)) {
+        parts.push(
+          '<p class="site-drone-tip-missing">' +
+          escapeHtml(t('common.droneNoTranslation', 'Sem tradução neste idioma — fica o sentido em português.')) +
+          '</p>'
+        );
+      }
+      if (info.category) {
+        parts.push('<p class="site-drone-tip-cat">' + escapeHtml(info.category) + '</p>');
+      }
+      if (info.mundane) {
+        parts.push(
+          '<p class="site-drone-tip-mundane"><span>' +
+          escapeHtml(t('pages.vida.learnMundane', 'Comum')) +
+          '</span> ' + escapeHtml(info.mundane) + '</p>'
+        );
+      }
+      if (info.gloss) {
+        parts.push(
+          '<p class="site-drone-tip-gloss"><span>' +
+          escapeHtml(info.mundane ? t('pages.vida.learnLabGloss', 'BudGanja') : t('common.droneMeaning', 'Significado')) +
+          '</span> ' + escapeHtml(info.gloss) + '</p>'
+        );
+      }
+      if (!info.translation && !info.gloss && !info.mundane) {
+        parts.push(
+          '<p class="site-drone-tip-missing">' +
+          escapeHtml(t('common.droneNoMeaning', 'Ainda não há ficha para esta palavra.')) +
+          '</p>'
+        );
+      }
+      if (info.href) {
+        parts.push(
+          '<a class="site-drone-tip-link" href="' + escapeHtml(info.href) + '">' +
+          escapeHtml(t('common.droneOpenFicha', 'Abrir ficha')) + '</a>'
+        );
+      }
     }
     state.tip.innerHTML = parts.join('');
     state.tip.style.visibility = 'hidden';
@@ -346,7 +399,8 @@
     var spaceAbove = Math.max(0, droneRect.top - topLimit - gap);
     var spaceBelow = Math.max(0, vh - droneRect.bottom - margin - gap);
 
-    state.tip.style.maxWidth = Math.min(296, vw - margin * 2) + 'px';
+    var wide = state.tip.classList.contains('is-etym');
+    state.tip.style.maxWidth = Math.min(wide ? 360 : 296, vw - margin * 2) + 'px';
     state.tip.style.maxHeight = '';
     var tipW = state.tip.offsetWidth;
     var tipH = state.tip.offsetHeight;
@@ -555,7 +609,6 @@
   }
 
   function syncPad() {
-    if (!state.pad) mountPad();
     if (!state.pad) return;
     var hasStuff = state.cargo.length > 0 || !!state.cargoDraft;
     state.pad.hidden = !hasStuff;
@@ -800,6 +853,89 @@
     keepTranslateHit(hit);
   }
 
+  function labEtymology(word) {
+    var g = glossary();
+    if (!g) return '';
+    if (typeof g.etymonOf === 'function') return g.etymonOf(word) || '';
+    if (typeof g.findEntry !== 'function') return '';
+    var entry = g.findEntry(word);
+    if (!entry || !entry.gloss) return '';
+    var gloss = String(entry.gloss);
+    if (!/(lat\.|gr\.|←|étimo|étymon|do lat|do gr|from lat|from gr|\boe\b|pie |proto|vem do|do árabe|do tupi)/i.test(gloss)) {
+      return '';
+    }
+    return gloss.split(/\s*(?:;?\s*elos\b|;?\s*Valeu)/i)[0].replace(/[.;]\s*$/, '').trim();
+  }
+
+  function fetchWikiEtymology(word) {
+    return fetch('/api/etymology?q=' + encodeURIComponent(word)).then(function (res) {
+      if (!res.ok) return null;
+      return res.json();
+    }).then(function (data) {
+      if (!data || !data.text) return null;
+      return {
+        text: data.text,
+        href: data.href || '',
+        source: data.source || ''
+      };
+    }).catch(function () { return null; });
+  }
+
+  function lookupEtymology(word) {
+    var key = String(word || '').toLocaleLowerCase('pt-BR');
+    if (state.etymCache[key]) return Promise.resolve(state.etymCache[key]);
+    return fetchWikiEtymology(word).then(function (etym) {
+      if (etym) state.etymCache[key] = etym;
+      return etym;
+    });
+  }
+
+  function emptyEtymInfo(word) {
+    return {
+      src: word,
+      lang: targetLang(),
+      translation: '',
+      gloss: '',
+      mundane: '',
+      category: '',
+      href: '',
+      tone: '',
+      emotion: emotionOf(word),
+      etymMode: true,
+      etymology: '',
+      etymologyLoading: true,
+      etymologyHref: '',
+      etymologySource: ''
+    };
+  }
+
+  function showEtymologyPopup(word) {
+    var info = meaningOf(word) || emptyEtymInfo(word);
+    info.etymMode = true;
+    info.etymology = labEtymology(word);
+    info.etymologyLoading = true;
+    info.etymologyHref = '';
+    info.etymologySource = '';
+    state.currentSrc = word;
+    state.etymPinned = true;
+    fillTip(info);
+    var req = ++state.etymReq;
+    lookupEtymology(word).then(function (etym) {
+      if (req !== state.etymReq || state.currentSrc !== word) return;
+      if (etym && etym.text) {
+        info.etymology = etym.text;
+        info.etymologyHref = etym.href;
+        info.etymologySource = etym.source || '';
+      }
+      info.etymologyLoading = false;
+      fillTip(info);
+    }).catch(function () {
+      if (req !== state.etymReq || state.currentSrc !== word) return;
+      info.etymologyLoading = false;
+      fillTip(info);
+    });
+  }
+
   function finishAbduct() {
     state.rush = false;
     state.caught = true;
@@ -807,23 +943,7 @@
     var hit = state.abductHit;
     if (hit && hit.word) {
       if (!state.reduced) spawnAbductGhost(hit.word, hit.rect, emotionOf(hit.word));
-      collectAbductedWord(hit.word, emotionOf(hit.word));
-      var info = meaningOf(hit.word);
-      if (!info) {
-        info = {
-          src: hit.word,
-          lang: targetLang(),
-          translation: '',
-          gloss: '',
-          mundane: '',
-          category: '',
-          href: '',
-          tone: '',
-          emotion: emotionOf(hit.word)
-        };
-      }
-      state.currentSrc = hit.word;
-      fillTip(info);
+      showEtymologyPopup(hit.word);
     }
     global.setTimeout(function () {
       if (state.drone) state.drone.classList.remove('is-abducting');
@@ -835,7 +955,6 @@
   function abductAt(clientX, clientY) {
     if (!state.drone || !state.on) return;
     var hit = wordHitAt(clientX, clientY);
-    revealHit(hit);
     var next = clampToPad(clientX - SIZE * 0.28, clientY - SIZE * 0.95);
     state.rush = true;
     state.following = true;
@@ -845,7 +964,7 @@
     state.ty = next.y;
     state.abductHit = hit;
     state.drone.classList.add('is-abducting', 'is-lit');
-    if (state.reduced) {
+    if (state.reduced || document.visibilityState === 'hidden') {
       state.x = next.x;
       state.y = next.y;
       applyPose();
@@ -937,7 +1056,7 @@
   }
 
   function inspectAt(clientX, clientY) {
-    if (!state.on) return;
+    if (!state.on || state.etymPinned) return;
     var hit = document.elementFromPoint(clientX, clientY);
     if (hit && hit.closest && hit.closest('#site-drone, .site-drone, .site-drone-tip')) return;
     var src = wordAtPointer(clientX, clientY);
@@ -1142,6 +1261,15 @@
     state.tip = tip;
     tip.addEventListener('mouseenter', function () { state.paused = true; });
     tip.addEventListener('mouseleave', function () { state.paused = false; });
+    tip.addEventListener('click', function (event) {
+      var close = event.target.closest && event.target.closest('[data-drone-tip-close]');
+      if (!close) return;
+      event.preventDefault();
+      event.stopPropagation();
+      state.etymPinned = false;
+      state.currentSrc = '';
+      fillTip(null);
+    });
     var p = pad();
     state.x = Math.min(window.innerWidth * 0.78, p.right);
     state.y = Math.min(window.innerHeight * 0.58, p.bottom);
@@ -1188,6 +1316,8 @@
   }
 
   function dimDrone() {
+    state.etymPinned = false;
+    state.etymReq += 1;
     fillTip(null);
     state.currentSrc = '';
     state.rush = false;
@@ -1385,8 +1515,9 @@
     });
     global.addEventListener('budganja:locale-change', function () {
       syncButtons();
-      syncPad();
-      if (state.currentSrc) fillTip(meaningOf(state.currentSrc));
+      if (state.pad) syncPad();
+      if (state.etymPinned && state.currentSrc) showEtymologyPopup(state.currentSrc);
+      else if (state.currentSrc) fillTip(meaningOf(state.currentSrc));
       if (state.drone) applyDroneChrome();
     });
     if (!isDismissed()) {
@@ -1398,7 +1529,6 @@
     } else {
       syncButtons();
     }
-    mountPad();
   }
 
   if (document.readyState === 'loading') {

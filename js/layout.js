@@ -1,15 +1,12 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '359';
+const ASSET_V = '360';
 const HOME = '/';
 
 (function applyStoredTheme() {
   try {
-    if (localStorage.getItem('budganja-theme') === 'light') {
-      document.documentElement.removeAttribute('data-theme');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    var t = localStorage.getItem('budganja-theme');
+    document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
   } catch (e) {
     document.documentElement.setAttribute('data-theme', 'dark');
   }
@@ -781,13 +778,16 @@ const DEFAULT_SITE = {
   ],
   footerLinks: [
     { label: 'Início', href: HOME },
-    { label: 'Diário de pesquisas', href: '/cultivo/' },
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
     { label: 'Fungos', href: '/fungos/' },
+    { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
     { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
+    { label: 'Diário de cultivo', href: '/cultivo/' },
+    { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
+    { label: 'Jogos', href: '/jogos/' },
     { label: 'Objetos', href: '/objetos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
     { label: 'Comunidade', href: '/comunidade/' },
@@ -801,17 +801,19 @@ const DEFAULT_SITE = {
         { label: 'Plantas', href: '/plantas/' },
         { label: 'Animais', href: '/animais/' },
         { label: 'Fungos', href: '/fungos/' },
+        { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
         { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
-        { label: 'Inspeções', href: '/biblioteca/inspecoes/', inspectionsOnly: true },
+        { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
+        { label: 'Diário de cultivo', href: '/cultivo/' },
         { label: 'Vídeos', href: '/videos/' },
+        { label: 'Jogos', href: '/jogos/' },
         { label: 'Objetos', href: '/objetos/' }
       ]
     },
     {
       title: 'Ferramentas',
       links: [
-        { label: 'Diário de pesquisas', href: '/cultivo/' },
         { label: 'Ferramentas', href: '/calculadoras/' },
         { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
         { label: 'Solo', href: '/calculadoras/super-solo.html' }
@@ -855,6 +857,7 @@ function translateFooterLabel(label) {
     'Luxímetro': 'nav.luxMeter',
     'Solo': 'nav.soilCalc',
     'Diário de pesquisas': 'nav.growDiary',
+    'Diário de cultivo': 'nav.growDiary',
     'Últimos vídeos': 'nav.videos',
     'Vídeos': 'nav.videos',
     'Games': 'nav.games',
@@ -869,6 +872,7 @@ function translateFooterLabel(label) {
     'Plantas': 'nav.plants',
     'Animais': 'nav.animals',
     'Fungos': 'nav.fungi',
+    'UNIFESP': 'nav.unifesp'
   };
   return map[label] ? i18n(map[label], label) : label;
 }
@@ -951,11 +955,9 @@ function markQuickNavActive(root) {
       .map(function (p) { return normalizeNavPath(p.trim()); })
       .filter(Boolean);
     const prefixMatch = prefixes.some(function (prefix) {
-      if (prefix === '/') return false;
       return current === prefix || current.startsWith(prefix + '/');
     });
-    const exact = link.getAttribute('data-active-exact') === '1';
-    const active = exact ? isNavLinkActive(href) : (isNavLinkActive(href) || prefixMatch);
+    const active = isNavLinkActive(href) || prefixMatch;
     link.classList.toggle('is-active', active);
     if (active) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
@@ -1286,7 +1288,6 @@ function isAuthUser(authState) {
 
 function navItemAllowed(item, authState) {
   if (!item) return false;
-  if (item.inspectionsOnly && !(authState && authState.canViewInspections)) return false;
   if (item.adminOnly && !isAdminAuth(authState)) return false;
   if (item.authOnly && !isAuthUser(authState)) return false;
   return true;
@@ -1302,14 +1303,6 @@ function filterAdminOnlyNav(items, authState) {
 /** Hubs reais do site — fonte única para quick-nav (desktop) e menu mobile. */
 function getSiteHubNav(authState) {
   const quick = [
-      {
-        href: '/cultivo/',
-        icon: '📓',
-        label: i18n('nav.diaryShort', 'Diário'),
-        tip: i18n('nav.quickGrowTip', 'Diário de pesquisas e registos de cultivo'),
-        prefixes: '/cultivo,/planejamento',
-        tone: 'cultivo'
-      },
       {
         href: '/videos/',
         icon: '▶',
@@ -1351,6 +1344,14 @@ function getSiteHubNav(authState) {
         tone: 'fungos'
       },
       {
+        href: '/biblioteca/unifesp/',
+        icon: '🎓',
+        label: i18n('nav.unifesp', 'UNIFESP'),
+        tip: i18n('nav.quickUnifespTip', 'Curso de extensão UNIFESP sobre cannabis medicinal'),
+        prefixes: '/biblioteca/unifesp,/posts/post-inspecao-curso-unifesp',
+        tone: 'inspecoes'
+      },
+      {
         href: '/biblioteca/cadernos/',
         icon: '📓',
         label: i18n('nav.cadernosEngenharia', 'Cadernos'),
@@ -1367,19 +1368,10 @@ function getSiteHubNav(authState) {
         tone: 'inspecoes'
       },
       {
-        href: '/biblioteca/inspecoes/',
-        icon: '🔍',
-        label: i18n('nav.inspections', 'Inspeções'),
-        tip: i18n('nav.quickInspectionsTip', 'Relatórios técnicos com método verificável'),
-        prefixes: '/biblioteca/inspecoes',
-        tone: 'inspecoes',
-        inspectionsOnly: true
-      },
-      {
         href: '/biblioteca/',
         icon: '📚',
         label: i18n('nav.library', 'Biblioteca'),
-        tip: i18n('nav.quickLibraryTip', 'Inspeções, guias, pesquisas e catálogos'),
+        tip: i18n('nav.quickLibraryTip', 'Inspeções, UNIFESP, guias, pesquisas e catálogos'),
         prefixes: '/biblioteca/inspecoes,/guia',
         tone: 'inspecoes',
         authOnly: true
@@ -1388,8 +1380,16 @@ function getSiteHubNav(authState) {
         href: '/biblioteca/pesquisas/',
         icon: '🔬',
         label: i18n('nav.technicalResearch', 'Pesquisas'),
-        tip: i18n('nav.quickResearchTip', 'Pesquisas do laboratório e da comunidade'),
+        tip: i18n('nav.quickResearchTip', 'Estudos publicados pelo laboratório — separados do diário'),
         prefixes: '/biblioteca/pesquisas',
+        tone: 'pesquisas'
+      },
+      {
+        href: '/cultivo/',
+        icon: '📓',
+        label: i18n('nav.growDiary', 'Diário de cultivo'),
+        tip: i18n('nav.quickGrowTip', 'Diário de cultivo — registos dia a dia'),
+        prefixes: '/cultivo',
         tone: 'pesquisas'
       },
       {
@@ -1399,6 +1399,14 @@ function getSiteHubNav(authState) {
         tip: i18n('nav.quickCalculatorsTip', 'VPD, pH, EC, luxímetro e mais'),
         prefixes: '/calculadoras',
         tone: 'ferramentas'
+      },
+      {
+        href: '/jogos/',
+        icon: '🎮',
+        label: i18n('nav.games', 'Jogos'),
+        tip: i18n('nav.quickGamesTip', 'Zangado e Paulinho o LOKO'),
+        prefixes: '/jogos',
+        tone: 'games'
       }
   ].filter(function (item) { return navItemAllowed(item, authState); });
 
@@ -1410,21 +1418,6 @@ function getSiteHubNav(authState) {
             prefixes: '/',
             exact: true,
             tone: 'inicio'
-          },
-          {
-            href: '/cultivo/',
-            icon: '📓',
-            label: i18n('nav.growDiary', 'Diário de pesquisas'),
-            prefixes: '/cultivo',
-            tone: 'cultivo'
-          },
-          {
-            href: '/cultivo/?view=novo',
-            icon: '＋',
-            label: i18n('pages.home.newDiaryTitle', 'Novo diário de cultivo'),
-            prefixes: '',
-            exact: true,
-            tone: 'cultivo'
           },
           {
             href: '/laboratorio/',
@@ -1463,6 +1456,13 @@ function getSiteHubNav(authState) {
             tone: 'comunidade'
           },
           {
+            href: '/biblioteca/unifesp/',
+            icon: '🎓',
+            label: i18n('nav.unifesp', 'Curso UNIFESP'),
+            prefixes: '/biblioteca/unifesp',
+            tone: 'inspecoes'
+          },
+          {
             href: '/biblioteca/cadernos/',
             icon: '📓',
             label: i18n('nav.cadernosEngenharia', 'Cadernos'),
@@ -1481,8 +1481,7 @@ function getSiteHubNav(authState) {
             icon: '🔍',
             label: i18n('nav.inspections', 'Inspeções'),
             prefixes: '/biblioteca/inspecoes',
-            tone: 'inspecoes',
-            inspectionsOnly: true
+            tone: 'inspecoes'
           },
           {
             href: '/biblioteca/pesquisas/',
@@ -1492,11 +1491,25 @@ function getSiteHubNav(authState) {
             tone: 'pesquisas'
           },
           {
+            href: '/cultivo/',
+            icon: '📓',
+            label: i18n('nav.growDiary', 'Diário de cultivo'),
+            prefixes: '/cultivo',
+            tone: 'pesquisas'
+          },
+          {
             href: '/videos/',
             icon: '▶',
             label: i18n('nav.videos', 'Vídeos'),
             prefixes: '/videos',
             tone: 'videos'
+          },
+          {
+            href: '/jogos/',
+            icon: '🎮',
+            label: i18n('nav.games', 'Jogos'),
+            prefixes: '/jogos',
+            tone: 'games'
           }
   ].filter(function (item) { return navItemAllowed(item, authState); });
 
@@ -1529,6 +1542,13 @@ function getSiteHubNav(authState) {
             icon: '🔬',
             label: i18n('nav.technicalResearch', 'Pesquisas'),
             prefixes: '/biblioteca/pesquisas',
+            tone: 'pesquisas'
+          },
+          {
+            href: '/cultivo/',
+            icon: '📓',
+            label: i18n('nav.growDiary', 'Diário de cultivo'),
+            prefixes: '/cultivo',
             tone: 'pesquisas'
           }
         ]
@@ -1618,10 +1638,10 @@ function buildThemeToggleHTML(variant) {
   const isHeader = variant === 'header';
   const cls = isHeader ? 'header-theme-toggle' : 'footer-theme-toggle';
   const id = isHeader ? ' id="theme-toggle"' : '';
-  const label = i18n('common.themeDark', 'Ativar tema escuro');
+  const label = i18n('common.themeLight', 'Ativar tema claro');
   return (
     '<button type="button" class="' + cls + '" data-theme-toggle' + id +
-    ' aria-pressed="false" aria-label="' + escapeNavText(label) + '" title="' + escapeNavText(label) + '">' +
+    ' aria-pressed="true" aria-label="' + escapeNavText(label) + '" title="' + escapeNavText(label) + '">' +
     '<span class="theme-toggle-icon theme-toggle-icon--moon" aria-hidden="true">' +
     '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
     '<path d="M20.5 14.5A8.2 8.2 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5z"></path>' +
@@ -1632,35 +1652,6 @@ function buildThemeToggleHTML(variant) {
     '<path d="M12 3v1.6M12 19.4V21M4.9 4.9l1.1 1.1M18 18l1.1 1.1M3 12h1.6M19.4 12H21M4.9 19.1 6 18M18 6l1.1-1.1"></path>' +
     '</svg></span>' +
     '</button>'
-  );
-}
-
-function isHomePage() {
-  return !!(document.body && document.body.dataset.page === 'home');
-}
-
-function buildHeaderRadioFallbackHTML() {
-  const label = i18n('radio.open', 'Abrir rádio');
-  const tip = i18n('nav.quickRadioTip', 'Playlist BudGanja Radio');
-  return (
-    '<a href="/radio/" class="header-quick-link header-quick-link--radio header-radio-fallback"' +
-    ' data-active-prefixes="/radio"' +
-    ' data-tip="' + escapeNavText(tip) + '"' +
-    ' aria-label="' + escapeNavText(label) + '"' +
-    ' title="' + escapeNavText(label) + '">' +
-    '<span class="header-quick-link-icon" aria-hidden="true">📻</span>' +
-    '<span class="header-quick-link-label">' + escapeNavText(i18n('nav.radio', 'BudGanja Radio')) + '</span>' +
-    '</a>'
-  );
-}
-
-function buildHomeRadioLangClusterHTML() {
-  return (
-    '<div class="header-cluster--community-lang">' +
-    '<div id="header-radio-host" class="header-radio-host"></div>' +
-    buildHeaderRadioFallbackHTML() +
-    buildLangSwitcherHTML('header') +
-    '</div>'
   );
 }
 
@@ -1694,25 +1685,16 @@ function buildHeaderHTML(site, authState) {
     '</div>';
 
   const headerThemeToggle = buildThemeToggleHTML('header');
-  const homePage = isHomePage();
-  const headerRadioSlot = homePage
-    ? ''
-    : '<div id="header-radio-host" class="header-radio-host"></div>';
-  const homeRadioLangCluster = homePage ? buildHomeRadioLangClusterHTML() : '';
-  const headerLangUtility = homePage ? '' : buildLangSwitcherHTML('header');
 
-  const headerBoat =
-    '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand header-quick-link--boat logo-link"' +
-    ' data-active-exact="1"' +
+  const headerBrand =
+    '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand header-quick-link--inspector logo-link"' +
+    ' data-active-prefixes="/"' +
     ' data-tip="' + escapeNavText(i18n('common.home', 'Início')) + '"' +
     ' aria-label="' + escapeNavText(i18n('common.home', 'Início')) + '"' +
     ' title="' + escapeNavText(i18n('common.home', 'Início')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
-    '<svg class="header-boat-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">' +
-    '<path d="M3.1 16.4h17.8c.45 0 .72.52.43.88C20.3 18.7 18.4 19.7 16 19.7H8c-2.4 0-4.3-1-5.33-2.42-.29-.36-.02-.88.43-.88z"/>' +
-    '<path d="M12.15 3.15c.28-.4.85-.2.85.32V15.6H7.05c-.5 0-.75-.6-.42-.95l5.52-11.5z"/>' +
-    '<path d="M13.35 6.2 19.1 15.6h-5.75V6.55c0-.52.6-.78.99-.35z"/>' +
-    '</svg></span></a>';
+    '<img class="logo-mark-img" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="28" height="28" decoding="async">' +
+    '</span></a>';
 
   return (
     '<a class="skip-link" href="#main-content">' + escapeNavText(i18n('common.skipLink', 'Ir para o conteúdo')) + '</a>' +
@@ -1722,17 +1704,16 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-bar">' +
     '<div class="header-chrome header-chrome--main header-chrome--slim">' +
     '<div class="header-brand-group">' +
-    headerBoat +
+    headerBrand +
     '</div>' +
-    headerRadioSlot +
+    '<div id="header-radio-host" class="header-radio-host"></div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
     buildDesktopQuickNavHTML(authState) +
     '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
-    homeRadioLangCluster +
     '<div class="header-right">' +
     '<div class="header-utilities">' +
     headerToolbar +
-    headerLangUtility +
+    buildLangSwitcherHTML('header') +
     headerThemeToggle +
     '</div>' +
     '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
@@ -2041,17 +2022,9 @@ function buildFooterHTML(site) {
   const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
   const spotifyLabel = config.spotifyPodcastLabel || DEFAULT_SITE.spotifyPodcastLabel;
   const footerGroups = config.footerGroups || DEFAULT_SITE.footerGroups;
-  const authState = cachedLayoutAuth || null;
-  const filteredFooterGroups = footerGroups.map(function (group) {
-    return Object.assign({}, group, {
-      links: (group.links || []).filter(function (link) {
-        return navItemAllowed(link, authState);
-      })
-    });
-  });
   const privacyDate = resolveFooterUpdatedDate(config);
 
-  const groupsHtml = filteredFooterGroups.map((group) =>
+  const groupsHtml = footerGroups.map((group) =>
     '<div class="footer-col">' +
     '<p class="footer-col-title">' + escapeNavText(translateFooterGroupTitle(group.title)) + '</p>' +
     '<nav class="footer-col-links" aria-label="' + escapeNavText(translateFooterGroupTitle(group.title)) + '">' +
@@ -2087,7 +2060,9 @@ function buildFooterHTML(site) {
       : '') +
     '</div>';
 
-  const skipShareRail = !(authState && authState.canViewInspections);
+  const page = (document.body && document.body.dataset.page) || '';
+  const skipShareRail = /admin/i.test(page) || page === 'login' || page === 'entrar' ||
+    page === 'apresentacao-unifesp' || page === 'apresentacao-unifesp-print';
 
   const shareRailHtml = skipShareRail ? '' :
     '<section class="inspecoes-share-rail" id="inspecoes-share-rail" hidden aria-labelledby="inspecoes-share-rail-title">' +
@@ -2296,7 +2271,7 @@ function applyFerramentasNav(site) {
 
 async function fetchAuthState() {
   const userFallback = { label: i18n('common.login', 'Entrar'), href: '/entrar.html', isUser: false };
-  const state = { userLink: userFallback, adminLink: null, isAdmin: false, isUser: false, canViewInspections: false };
+  const state = { userLink: userFallback, adminLink: null, isAdmin: false, isUser: false };
 
   try {
     const serverOk = await isServerAvailable();
@@ -2314,17 +2289,14 @@ async function fetchAuthState() {
           name: data.name || null
         };
         state.isUser = true;
-        if (data.canViewInspections) state.canViewInspections = true;
       }
     } catch (e) { /* not logged in as user */ }
 
     try {
       const res = await fetch('/api/me', { credentials: 'include' });
       if (res.ok) {
-        const data = await res.json();
         state.adminLink = { label: i18n('common.panel', 'Painel'), href: '/admin.html', isAdmin: true };
         state.isAdmin = true;
-        if (data.canViewInspections) state.canViewInspections = true;
       }
     } catch (e) { /* not admin */ }
 
@@ -2525,7 +2497,6 @@ async function enrichBibliotecaWithPosts(navPanel) {
   const grouped = { pesquisa: [], inspecao: [], equipamento: [] };
   posts.forEach((post) => {
     const cat = post.category || 'pesquisa';
-    if (cat === 'inspecao') return;
     if (grouped[cat] && grouped[cat].length < 3) grouped[cat].push(post);
   });
 
@@ -2584,14 +2555,6 @@ function applyAuthOnlyVisibility(authState) {
   });
 }
 
-function applyInspectionsVisibility(canView) {
-  document.body.classList.toggle('can-view-inspections', !!canView);
-  document.querySelectorAll('[data-inspections-only]').forEach(function (el) {
-    if (canView) el.removeAttribute('hidden');
-    else el.setAttribute('hidden', '');
-  });
-}
-
 function injectLayout(site, authState) {
   cachedLayoutSite = site;
   cachedLayoutAuth = authState;
@@ -2603,7 +2566,6 @@ function injectLayout(site, authState) {
   const footerHTML = buildFooterHTML(localizedSite);
   applyAdminOnlyVisibility(isAdminAuth(localizedAuth));
   applyAuthOnlyVisibility(localizedAuth);
-  applyInspectionsVisibility(localizedAuth && localizedAuth.canViewInspections);
 
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;
@@ -2702,12 +2664,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.body.appendChild(feat);
   }
 
-  const layoutPage = (document.body && document.body.dataset.page) || '';
-  const skipShareRailScript = !cachedLayoutAuth || !cachedLayoutAuth.canViewInspections ||
-    /admin/i.test(layoutPage) || layoutPage === 'login' || layoutPage === 'entrar' ||
-    layoutPage === 'home';
-
-  if (!skipShareRailScript && !document.querySelector('script[src*="inspecoes-share-rail.js"]')) {
+  if (!document.querySelector('script[src*="inspecoes-share-rail.js"]')) {
     const shareRail = document.createElement('script');
     shareRail.id = 'inspecoes-share-rail-js';
     shareRail.src = '/js/inspecoes-share-rail.js?v=' + ASSET_V;
@@ -2723,23 +2680,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   function loadRadioPlayerScript() {
     if (document.querySelector('script[src*="radio-player.js"]')) return;
-    function injectPlayer() {
-      if (document.querySelector('script[src*="radio-player.js"]')) return;
-      const radio = document.createElement('script');
-      radio.id = 'radio-player-js';
-      radio.src = '/js/radio-player.js?v=' + ASSET_V;
-      document.body.appendChild(radio);
-    }
-    if (!document.querySelector('script[src*="radio-youtube.js"]')) {
-      const yt = document.createElement('script');
-      yt.id = 'radio-youtube-js';
-      yt.src = '/js/radio-youtube.js?v=' + ASSET_V;
-      yt.onload = injectPlayer;
-      yt.onerror = injectPlayer;
-      document.body.appendChild(yt);
-      return;
-    }
-    injectPlayer();
+    const radio = document.createElement('script');
+    radio.id = 'radio-player-js';
+    radio.src = '/js/radio-player.js?v=' + ASSET_V;
+    document.body.appendChild(radio);
   }
 
   function loadRadioOrderThenPlayer() {

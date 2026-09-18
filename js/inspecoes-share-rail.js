@@ -129,24 +129,21 @@
     var url = absUrl(item.url);
     var title = itemTitle(item) || 'Inspetor BudGanja';
     var text = itemExcerpt(item) || title;
-    var cover = coverSrc(item && item.coverImage);
-    var image = cover ? absUrl(cover) : '';
-    if (window.BudGanjaShare && typeof window.BudGanjaShare.open === 'function') {
-      window.BudGanjaShare.open({ title: title, text: text, url: url, image: image }, btn);
-      return;
-    }
+    var payload = { title: title, text: text, url: url };
+
+    var run;
     if (typeof navigator.share === 'function') {
-      navigator.share({ title: title, text: title, url: url }).then(function () {
+      run = navigator.share(payload).then(function () {
         return 'shared';
       }).catch(function (err) {
         if (err && err.name === 'AbortError') return 'shared';
         return copyUrl(url);
-      }).then(function (result) {
-        if (result === 'copied' || result === 'fallback') showCopied(btn);
-      }).catch(function () { /* ignore */ });
-      return;
+      });
+    } else {
+      run = copyUrl(url);
     }
-    copyUrl(url).then(function (result) {
+
+    run.then(function (result) {
       if (result === 'copied' || result === 'fallback') showCopied(btn);
     }).catch(function () { /* ignore */ });
   }
