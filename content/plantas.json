@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T12:51:36.275Z",
+  "updatedAt": "2026-09-18T14:08:02.492Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -909,14 +909,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/laranja-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-laranja.html",
-          "label": "Inspeção: Derivados da Laranja — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Orange derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Naranja — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "acai",
@@ -946,14 +939,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/acai-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-acai.html",
-          "label": "Inspeção: Derivados do Açaí — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Açaí derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Açaí — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "manga",
@@ -982,14 +968,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/manga-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-manga.html",
-          "label": "Inspeção: Derivados da Manga — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Mango derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Mango — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "banana",
@@ -1017,14 +996,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/banana-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-banana.html",
-          "label": "Inspeção: Derivados da Banana — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Banana derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Plátano / banana — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "maca",
@@ -1053,14 +1025,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/maca-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-maca.html",
-          "label": "Inspeção: Derivados da Maçã — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Apple derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Manzana — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "abacaxi",
@@ -1089,14 +1054,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/abacaxi-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-abacaxi.html",
-          "label": "Inspeção: Derivados do Abacaxi — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Pineapple derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Piña — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "goiaba",
@@ -1125,14 +1083,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/goiaba-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-goiaba.html",
-          "label": "Inspeção: Derivados da Goiaba — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Guava derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Guayaba — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "cacau",
@@ -1164,12 +1115,6 @@
       "cover": "/imagens/plantas/cacau-cover.jpg",
       "relatedInspections": [
         {
-          "href": "/posts/post-inspecao-derivado-cacau.html",
-          "label": "Inspeção: Derivados do Cacau — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Cacao derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Cacao — azúcar, aditivos y química industrial"
-        },
-        {
           "href": "/posts/post-inspecao-derivado-chocolate.html",
           "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
           "labelEn": "Inspection: Industrial chocolate — cacao, sugar, flour and milk",
@@ -1188,10 +1133,16 @@
           "labelEs": "Inspección: Gluten / harina"
         },
         {
+          "href": "/posts/post-inspecao-derivado-leite.html",
+          "label": "Inspeção: Leite e derivados",
+          "labelEn": "Inspection: Milk and derivatives",
+          "labelEs": "Inspección: Leche y derivados"
+        },
+        {
           "href": "/posts/post-inspecao-derivado-caseina.html",
-          "label": "Inspeção: Caseína / leite",
-          "labelEn": "Inspection: Casein / milk",
-          "labelEs": "Inspección: Caseína / leche"
+          "label": "Inspeção: Caseína / cola do leite",
+          "labelEn": "Inspection: Casein / milk’s glue",
+          "labelEs": "Inspección: Caseína / cola de la leche"
         }
       ]
     },
@@ -1221,14 +1172,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/uva-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-uva.html",
-          "label": "Inspeção: Derivados da Uva — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Grape derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Uva — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "morango",
@@ -1257,14 +1201,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/morango-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-morango.html",
-          "label": "Inspeção: Derivados do Morango — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Strawberry derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Fresa — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "maracuja-fruta",
@@ -1293,14 +1230,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/maracuja-fruta-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-maracuja-fruta.html",
-          "label": "Inspeção: Derivados do Maracujá (fruta) — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Passion fruit derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Maracuyá (fruta) — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "tomatinho-cereja",
@@ -1366,14 +1296,7 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/melancia-cover.jpg",
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-melancia.html",
-          "label": "Inspeção: Derivados da Melancia — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Watermelon derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Sandía — azúcar, aditivos y química industrial"
-        }
-      ]
+      "relatedInspections": []
     },
     {
       "id": "mamao",
@@ -1409,12 +1332,6 @@
       "relatedUnifesp": true,
       "cover": "/imagens/plantas/mamao-cover.jpg",
       "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-derivado-mamao.html",
-          "label": "Inspeção: Derivados do Mamão — açúcar, aditivos e química industrial",
-          "labelEn": "Inspection: Papaya derivatives — sugar, additives and industrial chemistry",
-          "labelEs": "Inspección: Derivados de Papaya — azúcar, aditivos y química industrial"
-        },
         {
           "href": "/biblioteca/unifesp/livro-xiv.html",
           "label": "Rascunhos XIV UNIFESP — papaína / farmácias vivas",
@@ -1514,6 +1431,138 @@
           "label": "Inspeção: Derivados do Marolo — açúcar, aditivos e química industrial",
           "labelEn": "Inspection: Marolo / araticum derivatives — sugar, additives and industrial chemistry",
           "labelEs": "Inspección: Derivados de Marolo / araticum — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "soja",
+      "slug": "soja",
+      "nomePopular": "Soja",
+      "nomeCientifico": "Glycine max (L.) Merr.",
+      "familia": "Fabaceae",
+      "inspecaoDate": "2026-09-17",
+      "relatedUnifesp": true,
+      "summary": "Leguminosa (*Glycine max*): a ficha separa o feijão (edamame, tofu, miso) do isolado, do óleo e da matriz ultraprocessada com glúten e farinha branca — riscos à saúde e o ciclo «como os ricos transformam as coisas».",
+      "partsUsed": [
+        "Grãos maduros (cozinha, tofu tradicional)",
+        "Vagens imaturas (edamame)",
+        "Fermentados tradicionais (miso, tempeh, shoyu)",
+        "Derivados industriais à parte (óleo, lecitina, isolado, proteína texturizada)"
+      ],
+      "traditionalUses": [
+        "Cozinha do feijão — edamame, tofu, tempeh, miso (ofício alimentar, não protocolo)",
+        "Isoflavona como fitoterápico padronizado (RENAME) — identidade, não automedicação",
+        "Citação no curso UNIFESP: Cerrado vs monocultura; interesse no endocanabinoidoma (FAAH)",
+        "Cruzamento lab: glúten / farinha branca, ultraprocessados e frase-mapa dos ricos"
+      ],
+      "cautions": "Alergia à soja é eixo clínico. Isolados, leites vegetais adoçados, óleo de fritura e «carne» de fábrica não são o feijão. Isoflavona em cápsula exige orientação profissional. Soja transgénica / agrotóxico é risco de cadeia, não prova de que o grão tradicional seja veneno. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "alimento",
+        "culinaria",
+        "leguminosa",
+        "fabaceae",
+        "isoflavona",
+        "ultraprocessado",
+        "cerrado",
+        "unifesp"
+      ],
+      "cover": "/imagens/plantas/soja-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-gluten.html",
+          "label": "Inspeção: Glúten / farinha — trigo e proteína nociva",
+          "labelEn": "Inspection: Gluten / flour — wheat protein of concern",
+          "labelEs": "Inspección: Gluten / harina — trigo y proteína nociva"
+        },
+        {
+          "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
+          "label": "Inspeção: Como os ricos transformam as coisas",
+          "labelEn": "Inspection: How the rich transform things",
+          "labelEs": "Inspección: Cómo los ricos transforman las cosas"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-risco.html",
+          "label": "Inspeção: Palavra — risco",
+          "labelEn": "Inspection: Word — risk",
+          "labelEs": "Inspección: Palabra — riesgo"
+        },
+        {
+          "href": "/posts/post-inspecao-artigo-hall-ultraprocessados-2019.html",
+          "label": "Artigo: ultraprocessados (Hall et al., 2019)",
+          "labelEn": "Article: ultra-processed foods (Hall et al., 2019)",
+          "labelEs": "Artículo: ultraprocesados (Hall et al., 2019)"
+        },
+        {
+          "href": "/posts/post-inspecao-conto-vida-sementinha-jogo.html",
+          "label": "Conto: A Sementinha e o jogo da cidade (a soja do GTA)",
+          "labelEn": "Story: The Little Seed and the city game (GTA soy)",
+          "labelEs": "Cuento: La Semillita y el juego de la ciudad (soja del GTA)"
+        }
+      ]
+    },
+    {
+      "id": "trigo",
+      "slug": "trigo",
+      "nomePopular": "Trigo",
+      "nomeCientifico": "Triticum aestivum L.",
+      "familia": "Poaceae",
+      "inspecaoDate": "2026-09-17",
+      "relatedUnifesp": false,
+      "summary": "Cereal (*Triticum aestivum*): a ficha separa o grão e o pão tradicional da farinha branca e do glúten em ultraprocessados — riscos à saúde e o ciclo «como os ricos transformam as coisas».",
+      "partsUsed": [
+        "Grãos maduros (cozinha, pão de ofício, massa tradicional)",
+        "Farelo e gérmen (farinha integral)",
+        "Endosperma isolado (farinha branca — derivado de risco, à parte)",
+        "Glúten como rede do pão vs glúten como aditivo industrial"
+      ],
+      "traditionalUses": [
+        "Pão de fermentação e massa de ofício — tradição alimentar, não protocolo",
+        "Grão cozido / cuscuz de trigo em cozinhas históricas",
+        "Cruzamento lab: farinha branca, glúten, Barriga de Trigo e frase-mapa dos ricos",
+        "Separar a espiga do saco branqueado da fábrica"
+      ],
+      "cautions": "Doença celíaca, alergia ao trigo e sensibilidade não celíaca exigem orientação profissional. Farinha branca, pão industrial e «glúten» como aditivo não são a espiga. Trigo moderno vs ancestral é debate de divulgação — esta ficha não prescreve exclusão populacional do cereal. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "alimento",
+        "culinaria",
+        "cereal",
+        "poaceae",
+        "gluten",
+        "farinha",
+        "ultraprocessado",
+        "trigo"
+      ],
+      "cover": "/imagens/plantas/trigo-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-gluten.html",
+          "label": "Inspeção: Glúten / farinha — o derivado branco",
+          "labelEn": "Inspection: Gluten / flour — the white derivative",
+          "labelEs": "Inspección: Gluten / harina — el derivado blanco"
+        },
+        {
+          "href": "/posts/post-inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve.html",
+          "label": "Cruzamento: farinha branca × cocaína × Branca de Neve",
+          "labelEn": "Cross-map: white flour × cocaine × Snow White",
+          "labelEs": "Cruce: harina blanca × cocaína × Blancanieves"
+        },
+        {
+          "href": "/posts/post-inspecao-arte-barriga-de-trigo.html",
+          "label": "Artes: Barriga de Trigo (William Davis)",
+          "labelEn": "Arts: Wheat Belly (William Davis)",
+          "labelEs": "Artes: Barriga de Trigo (William Davis)"
+        },
+        {
+          "href": "/posts/post-inspecao-artigo-wieser-duas-faces-trigo-2020.html",
+          "label": "Artigo: as duas faces do trigo (Wieser, 2020)",
+          "labelEn": "Article: the two faces of wheat (Wieser, 2020)",
+          "labelEs": "Artículo: las dos caras del trigo (Wieser, 2020)"
+        },
+        {
+          "href": "/posts/post-inspecao-planta-soja.html",
+          "label": "Inspeção: Soja — outro isolado vs o grão",
+          "labelEn": "Inspection: Soy — another isolate vs the bean",
+          "labelEs": "Inspección: Soja — otro aislado vs el grano"
         }
       ]
     }

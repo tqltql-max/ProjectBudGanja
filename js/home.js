@@ -45,13 +45,12 @@ function formatDateCompact(iso) {
 }
 
 var HOME_PINNED_SLUGS = [
-  'inspecao-palavra-javascript',
-  'inspecao-divulgacao-samuel-dalle-laste',
-  'inspecao-palavra-teologia',
-  'inspecao-expressao-quem-nao-arrisca-nao-petisca',
-  'inspecao-palavra-teoria-das-cordas',
-  'inspecao-arte-bom-dia-inverno',
-  'inspecao-canal-paulinho'
+  'inspecao-expressao-virou-carne-de-vaca',
+  'inspecao-derivado-leite',
+  'inspecao-derivado-caseina',
+  'inspecao-derivado-gluten',
+  'inspecao-planta-trigo',
+  'inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve'
 ];
 
 /**

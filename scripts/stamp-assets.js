@@ -75,14 +75,6 @@ function stampHtml(content) {
         '$1\n    <link rel="stylesheet" href="/css/pages/planejamento.css?v=' + ASSET_VERSION + '">'
       );
     }
-  } else if (
-    (next.includes('data-page="cadernos-engenharia"') || next.includes('data-page="unifesp-caderno"')) &&
-    !next.includes('pages/cadernos-engenharia.css')
-  ) {
-    next = next.replace(
-      /(<link rel="stylesheet" href="\/css\/style\.css\?v=[^"]+">)/,
-      '$1\n    <link rel="stylesheet" href="/css/pages/cadernos-engenharia.css?v=' + ASSET_VERSION + '">'
-    );
   } else if (!next.includes('i18n-data.js') && next.includes('layout.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
@@ -120,6 +112,29 @@ function stampHtml(content) {
   }
 
   return ensureVersionCheckScript(next);
+}
+
+/** Cópia versionada dos ícones — o HTML aponta para .v{VERSION}.png; sem isto o Inspetor parte. */
+function ensureVersionedIcons() {
+  const files = [
+    path.join(ROOT, 'imagens', 'app-icon.png'),
+    path.join(ROOT, 'imagens', 'icon-192.png'),
+    path.join(ROOT, 'imagens', 'icon-512.png'),
+    path.join(ROOT, 'imagens', 'icon-512-maskable.png'),
+    path.join(ROOT, 'imagens', 'apple-touch-icon.png'),
+    path.join(ROOT, 'imagens', 'favicon-16.png'),
+    path.join(ROOT, 'imagens', 'favicon-32.png'),
+    path.join(ROOT, 'imagens', 'favicon-48.png'),
+    path.join(ROOT, 'favicon.ico'),
+    path.join(ROOT, 'favicon.svg')
+  ];
+  for (const src of files) {
+    if (!fs.existsSync(src)) continue;
+    const dest = src.replace(/(\.[a-z0-9]+)$/i, '.v' + ASSET_VERSION + '$1');
+    if (fs.existsSync(dest)) continue;
+    fs.copyFileSync(src, dest);
+    console.log('stamp-assets: copiou ' + path.relative(ROOT, dest));
+  }
 }
 
 function stampIcons(html) {
@@ -190,6 +205,8 @@ function stampHero(html) {
   );
   return nextHtml.replace(/<img\b[^>]*\bhero-media\b[^>]*>/gi, stampHeroMediaAttrs);
 }
+
+ensureVersionedIcons();
 
 let changedHtml = 0;
 let skippedHtml = 0;

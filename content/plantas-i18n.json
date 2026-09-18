@@ -1165,6 +1165,70 @@
       ],
       "cautionsEn": "Ripe pulp is traditional food. Annonaceae seeds and leaves are not a generic tea or home extract. Do not confuse with passion fruit, papaya, sugar-apple or soursop. Industrial sugary derivatives belong in Risk derivatives. Educational — not professional advice or biome management.",
       "cautionsEs": "La pulpa madura es alimento tradicional. Semillas y hojas de Annonaceae no son té genérico ni extracto casero. No confundir con maracuyá, papaya, anón o guanábana. Derivados industriales azucarados entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "soja": {
+      "nomePopularEn": "Soybean",
+      "nomePopularEs": "Soja",
+      "summaryEn": "Legume (*Glycine max*): this sheet separates the bean (edamame, tofu, miso) from isolate, oil and the ultra-processed matrix with gluten and white flour — health risks and the cycle “how the rich transform things”.",
+      "summaryEs": "Leguminosa (*Glycine max*): la ficha separa el grano (edamame, tofu, miso) del aislado, el aceite y la matriz ultraprocesada con gluten y harina blanca — riesgos para la salud y el ciclo «cómo los ricos transforman las cosas».",
+      "partsUsedEn": [
+        "Mature beans (cooking, traditional tofu)",
+        "Immature pods (edamame)",
+        "Traditional ferments (miso, tempeh, shoyu)",
+        "Industrial derivatives set apart (oil, lecithin, isolate, textured protein)"
+      ],
+      "partsUsedEs": [
+        "Granos maduros (cocina, tofu tradicional)",
+        "Vainas inmaduras (edamame)",
+        "Fermentados tradicionales (miso, tempeh, shoyu)",
+        "Derivados industriales aparte (aceite, lecitina, aislado, proteína texturizada)"
+      ],
+      "traditionalUsesEn": [
+        "Bean kitchen — edamame, tofu, tempeh, miso (food craft, not a protocol)",
+        "Isoflavone as a standardized herbal (RENAME) — identity, not self-medication",
+        "UNIFESP course: Cerrado vs monoculture; endocannabinoid axis (FAAH) interest",
+        "Lab cross: gluten / white flour, ultra-processed foods and the rich-transform phrase-map"
+      ],
+      "traditionalUsesEs": [
+        "Cocina del grano — edamame, tofu, tempeh, miso (oficio alimentario, no protocolo)",
+        "Isoflavona como fitoterápico padronizado (RENAME) — identidad, no automedicación",
+        "Curso UNIFESP: Cerrado vs monocultivo; interés en el endocannabinoidoma (FAAH)",
+        "Cruce del lab: gluten / harina blanca, ultraprocesados y la frase-mapa de los ricos"
+      ],
+      "cautionsEn": "Soy allergy is a clinical axis. Isolates, sweetened plant milks, frying oil and factory “meat” are not the bean. Isoflavone capsules need professional guidance. GMO / agrochemical soy is a supply-chain risk, not proof that the traditional bean is poison. Educational — not a substitute for care.",
+      "cautionsEs": "La alergia a la soja es eje clínico. Aislados, leches vegetales azucaradas, aceite de fritura y «carne» de fábrica no son el grano. Isoflavona en cápsula exige orientación profesional. Soja transgénica / agrotóxico es riesgo de cadena. Contenido educativo — no sustituye consulta."
+    },
+    "trigo": {
+      "nomePopularEn": "Wheat",
+      "nomePopularEs": "Trigo",
+      "summaryEn": "Cereal (*Triticum aestivum*): this sheet separates the grain and traditional bread from white flour and gluten in ultra-processed foods — health risks and the cycle “how the rich transform things”.",
+      "summaryEs": "Cereal (*Triticum aestivum*): la ficha separa el grano y el pan tradicional de la harina blanca y el gluten en ultraprocesados — riesgos para la salud y el ciclo «cómo los ricos transforman las cosas».",
+      "partsUsedEn": [
+        "Mature grains (cooking, craft bread, traditional pasta)",
+        "Bran and germ (wholemeal)",
+        "Isolated endosperm (white flour — risk derivative, set apart)",
+        "Gluten as bread network vs gluten as industrial additive"
+      ],
+      "partsUsedEs": [
+        "Granos maduros (cocina, pan de oficio, pasta tradicional)",
+        "Salvado y germen (harina integral)",
+        "Endospermo aislado (harina blanca — derivado de riesgo, aparte)",
+        "Gluten como red del pan vs gluten como aditivo industrial"
+      ],
+      "traditionalUsesEn": [
+        "Leavened bread and craft pasta — food tradition, not a protocol",
+        "Cooked grain / wheat couscous in historic kitchens",
+        "Lab cross: white flour, gluten, Wheat Belly and the rich-transform phrase-map",
+        "Keep the ear apart from the bleached factory bag"
+      ],
+      "traditionalUsesEs": [
+        "Pan de fermentación y pasta de oficio — tradición alimentaria, no protocolo",
+        "Grano cocido / cuscús de trigo en cocinas históricas",
+        "Cruce del lab: harina blanca, gluten, Barriga de Trigo y la frase-mapa de los ricos",
+        "Separar la espiga del saco blanqueado de fábrica"
+      ],
+      "cautionsEn": "Celiac disease, wheat allergy and non-celiac sensitivity need professional care. White flour, factory bread and “gluten” as additive are not the ear. Modern vs ancestral wheat is an outreach debate — this sheet does not prescribe population-wide exclusion. Educational — not a substitute for care.",
+      "cautionsEs": "Celiaquía, alergia al trigo y sensibilidad no celíaca exigen orientación profesional. Harina blanca, pan industrial y «gluten» como aditivo no son la espiga. Esta ficha no prescribe exclusión poblacional del cereal. Contenido educativo — no sustituye consulta."
     }
   }
 }

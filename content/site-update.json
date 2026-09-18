@@ -1,34 +1,34 @@
 {
-  "enabled": false,
-  "id": "bom-dia-inverno-2026-08-popup",
-  "href": "/inverno/",
-  "image": "/imagens/inspecoes/bom-dia-inverno-cover.jpg",
+  "enabled": true,
+  "id": "lab-358-2026-09-18",
+  "href": "/",
+  "image": "/imagens/icon-512.png",
   "imageAlt": {
-    "pt-BR": "Capa de Bom dia, Inverno — Tamara Klink no gelo com o controle do drone na mão esquerda",
-    "en": "Bom dia, Inverno cover — Tamara Klink on the ice holding the drone controller in her left hand",
-    "es": "Portada de Bom dia, Inverno — Tamara Klink en el hielo con el control del dron en la mano izquierda"
+    "pt-BR": "Ícone do Inspetor BudGanja",
+    "en": "Inspetor BudGanja icon",
+    "es": "Icono del Inspetor BudGanja"
   },
-  "mark": "TT",
+  "mark": "IB",
   "markHidden": true,
   "linkLabel": {
-    "pt-BR": "Entrar no gelo",
-    "en": "Step onto the ice",
-    "es": "Entrar al hielo"
+    "pt-BR": "Abrir o início",
+    "en": "Open home",
+    "es": "Abrir el inicio"
   },
   "label": {
-    "pt-BR": "Divulgação",
-    "en": "Promotion",
-    "es": "Divulgación"
+    "pt-BR": "Actualização",
+    "en": "Update",
+    "es": "Actualización"
   },
   "title": {
-    "pt-BR": "Bom dia, Inverno — façam o livro circular",
-    "en": "Bom dia, Inverno — let the book circulate",
-    "es": "Bom dia, Inverno — hagan circular el libro"
+    "pt-BR": "Nova versão do laboratório",
+    "en": "New lab version",
+    "es": "Nueva versión del laboratorio"
   },
   "text": {
-    "pt-BR": "Oito meses no gelo. Tamara pediu: empresta, doa, deixa o papel viver.",
-    "en": "Eight months on the ice. Tamara asked: lend, donate, let the paper live.",
-    "es": "Ocho meses en el hielo. Tamara pidió: presta, dona, deja vivir el papel."
+    "pt-BR": "Ícone do Inspetor, inspeções do leite e da carne nas Últimas, e o sentido de virou carne de vaca. No telemóvel, toque em Atualizar agora.",
+    "en": "Inspector icon, milk and meat inspections on Latest, and the everyday meaning of virou carne de vaca. On the phone, tap Update now.",
+    "es": "Icono del Inspector, inspecciones de leche y carne en Últimas, y el sentido cotidiano de virou carne de vaca. En el móvil, toca Actualizar ahora."
   },
   "cta": {
     "pt-BR": "Depois",
