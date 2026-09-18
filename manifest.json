@@ -15,19 +15,19 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/imagens/icon-192.v360.png",
+      "src": "/imagens/icon-192.v361.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/imagens/icon-512.v360.png",
+      "src": "/imagens/icon-512.v361.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/imagens/icon-512-maskable.v360.png",
+      "src": "/imagens/icon-512-maskable.v361.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

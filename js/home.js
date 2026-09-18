@@ -138,22 +138,32 @@ function renderHomePostCards(container, posts) {
   if (window.budganjaEnhanceAdminPostCards) window.budganjaEnhanceAdminPostCards();
 }
 
+async function fetchJsonList(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch (e) {
+    return [];
+  }
+}
+
 async function loadLatestPosts() {
   const container = document.getElementById('home-latest-posts');
   if (!container) return;
 
-  let posts = [];
-  try {
-    const res = await fetch('/api/posts');
-    if (res.ok) posts = await res.json();
-  } catch (e) { /* static fallback */ }
-
-  if (!posts.length) {
-    try {
-      const res = await fetch('/posts-public.json');
-      if (res.ok) posts = await res.json();
-    } catch (e) { /* ignore */ }
-  }
+  const fromApi = await fetchJsonList('/api/posts');
+  const fromPublic = await fetchJsonList('/posts-public.json');
+  const bySlug = Object.create(null);
+  fromApi.concat(fromPublic).forEach(function (p) {
+    if (p && p.slug && !bySlug[p.slug]) bySlug[p.slug] = p;
+  });
+  HOME_PINNED_SLUGS.forEach(function (slug) {
+    const hit = fromPublic.find(function (p) { return p && p.slug === slug; });
+    if (hit) bySlug[slug] = hit;
+  });
+  const posts = Object.keys(bySlug).map(function (k) { return bySlug[k]; });
 
   renderHomePostCards(container, pickHomeLatestPosts(posts, 4));
 }

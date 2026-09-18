@@ -1,14 +1,14 @@
 {
-  "version": "360",
+  "version": "361",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-09-18T15:26:52.970Z",
+  "builtAt": "2026-09-18T15:28:53.686Z",
   "update": {
     "enabled": true,
-    "id": "lab-360-2026-09-18",
+    "id": "lab-361-2026-09-18",
     "href": "/",
     "image": "/imagens/icon-512.png",
     "imageAlt": {
