@@ -1252,6 +1252,7 @@ window.__I18N_LOCALES__ = {
         "vidaCardText": "The Inspector, Dona Maria, Ladybug Joana and the Three Little Birds teach the right way to care for plants.",
         "vidaCtaHub": "Start Vida",
         "vidaCtaStory": "Read the story",
+        "vidaCtaStory2": "Second story",
         "cardGuiaTitle": "Basic Growing Guide",
         "cardGuiaText": "Video trail by @InspetorBudGanja — from soil to flowering, step by step.",
         "cardGuiaBtn": "Open guide",
@@ -2654,6 +2655,7 @@ window.__I18N_LOCALES__ = {
         "vidaCardText": "El Inspector, Doña María, la Mariquita Juana y los Three Little Birds enseñan el cuidado correcto de las plantas.",
         "vidaCtaHub": "Empezar Vida",
         "vidaCtaStory": "Leer la historia",
+        "vidaCtaStory2": "Segundo cuento",
         "latestPlantas": "Plantas →",
         "latestUnifesp": "UNIFESP →"
       },
@@ -7203,6 +7205,7 @@ window.__I18N_LOCALES__ = {
         "vidaCardText": "O Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam o jeito certo de cuidar das plantas.",
         "vidaCtaHub": "Começar Vida",
         "vidaCtaStory": "Ler a história",
+        "vidaCtaStory2": "Segundo conto",
         "cardGuiaTitle": "Guia de Cultivo Básico",
         "cardGuiaText": "Trilha em vídeo do canal @InspetorBudGanja — do solo à floração, passo a passo.",
         "cardGuiaBtn": "Abrir guia",

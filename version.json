@@ -1,14 +1,14 @@
 {
-  "version": "361",
+  "version": "362",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-09-18T15:28:53.686Z",
+  "builtAt": "2026-09-18T15:32:48.865Z",
   "update": {
     "enabled": true,
-    "id": "lab-361-2026-09-18",
+    "id": "lab-362-2026-09-18",
     "href": "/",
     "image": "/imagens/icon-512.png",
     "imageAlt": {
@@ -34,9 +34,9 @@
       "es": "Nueva versión del laboratorio"
     },
     "text": {
-      "pt-BR": "O laboratório completo voltou: Últimas com carne, leite, glúten e trigo. No telemóvel, toque em Atualizar agora.",
-      "en": "The full lab is back: Latest with meat, milk, gluten and wheat. On the phone, tap Update now.",
-      "es": "El laboratorio completo volvió: Últimas con carne, leche, gluten y trigo. En el móvil, toca Actualizar ahora."
+      "pt-BR": "Últimas: carne, leite, glúten, trigo e o segundo conto da Sementinha. No telemóvel, toque em Atualizar agora.",
+      "en": "Latest: meat, milk, gluten, wheat and the second Little Seed story. On the phone, tap Update now.",
+      "es": "Últimas: carne, leche, gluten, trigo y el segundo cuento de la Semillita. En el móvil, toca Actualizar ahora."
     },
     "cta": {
       "pt-BR": "Depois",

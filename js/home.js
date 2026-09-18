@@ -50,13 +50,15 @@ var HOME_PINNED_SLUGS = [
   'inspecao-derivado-caseina',
   'inspecao-derivado-gluten',
   'inspecao-planta-trigo',
-  'inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve'
+  'inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve',
+  'inspecao-conto-vida-sementinha-jogo',
+  'inspecao-planta-soja'
 ];
 
 /**
  * Últimas do laboratório: ordena por data, mas garante diversidade de categorias
  * (ex.: uma pesquisa não fica enterrada sob várias inspeções do mesmo dia).
- * Destaques (conto da sementinha, teoria das cordas e Paulinho) ficam no início.
+ * Destaques do dia: carne, leite, glúten, trigo, segundo conto da sementinha.
  */
 function pickHomeLatestPosts(posts, limit) {
   const max = Math.max(1, Number(limit) || 4);
