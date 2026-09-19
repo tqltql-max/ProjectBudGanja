@@ -43,12 +43,6 @@
     return p === '/radio/' || p === '/radio' || p === '/radio/index.html';
   }
 
-  /** Mini-player exclusivo da Comunidade (Feed Vivo). */
-  function isCommunityPage() {
-    var p = pathLower();
-    return p === '/comunidade' || p === '/comunidade/' || p.indexOf('/comunidade/') === 0;
-  }
-
   /** Páginas de trabalho: só pill discreta (não barra larga). */
   function isFocusPage() {
     var p = pathLower();
@@ -269,10 +263,9 @@
     var wantPlay = sessionStorage.getItem(STORAGE_PLAYING) === '1';
     var savedTime = freshSession ? 0 : Math.max(0, readFloat(STORAGE_TIME, 0));
     var inHeader = !!host;
-    // No header: só toggle liga/desliga — painel completo fica em /radio/.
-    var collapsed = inHeader ? true : ((!inHeader && isFocusPage()) || isCollapsedPref());
+    var collapsed = (!inHeader && isFocusPage()) || isCollapsedPref();
+    if (wantPlay) collapsed = false;
     var unlockBound = false;
-    if (inHeader) root.classList.add('radio-mini--toggle');
 
     function radioLabel() {
       return tr('radio.label', meta.label || 'Rádio');
@@ -302,6 +295,9 @@
           updatePlayUi(true);
           writeSession(STORAGE_PLAYING, '1');
           wantPlay = true;
+          collapsed = false;
+          setCollapsedPref(false);
+          applyCollapsed();
           updateMediaSession(tracks[index]);
         }).catch(function () {
           updatePlayUi(false);
@@ -345,18 +341,7 @@
 
     function applyCollapsed() {
       root.classList.toggle('is-collapsed', collapsed);
-      if (inHeader) {
-        btnFab.removeAttribute('aria-expanded');
-        var playing = wantPlay || !audio.paused;
-        btnFab.setAttribute(
-          'aria-label',
-          playing
-            ? tr('radio.powerOff', 'Desligar rádio')
-            : tr('radio.powerOn', 'Ligar rádio')
-        );
-        btnFab.setAttribute('title', trackHint());
-        return;
-      }
+      if (!btnFab) return;
       btnFab.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
       btnFab.setAttribute(
         'aria-label',
@@ -366,6 +351,7 @@
             : tr('radio.open', 'Abrir rádio'))
           : tr('radio.opened', 'Rádio aberta')
       );
+      if (inHeader) btnFab.setAttribute('title', trackHint());
     }
 
     function updateMuteUi() {
@@ -385,11 +371,6 @@
           'aria-label',
           playing ? tr('radio.pause', 'Pausar') : tr('radio.play', 'Reproduzir')
         );
-      }
-      if (inHeader && btnFab) {
-        btnFab.innerHTML =
-          (playing ? ICONS.pause : ICONS.radio) +
-          '<span class="radio-mini-fab-dot" aria-hidden="true"></span>';
       }
       root.classList.toggle('is-playing', playing);
       applyCollapsed();
@@ -471,10 +452,6 @@
     }
 
     btnFab.addEventListener('click', function () {
-      if (inHeader) {
-        togglePlayback();
-        return;
-      }
       collapsed = false;
       setCollapsedPref(false);
       applyCollapsed();
@@ -664,11 +641,9 @@
         writeSession(STORAGE_PLAYING, '1');
         wantPlay = true;
         updateMediaSession(tracks[index]);
-        if (collapsed && freshSession) {
-          collapsed = false;
-          setCollapsedPref(false);
-          applyCollapsed();
-        }
+        collapsed = false;
+        setCollapsedPref(false);
+        applyCollapsed();
       });
     }
 
@@ -742,8 +717,6 @@
   function init() {
     if (isAdminPage()) return;
     if (isRadioPage()) return;
-    // Rádio exclusiva da Comunidade — não monta no resto do site.
-    if (!isCommunityPage()) return;
     if (isDismissed()) return;
     if (document.getElementById('budganja-radio')) return;
 

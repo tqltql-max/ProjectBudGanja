@@ -46,6 +46,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const audio = new Audio();
   audio.preload = 'metadata';
   const Order = window.BudGanjaRadioOrder || null;
+  const STORAGE_INDEX = 'budganja.radio.index';
+  const STORAGE_PLAYING = 'budganja.radio.playing';
+  const STORAGE_TIME = 'budganja.radio.time';
+  const STORAGE_DISMISSED = 'budganja.radio.dismissed';
+  let unloading = false;
+
+  function writeSession(key, value) {
+    try {
+      sessionStorage.setItem(key, String(value));
+    } catch (e) { /* ignore */ }
+  }
+
+  function persistRadioProgress(playing) {
+    writeSession(STORAGE_INDEX, index);
+    try {
+      if (Number.isFinite(audio.currentTime) && audio.currentTime > 0) {
+        writeSession(STORAGE_TIME, audio.currentTime);
+      }
+    } catch (e) { /* ignore */ }
+    if (playing) {
+      writeSession(STORAGE_PLAYING, '1');
+      writeSession(STORAGE_DISMISSED, '0');
+    } else if (!unloading) {
+      writeSession(STORAGE_PLAYING, '0');
+    }
+  }
 
   function escapeHtml(s) {
     return String(s || '')
@@ -285,6 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (timeDuration) timeDuration.textContent = '0:00';
     highlightActive();
     refreshMediaSession();
+    writeSession(STORAGE_INDEX, index);
     if (autoplay) {
       audio.play().then(() => {
         updatePlayUi(true);
@@ -587,13 +614,27 @@ document.addEventListener('DOMContentLoaded', () => {
   audio.addEventListener('ended', () => loadTrack(index + 1, true));
   audio.addEventListener('play', () => {
     updatePlayUi(true);
+    persistRadioProgress(true);
     refreshMediaSession();
   });
   audio.addEventListener('pause', () => {
+    if (unloading) {
+      persistRadioProgress(true);
+      return;
+    }
     if (!audio.ended) {
       updatePlayUi(false);
+      persistRadioProgress(false);
       refreshMediaSession();
     }
+  });
+  window.addEventListener('pagehide', () => {
+    unloading = true;
+    persistRadioProgress(!audio.paused);
+  });
+  window.addEventListener('beforeunload', () => {
+    unloading = true;
+    persistRadioProgress(!audio.paused);
   });
   audio.addEventListener('timeupdate', () => {
     if (seeking) return;
@@ -607,6 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setProgressPct(pct);
     }
     if (window.BudGanjaRadioMedia) window.BudGanjaRadioMedia.updatePosition(audio);
+    if (!audio.paused) persistRadioProgress(true);
   });
   function applySeekFromControl() {
     if (!seekEl) return false;
