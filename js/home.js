@@ -46,6 +46,9 @@ function formatDateCompact(iso) {
 
 var HOME_PINNED_SLUGS = [
   'inspecao-expressao-virou-carne-de-vaca',
+  'inspecao-expressao-vinganca-mata-alma-envenena',
+  'inspecao-expressao-faca-o-melhor',
+  'inspecao-expressao-veneno-forma-de-acucar',
   'inspecao-derivado-leite',
   'inspecao-derivado-caseina',
   'inspecao-derivado-gluten',
@@ -61,53 +64,27 @@ var HOME_PINNED_SLUGS = [
  * Destaques do dia: carne, leite, glúten, trigo, segundo conto da sementinha.
  */
 function pickHomeLatestPosts(posts, limit) {
-  const max = Math.max(1, Number(limit) || 4);
-  const sorted = (posts || []).slice().sort(function (a, b) {
-    return new Date(b.date) - new Date(a.date);
+  const max = Math.max(HOME_PINNED_SLUGS.length, Number(limit) || 8);
+  const list = posts || [];
+  const bySlug = Object.create(null);
+  list.forEach(function (p) {
+    if (p && p.slug) bySlug[p.slug] = p;
   });
-  if (!sorted.length) return [];
-
   const pinned = HOME_PINNED_SLUGS.map(function (slug) {
-    return sorted.find(function (p) {
-      return p && p.slug === slug;
-    });
+    return bySlug[slug];
   }).filter(Boolean);
-  const windowSize = Math.min(sorted.length, 36);
-  const window = sorted.slice(0, windowSize);
-  const picked = [];
   const used = Object.create(null);
-
-  function catOf(p) {
-    return String((p && p.category) || 'pesquisa');
-  }
-
-  function take(p) {
-    if (!p || !p.slug || used[p.slug]) return;
+  pinned.forEach(function (p) {
     used[p.slug] = true;
-    picked.push(p);
-  }
-
-  pinned.forEach(take);
-
-  ['pesquisa', 'inspecao', 'equipamento'].forEach(function (cat) {
-    if (picked.length >= max) return;
-    const hit = window.find(function (p) {
-      return catOf(p) === cat && !used[p.slug];
+  });
+  const rest = list
+    .filter(function (p) {
+      return p && p.slug && !used[p.slug];
+    })
+    .sort(function (a, b) {
+      return new Date(b.date) - new Date(a.date);
     });
-    if (hit) take(hit);
-  });
-
-  sorted.forEach(function (p) {
-    if (picked.length >= max) return;
-    take(p);
-  });
-
-  const rest = picked.filter(function (p) {
-    return HOME_PINNED_SLUGS.indexOf(p.slug) < 0;
-  }).sort(function (a, b) {
-    return new Date(b.date) - new Date(a.date);
-  });
-  return pinned.concat(rest);
+  return pinned.concat(rest).slice(0, max);
 }
 
 function renderHomePostCards(container, posts) {
@@ -142,7 +119,7 @@ function renderHomePostCards(container, posts) {
 
 async function fetchJsonList(url) {
   try {
-    const res = await fetch(url);
+    const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return [];
     const data = await res.json();
     return Array.isArray(data) ? data : [];
@@ -155,19 +132,10 @@ async function loadLatestPosts() {
   const container = document.getElementById('home-latest-posts');
   if (!container) return;
 
-  const fromApi = await fetchJsonList('/api/posts');
-  const fromPublic = await fetchJsonList('/posts-public.json');
-  const bySlug = Object.create(null);
-  fromApi.concat(fromPublic).forEach(function (p) {
-    if (p && p.slug && !bySlug[p.slug]) bySlug[p.slug] = p;
-  });
-  HOME_PINNED_SLUGS.forEach(function (slug) {
-    const hit = fromPublic.find(function (p) { return p && p.slug === slug; });
-    if (hit) bySlug[slug] = hit;
-  });
-  const posts = Object.keys(bySlug).map(function (k) { return bySlug[k]; });
-
-  renderHomePostCards(container, pickHomeLatestPosts(posts, 4));
+  let posts = await fetchJsonList('/posts-public.json?_=' + Date.now());
+  if (!posts.length) posts = await fetchJsonList('/api/posts');
+  const picked = pickHomeLatestPosts(posts, 8);
+  if (picked.length) renderHomePostCards(container, picked);
 }
 
 async function loadSorteioBanner() {

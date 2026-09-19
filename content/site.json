@@ -80,6 +80,15 @@
               "description": "Aprender a dobrar papel — mãos reais; aula do barquinho. Sem fala, áudio local."
             },
             {
+              "label": "Poemas",
+              "tileLabel": "Poemas",
+              "href": "/poemas/",
+              "icon": "📜",
+              "slug": "poemas",
+              "featured": true,
+              "description": "Versos originais do laboratório — ficar, cultivar, inspecionar."
+            },
+            {
               "label": "Vida",
               "tileLabel": "Vida",
               "href": "/vida/",
@@ -185,20 +194,20 @@
                   "description": "Relatório sobre substratos biodegradáveis."
                 },
                 {
+                  "label": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
+                  "tileLabel": "Pesquisa: Ofício sob roubo e pr…",
+                  "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+                  "icon": "📋",
+                  "slug": "post-pesquisa-oficio-roubo-proibicao",
+                  "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor."
+                },
+                {
                   "label": "Pesquisa: Fitocanabinoides — catálogo da CBGA ao CBN",
                   "tileLabel": "Pesquisa: Fitocanabinoides — ca…",
                   "href": "/posts/post-pesquisa-fitocanabinoides.html",
                   "icon": "📋",
                   "slug": "post-pesquisa-fitocanabinoides",
                   "description": "Catálogo de ofício: ácidos e neutros, mãe CBGA, THC/CBD/CBG/CBC/CBN e série varin — literacia química ligada a quimiotipos e ao endocanabinoidoma. Não é bula nem extração."
-                },
-                {
-                  "label": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
-                  "tileLabel": "Pesquisa: Ofício sob roubo e pr…",
-                  "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
-                  "icon": "📋",
-                  "slug": "post-pesquisa-oficio-roubo-proibicao",
-                  "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Valeu !!!» sem rancor."
                 },
                 {
                   "label": "Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final",
@@ -259,21 +268,36 @@
                   "description": "Canais, equipamentos, insumos e formação."
                 },
                 {
-                  "label": "Inspeção: Teoria das cordas — a física, não o fio",
-                  "tileLabel": "Inspeção: Teoria das cordas — a…",
-                  "href": "/posts/post-inspecao-palavra-teoria-das-cordas.html",
+                  "label": "Inspeção: Virou carne de vaca — ficou comum pra nós",
+                  "tileLabel": "Inspeção: Virou carne de vaca —…",
+                  "href": "/posts/post-inspecao-expressao-virou-carne-de-vaca.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-palavra-teoria-das-cordas",
-                  "description": "Palavras: «teoria das cordas» — calque de *string theory*; partículas como cordas a vibrar; ≠ objecto corda; programa aberto; Valeu !!!"
+                  "slug": "post-inspecao-expressao-virou-carne-de-vaca",
+                  "description": "Expressão BR: ficou comum pra nós — tão ordinário quanto o bife do dia. A vaca é a régua, não a vilã. Eco no lab: ofício × fábrica. Não é dieta prescrita."
                 },
                 {
-                  "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
-                  "tileLabel": "Divulgação: Bom dia, Inverno — …",
-                  "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+                  "label": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",
+                  "tileLabel": "Inspeção: A vingança nunca é pl…",
+                  "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-arte-bom-dia-inverno",
-                  "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink.",
-                  "featured": true
+                  "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
+                  "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
+                },
+                {
+                  "label": "Inspeção: Faça o melhor! — mantra do laboratório",
+                  "tileLabel": "Inspeção: Faça o melhor! — mant…",
+                  "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-faca-o-melhor",
+                  "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
+                },
+                {
+                  "label": "Inspeção: O veneno é forma de açúcar",
+                  "tileLabel": "Inspeção: O veneno é forma de a…",
+                  "href": "/posts/post-inspecao-expressao-veneno-forma-de-acucar.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-veneno-forma-de-acucar",
+                  "description": "Poema-método: a cana não é vilã. O veneno é a forma — pó branco, açúcar livre, prateleira. Não é dieta prescrita."
                 },
                 {
                   "label": "Inspeção: Leite e derivados — da ordenha à prateleira e o mal à saúde",
@@ -284,20 +308,60 @@
                   "description": "Pesquisa completa: leite, queijo, iogurte, pó, whey e bebidas lácteas — hub da família, cruzado com os 9.798 vídeos do projecto. Irmão da caseína. Não é aconselhamento médico."
                 },
                 {
-                  "label": "Inspeção: Rockstar Games — estúdio das cidades de ecrã",
-                  "tileLabel": "Inspeção: Rockstar Games — estú…",
-                  "href": "/posts/post-inspecao-estudio-rockstar.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-estudio-rockstar",
-                  "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
-                },
-                {
                   "label": "Inspeção: Caseína — a cola do leite e o mal à saúde",
                   "tileLabel": "Inspeção: Caseína — a cola do l…",
                   "href": "/posts/post-inspecao-derivado-caseina.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-derivado-caseina",
                   "description": "Pesquisa completa: A1/BCM-7, alergia, lactose distinta e laticínios ultraprocessados — cruzada com os 9.798 vídeos do projecto (0 títulos com a palavra caseína). Não é aconselhamento médico."
+                },
+                {
+                  "label": "Inspeção: Glúten — a cola invisível e o mal à saúde",
+                  "tileLabel": "Inspeção: Glúten — a cola invis…",
+                  "href": "/posts/post-inspecao-derivado-gluten.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-gluten",
+                  "description": "Pesquisa completa: gliadina, celíaca, farinha branca e ultraprocessados — cruzada com os 9.798 vídeos do projecto (Davis 106 · Lair 14 · Manual do Mundo 1). Não é aconselhamento médico."
+                },
+                {
+                  "label": "Inspeção: Planta — Trigo — grão, farinha branca e glúten",
+                  "tileLabel": "Inspeção: Planta — Trigo — grão…",
+                  "href": "/posts/post-inspecao-planta-trigo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-trigo",
+                  "description": "*Triticum aestivum* — a ficha separa o grão e o pão tradicional da farinha branca e do glúten em ultraprocessados; cruzamento com riscos à saúde e «como os ricos transformam»."
+                },
+                {
+                  "label": "Inspeção: Cruzamento — farinha branca, cocaína e Branca de Neve (riscos à saúde)",
+                  "tileLabel": "Inspeção: Cruzamento — farinha …",
+                  "href": "/posts/post-inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve",
+                  "description": "Artes · cruzamento: farinha branca × cocaína × Branca de Neve — o branco do refino, a gíria «neve» e a maçã do conto; riscos à saúde em colunas, sem colapsar comida e droga."
+                },
+                {
+                  "label": "Vida — A Sementinha e o jogo da cidade",
+                  "tileLabel": "Vida — A Sementinha e o jogo da…",
+                  "href": "/posts/post-inspecao-conto-vida-sementinha-jogo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-conto-vida-sementinha-jogo",
+                  "description": "Segundo conto a partir do vídeo inteiro: dois pezinhos, a caçada do funcionário, a soja, a barraca na praça — jogo não é vaso. Faça o melhor."
+                },
+                {
+                  "label": "Inspeção: Planta — Soja — feijão, isolado e matriz com glúten / farinha branca",
+                  "tileLabel": "Inspeção: Planta — Soja — feijã…",
+                  "href": "/posts/post-inspecao-planta-soja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-soja",
+                  "description": "*Glycine max* — a ficha separa o feijão (edamame, tofu, miso) do isolado, do óleo e da matriz ultraprocessada com glúten e farinha branca; cruzamento com riscos à saúde e «como os ricos transformam»."
+                },
+                {
+                  "label": "Inspeção: Rockstar Games — estúdio das cidades de ecrã",
+                  "tileLabel": "Inspeção: Rockstar Games — estú…",
+                  "href": "/posts/post-inspecao-estudio-rockstar.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-estudio-rockstar",
+                  "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
                 },
                 {
                   "label": "Inspeção: Filmografia de Leonardo DiCaprio — catálogo que inaugura o tipo",
@@ -322,6 +386,15 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-fungo-psilocybe-cubensis",
                   "description": "Fungos Cap. 1: *Psilocybe cubensis* — basidioma cosmopolita, esporada púrpura, azulamento; XIV UNIFESP; psilocibina/psilocina listadas. Ficha educativa, não cultivo."
+                },
+                {
+                  "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+                  "tileLabel": "Divulgação: Bom dia, Inverno — …",
+                  "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-bom-dia-inverno",
+                  "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink.",
+                  "featured": true
                 },
                 {
                   "label": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
@@ -412,14 +485,6 @@
                   "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
                 },
                 {
-                  "label": "Inspeção: Valeu !!! — mantra do laboratório",
-                  "tileLabel": "Inspeção: Valeu !!! — mantra do…",
-                  "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-faca-o-melhor",
-                  "description": "Expressões: «Valeu !!!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
-                },
-                {
                   "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
                   "tileLabel": "Inspeção: Derivados da galinha …",
                   "href": "/posts/post-inspecao-derivado-galinha.html",
@@ -508,14 +573,6 @@
                   "description": "Lojas · streaming: Mercado Play (play.mercadolivre.com.br) — AVOD BR 2023; grátis com anúncios ≠ domínio público; indicação datada só no player oficial; aluguel e Max/Globoplay de fora; sem endosso."
                 },
                 {
-                  "label": "Inspeção: jesusamado — assombro, afeto e oralidade BR",
-                  "tileLabel": "Inspeção: jesusamado — assombro…",
-                  "href": "/posts/post-inspecao-expressao-jesusamado.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-jesusamado",
-                  "description": "Expressões: «jesusamado» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
                   "tileLabel": "Inspeção: Derivados da vaca — c…",
                   "href": "/posts/post-inspecao-derivado-vaca.html",
@@ -588,14 +645,6 @@
                   "description": "*Citrus × sinensis* — laranja doce: crédito ao fruto inteiro e sumo fresco; separar concentrados, néctares e refrigerantes «de laranja»."
                 },
                 {
-                  "label": "Inspeção: Glúten — a cola invisível e o mal à saúde",
-                  "tileLabel": "Inspeção: Glúten — a cola invis…",
-                  "href": "/posts/post-inspecao-derivado-gluten.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-derivado-gluten",
-                  "description": "Pesquisa completa: gliadina, celíaca, farinha branca e ultraprocessados — cruzada com os 9.798 vídeos do projecto (Davis 106 · Lair 14 · Manual do Mundo 1). Não é aconselhamento médico."
-                },
-                {
                   "label": "Inspeção: ICL Cursos — Instituto Conhecimento Liberta",
                   "tileLabel": "Inspeção: ICL Cursos — Institut…",
                   "href": "/posts/post-inspecao-icl-cursos.html",
@@ -610,22 +659,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-patinete-eletrico-criancas",
                   "description": "Objetos: patinete eléctrico como locomoção a bateria — não é brinquedo com motor; INMETRO ≤24 V × CONTRAN 996; célula ≠ BYD Blade; quedas, via e fogo; sem endosso."
-                },
-                {
-                  "label": "Inspeção: meudeusdoceu — substituída por jesusudavi",
-                  "tileLabel": "Inspeção: meudeusdoceu — substi…",
-                  "href": "/posts/post-inspecao-expressao-meudeusdoceu.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-meudeusdoceu",
-                  "description": "Expressões: meudeusdoceu — nome lab antigo; ofício migrado para jesusudavi (meu Deus do céu / assombro alto)."
-                },
-                {
-                  "label": "Inspeção: jesusudavi — assombro alto (substitui meudeusdoceu)",
-                  "tileLabel": "Inspeção: jesusudavi — assombro…",
-                  "href": "/posts/post-inspecao-expressao-jesusudavi.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-jesusudavi",
-                  "description": "Expressões: «jesusudavi» — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala aff × jesusamando; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Derivados do porco — embutidos e química industrial",
@@ -692,14 +725,6 @@
                   "description": "Mapa gratuito do MEC com login gov.br: Canal Educação (vídeos), MEC Idiomas (inglês/espanhol), MEC Livros (biblioteca), AVAMEC e MEC Enem. Sem afiliação. Catalogar ≠ endosso político."
                 },
                 {
-                  "label": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
-                  "tileLabel": "Inspeção: deu certo, galera — c…",
-                  "href": "/posts/post-inspecao-expressao-deu-certo-galera.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-deu-certo-galera",
-                  "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
                   "tileLabel": "Inspeção: Chocolate industrial …",
                   "href": "/posts/post-inspecao-derivado-chocolate.html",
@@ -746,14 +771,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-manga",
                   "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-                },
-                {
-                  "label": "Inspeção: filho de deus — título, oralidade e dignidade",
-                  "tileLabel": "Inspeção: filho de deus — títul…",
-                  "href": "/posts/post-inspecao-expressao-filho-de-deus.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-filho-de-deus",
-                  "description": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Valeu !!!"
                 },
                 {
                   "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
@@ -804,22 +821,6 @@
                   "description": "Relatório educacional de Banana (*Musa spp.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
-                  "label": "Vida — A Sementinha e o jogo da cidade",
-                  "tileLabel": "Vida — A Sementinha e o jogo da…",
-                  "href": "/posts/post-inspecao-conto-vida-sementinha-jogo.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-conto-vida-sementinha-jogo",
-                  "description": "Segundo conto a partir do vídeo inteiro: dois pezinhos, a caçada do funcionário, a soja, a barraca na praça — jogo não é vaso. Faça o melhor."
-                },
-                {
-                  "label": "Inspeção: duasakdiqujdocedomadur — Deus ajuda quem cedo madruga",
-                  "tileLabel": "Inspeção: duasakdiqujdocedomadu…",
-                  "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-duasakdiqujdocedomadur",
-                  "description": "Expressões: duasakdiqujdocedomadur — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; elos Valeu !!!, caminho, jesusamando, meudeusdoceu"
-                },
-                {
                   "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
                   "tileLabel": "Inspeção: Nick Tosches — prosa …",
                   "href": "/posts/post-inspecao-figura-nick-tosches.html",
@@ -858,14 +859,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maca",
                   "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-                },
-                {
-                  "label": "Inspeção: Gratidão — gratidão reforçada e oralidade BR",
-                  "tileLabel": "Inspeção: Gratidão — gratidão r…",
-                  "href": "/posts/post-inspecao-expressao-muito-obrigado.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-muito-obrigado",
-                  "description": "Expressões: «Gratidão!» / Gratidão — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, valeu, jesusamando; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Erva — substituída por planta / plantas",
@@ -956,14 +949,6 @@
                   "description": "Legado: Richard Rasmussen — biólogo (CRBio) e apresentador de fauna; respeito de ofício (*respicere*: olhar de novo); YouTube @RichardRasmussenSelvagem; pessoa ≠ canal."
                 },
                 {
-                  "label": "Inspeção: eojsofaorforap — eu só falo a verdade",
-                  "tileLabel": "Inspeção: eojsofaorforap — eu s…",
-                  "href": "/posts/post-inspecao-expressao-eojsofaorforap.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-eojsofaorforap",
-                  "description": "Expressões: eojsofaorforap — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elos verdade, gesto; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Boldo — falso-boldo brasileiro",
                   "tileLabel": "Inspeção: Planta — Boldo — fals…",
                   "href": "/posts/post-inspecao-planta-boldo.html",
@@ -996,14 +981,6 @@
                   "description": "Auditoria do canal MovReCam — 290 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
                 },
                 {
-                  "label": "Inspeção: Deus abençoe — bênção, despedida e tipografia Deus Abenço",
-                  "tileLabel": "Inspeção: Deus abençoe — bênção…",
-                  "href": "/posts/post-inspecao-expressao-deus-abencoe.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-deus-abencoe",
-                  "description": "Expressões: «Deus abençoe» — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Melissa — citral e melissa officinalis",
                   "tileLabel": "Inspeção: Planta — Melissa — ci…",
                   "href": "/posts/post-inspecao-planta-melissa.html",
@@ -1026,14 +1003,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-figura-aleff",
                   "description": "Pessoas: Aliffe Henrique de Carvalho (Aleff) — mineiro de Machado; o recorte é a pessoa, não a persona de ecrã. O nome público Paulinho o LOKO fica como crédito, não como redução."
-                },
-                {
-                  "label": "Inspeção: Deus deu dois ouvidos e uma boca — proporção, escuta e tipografia pouvi",
-                  "tileLabel": "Inspeção: Deus deu dois ouvidos…",
-                  "href": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-deus-deu-dois-ouvidos",
-                  "description": "Expressões: «Deus deu dois ouvidos e uma boca» — ouvir 2× / falar 1×; tipografia dois pouvi → dois ouvidos; sem proselitismo; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano",
@@ -1092,14 +1061,6 @@
                   "description": "Pessoas × Artes: Michael J. Fox (Michael Andrew Fox) — timing, skate e coragem de ofício; elo principal em De Volta para o Futuro (1985). Pessoa, não personagem nem ficha de doença."
                 },
                 {
-                  "label": "Inspeção: Como os ricos transformam as coisas — poder, ciclo e História das Coisas",
-                  "tileLabel": "Inspeção: Como os ricos transfo…",
-                  "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-como-os-ricos-transformam-as-coisas",
-                  "description": "Expressões: «Como os ricos transformam as coisas» (tipografia osricostramsorandascoisas) — mapa do poder sobre o ciclo das coisas; elo Annie Leonard."
-                },
-                {
                   "label": "Inspeção: Tom Jobim — bossa, Águas de Março e a dedicatória «Adoro origami»",
                   "tileLabel": "Inspeção: Tom Jobim — bossa, Ág…",
                   "href": "/posts/post-inspecao-figura-tom-jobim.html",
@@ -1138,22 +1099,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maracuja-fruta",
                   "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-                },
-                {
-                  "label": "Inspeção: Cruzamento — farinha branca, cocaína e Branca de Neve (riscos à saúde)",
-                  "tileLabel": "Inspeção: Cruzamento — farinha …",
-                  "href": "/posts/post-inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-cruzamento-farinha-branca-cocaina-branca-de-neve",
-                  "description": "Artes · cruzamento: farinha branca × cocaína × Branca de Neve — o branco do refino, a gíria «neve» e a maçã do conto; riscos à saúde em colunas, sem colapsar comida e droga."
-                },
-                {
-                  "label": "Inspeção: fim da linha — fita, vida e o confeito de chocolate",
-                  "tileLabel": "Inspeção: fim da linha — fita, …",
-                  "href": "/posts/post-inspecao-expressao-fim-da-linha.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-fim-da-linha",
-                  "description": "Expressões: «fim da linha» — limite da fita, da vida e da esteira; caso de laboratório = confeito casca colorida + chocolate (formato M&M's); elos cinta, vida, chocolate industrial."
                 },
                 {
                   "label": "Inspeção: canal Amyr Klink — ofício do pai, junto da Tamara",
@@ -1202,14 +1147,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-tomatinho-cereja",
                   "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
-                },
-                {
-                  "label": "Inspeção: a bença — pedir bênção, dorme com Deus e amém",
-                  "tileLabel": "Inspeção: a bença — pedir bênçã…",
-                  "href": "/posts/post-inspecao-expressao-a-benca.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-a-benca",
-                  "description": "Expressões: «a bença» — pedido BR de bênção; sequência Deus te abençoe · dorme com Deus · amém (tipografia amem); irmã de Deus abençoe; sem catecismo."
                 },
                 {
                   "label": "Inspeção: canal Paulinho o LOKO — GTA RP, Anti-RP e arquivo de servidor",
@@ -1268,14 +1205,6 @@
                   "description": "Canais: Richard Rasmussen (@RichardRasmussenSelvagem) — arquivo YouTube de fauna e expedições desde 2016; respeito de arquivo; hub /videos; distinto da ficha de pessoa."
                 },
                 {
-                  "label": "Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício",
-                  "tileLabel": "Inspeção: o templo de Cristo, c…",
-                  "href": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-templo-de-cristo-corpo-e-alma",
-                  "description": "Expressões: «o templo de Cristo, corpo e alma» — morada, nome e inteireza; peças templo · Cristo · corpo · alma; sem catecismo; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Stephen King — o autor, a novela e Um Sonho de Liberdade",
                   "tileLabel": "Inspeção: Stephen King — o auto…",
                   "href": "/posts/post-inspecao-figura-stephen-king.html",
@@ -1316,22 +1245,6 @@
                   "description": "Canais: Instituto Conhecimento Liberta — jornalismo ao vivo (~8 h/dia); recorte classificado; cursos ≠ canal. Fora do hub de cultivo. Catalogar ≠ endosso."
                 },
                 {
-                  "label": "Inspeção: os doze apóstolos — conjunto, envio e ofício",
-                  "tileLabel": "Inspeção: os doze apóstolos — c…",
-                  "href": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-os-doze-apostolos",
-                  "description": "Expressões: «os doze apóstolos» — conjunto nomeado, frase viva BR e ofício de envio; listas divergentes; Tomé inspecciona; Valeu !!!"
-                },
-                {
-                  "label": "Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
-                  "tileLabel": "Inspeção: nossa senhora, ambulâ…",
-                  "href": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo",
-                  "description": "Expressões: nossa senhora, ambulância, sirene, Jesus Cristo — empilhamento céu+SAMU; escala acima de jesusudavi; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Mel Gibson — ofício de ecrã, realização e as duas obras",
                   "tileLabel": "Inspeção: Mel Gibson — ofício d…",
                   "href": "/posts/post-inspecao-figura-mel-gibson.html",
@@ -1364,14 +1277,6 @@
                   "description": "Canais (especial): Slivki Show (@slivkishowen) — arquivo EN de experiências e life hacks; destaque Aranha Rodrigo (saltadora). Aranha ≠ inseto. Hub /videos/?channel=slivki&series=rodrigo."
                 },
                 {
-                  "label": "Inspeção: Toda criança nasce cientista — recado de campo e mensagem da mãe",
-                  "tileLabel": "Inspeção: Toda criança nasce ci…",
-                  "href": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-toda-crianca-nasce-cientista",
-                  "description": "Expressões: Toda criança nasce cientista — citação de Arleu Barbosa Viana-Junior (CNN / campo no Cerrado); chegou como mensagem da mãe; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
                   "tileLabel": "Inspeção: Paulo Coelho — ofício…",
                   "href": "/posts/post-inspecao-figura-paulo-coelho.html",
@@ -1386,14 +1291,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-andiroba",
                   "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
-                },
-                {
-                  "label": "Inspeção: nó na vida! — o laço no arco, ainda não é desastre",
-                  "tileLabel": "Inspeção: nó na vida! — o laço …",
-                  "href": "/posts/post-inspecao-expressao-no-na-vida.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-no-na-vida",
-                  "description": "Expressões: «nó na vida!» — laço no arco da vida; par desatar o nó; ≠ desastre; ufa depois; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: canal Manual do Mundo — ciência no ecrã e o Manual Maker",
@@ -1428,28 +1325,12 @@
                   "description": "*Acmella oleracea* — alquilamidas (espilanthol) causam dormência oral; erva da culinária paraense."
                 },
                 {
-                  "label": "Inspeção: desatar o nó — o ofício, não o desastre",
-                  "tileLabel": "Inspeção: desatar o nó — o ofíc…",
-                  "href": "/posts/post-inspecao-expressao-desatar-o-no.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-desatar-o-no",
-                  "description": "Expressões: «desatar o nó» — soltar o laço na corda e na vida; ≠ desastre (*astro*); par nó na vida; ufa depois; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Mulungu — alcaloides eritrínicos calmantes",
                   "tileLabel": "Inspeção: Planta — Mulungu — al…",
                   "href": "/posts/post-inspecao-planta-mulungu.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-mulungu",
                   "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
-                },
-                {
-                  "label": "Inspeção: Elo de ligação — o cruzamento do infinito, não a eternidade",
-                  "tileLabel": "Inspeção: Elo de ligação — o cr…",
-                  "href": "/posts/post-inspecao-expressao-elo-de-ligacao.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-elo-de-ligacao",
-                  "description": "Expressões: «elo de ligação» — o anel que junta; *simbuklo* → símbolo do infinito (lemniscata); cruzamento = elo; aula XIV Kassia; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Aranha Rodrigo — saltadora nomeada do Slivki Show",
@@ -1468,28 +1349,12 @@
                   "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
                 },
                 {
-                  "label": "Inspeção: em pé e deitado — as duas posturas da lemniscata (*bodiado*)",
-                  "tileLabel": "Inspeção: em pé e deitado — as …",
-                  "href": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-em-pe-e-deitado",
-                  "description": "Expressões: «em pé e deitado» — par de posturas da lemniscata; *bodiado* → deitado (+ body); aula XIV Kassia; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Calêndula — flavonoides e pomadas cutâneas",
                   "tileLabel": "Inspeção: Planta — Calêndula — …",
                   "href": "/posts/post-inspecao-planta-calendula.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-calendula",
                   "description": "*Calendula officinalis* — pétalas ricas em triterpenos e flavonoides; uso tópico em pele irritada."
-                },
-                {
-                  "label": "Inspeção: em pé — o oito erguido, o corpo como caminho",
-                  "tileLabel": "Inspeção: em pé — o oito erguid…",
-                  "href": "/posts/post-inspecao-expressao-em-pe.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-em-pe",
-                  "description": "Expressões: «em pé» — postura vertical; oito erguido da lemniscata; aula XIV Kassia (corpo); Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Planta — Barbatimão — proantocianidinas adstringentes",
@@ -1500,28 +1365,12 @@
                   "description": "*Stryphnodendron adstringens* — casca rica em taninos e proantocianidinas; adstringente do Cerrado."
                 },
                 {
-                  "label": "Inspeção: A orelha cola o que a boca juntou",
-                  "tileLabel": "Inspeção: A orelha cola o que a…",
-                  "href": "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou",
-                  "description": "Expressões: a orelha cola o que a boca juntou — ofício do lab; dois eixos, duas frases; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Jaborandi — pilocarpina e glaucoma histórico",
                   "tileLabel": "Inspeção: Planta — Jaborandi — …",
                   "href": "/posts/post-inspecao-planta-jaborandi.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-jaborandi",
                   "description": "*Pilocarpus microphyllus* — folhas fonte histórica de pilocarpina; alcaloide imidazólico miótico."
-                },
-                {
-                  "label": "Inspeção: ando, indo, vindo, voltando — o ciclo que não pousa",
-                  "tileLabel": "Inspeção: ando, indo, vindo, vo…",
-                  "href": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-ando-indo-vindo-voltando",
-                  "description": "Expressões: «ando, indo, vindo, voltando» — sequência oral do loop; ando = eu ando; par loop infinito; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Planta — Ipecacuanha — emetina e xarope histórico",
@@ -1532,28 +1381,12 @@
                   "description": "*Carapichea ipecacuanha* — raiz com emetina e cephaeline; farmacopeia histórica como emético e antiamébico."
                 },
                 {
-                  "label": "Inspeção: loop infinito — o pattern que não sai",
-                  "tileLabel": "Inspeção: loop infinito — o pat…",
-                  "href": "/posts/post-inspecao-expressao-loop-infinito.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-loop-infinito",
-                  "description": "Expressões: «loop infinito» — processo sem saída; caso oral ando, indo, vindo, voltando; antídoto exit; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Pfaffia (ginseng-brasileiro) — ecdisteroides e ginseng-brasileiro",
                   "tileLabel": "Inspeção: Planta — Pfaffia (gin…",
                   "href": "/posts/post-inspecao-planta-pfaffia.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-pfaffia",
                   "description": "*Pfaffia glomerata* — raiz rica em ecdisteroides e pfaffic acids; «ginseng-brasileiro» adaptogénico popular."
-                },
-                {
-                  "label": "Inspeção: néctar dos deuses — o mito, a hipérbole, e o gatilho Deusus",
-                  "tileLabel": "Inspeção: néctar dos deuses — o…",
-                  "href": "/posts/post-inspecao-expressao-nectar-dos-deuses.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-nectar-dos-deuses",
-                  "description": "Expressões: néctar dos deuses — mito grego × hipérbole de gosto; ≠ suco de gôndola; peça néctar à parte; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Planta — Aroeira — pimenta-rosa e óleos resinosos",
@@ -1564,28 +1397,12 @@
                   "description": "*Schinus terebinthifolia* — frutos «pimenta-rosa» e folhas com óleos essenciais e taninos; tradição tópica e culinária."
                 },
                 {
-                  "label": "Inspeção: slow motion — o gesto esticado no ecrã; motion ≠ emotion",
-                  "tileLabel": "Inspeção: slow motion — o gesto…",
-                  "href": "/posts/post-inspecao-expressao-slow-motion.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-slow-motion",
-                  "description": "Expressões: slow motion — loan EN / câmera lenta; esticar o gesto no ecrã, não o relógio; ≠ emotion ≠ time-lapse; Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Planta — Quina — quinina e antimalárico histórico",
                   "tileLabel": "Inspeção: Planta — Quina — quin…",
                   "href": "/posts/post-inspecao-planta-quina.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-quina",
                   "description": "*Cinchona* spp. — casca fonte histórica de quinina; capítulo fundacional da quimioterapia antimalárica."
-                },
-                {
-                  "label": "Inspeção: Virou carne de vaca — ficou comum pra nós",
-                  "tileLabel": "Inspeção: Virou carne de vaca —…",
-                  "href": "/posts/post-inspecao-expressao-virou-carne-de-vaca.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-virou-carne-de-vaca",
-                  "description": "Expressão BR: ficou comum pra nós — tão ordinário quanto o bife do dia. A vaca é a régua, não a vilã. Eco no lab: ofício × fábrica. Não é dieta prescrita."
                 },
                 {
                   "label": "Inspeção: Planta — Cannabis (medicinal) — canabinoides THC/CBD e contexto clínico",
@@ -1612,28 +1429,12 @@
                   "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Valeu !!! ≠ seja génio; culto vazio = ressalva."
                 },
                 {
-                  "label": "Inspeção: Planta — Soja — feijão, isolado e matriz com glúten / farinha branca",
-                  "tileLabel": "Inspeção: Planta — Soja — feijã…",
-                  "href": "/posts/post-inspecao-planta-soja.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-planta-soja",
-                  "description": "*Glycine max* — a ficha separa o feijão (edamame, tofu, miso) do isolado, do óleo e da matriz ultraprocessada com glúten e farinha branca; cruzamento com riscos à saúde e «como os ricos transformam»."
-                },
-                {
                   "label": "Inspeção: Steve Jobs — ofício, casa sem iPad e o mito do celular aos 18",
                   "tileLabel": "Inspeção: Steve Jobs — ofício, …",
                   "href": "/posts/post-inspecao-figura-steve-jobs.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-figura-steve-jobs",
                   "description": "Pessoas: Steve Jobs (1955–2011). A fala documentada é limite de tecnologia em casa e iPad não usado (2010) — não «celular só aos 18». Elo palavra Jobs, ídolo e ficha do celular."
-                },
-                {
-                  "label": "Inspeção: Planta — Trigo — grão, farinha branca e glúten",
-                  "tileLabel": "Inspeção: Planta — Trigo — grão…",
-                  "href": "/posts/post-inspecao-planta-trigo.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-planta-trigo",
-                  "description": "*Triticum aestivum* — a ficha separa o grão e o pão tradicional da farinha branca e do glúten em ultraprocessados; cruzamento com riscos à saúde e «como os ricos transformam»."
                 },
                 {
                   "label": "Inspeção: Lucas — médico de homens e de almas",
@@ -2868,6 +2669,14 @@
                   "description": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Teoria das cordas — a física, não o fio",
+                  "tileLabel": "Inspeção: Teoria das cordas — a…",
+                  "href": "/posts/post-inspecao-palavra-teoria-das-cordas.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-teoria-das-cordas",
+                  "description": "Palavras: «teoria das cordas» — calque de *string theory*; partículas como cordas a vibrar; ≠ objecto corda; programa aberto; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: Violão — o objecto onde as cordas afinam",
                   "tileLabel": "Inspeção: Violão — o objecto on…",
                   "href": "/posts/post-inspecao-palavra-violao.html",
@@ -3108,14 +2917,6 @@
                   "description": "Palavras: «legal» (lat. *legālis*) — eixo jurídico e gíria BR «bacana»; contraste com inglês; elos ilícito, Lei 11.343, descriminalização, risco e verdade."
                 },
                 {
-                  "label": "Inspeção: ausdhuashduas — riso online e oralidade BR",
-                  "tileLabel": "Inspeção: ausdhuashduas — riso …",
-                  "href": "/posts/post-inspecao-expressao-ausdhuashduas.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-ausdhuashduas",
-                  "description": "Expressões: ausdhuashduas — nome lab do riso tipado BR; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff, Valeu !!!"
-                },
-                {
                   "label": "Inspeção: Fogo — elemento, ardor, cuidado e Valeu !!!",
                   "tileLabel": "Inspeção: Fogo — elemento, ardo…",
                   "href": "/posts/post-inspecao-palavra-fogo.html",
@@ -3314,14 +3115,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-barco",
                   "description": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*."
-                },
-                {
-                  "label": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",
-                  "tileLabel": "Inspeção: A vingança nunca é pl…",
-                  "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
-                  "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
                 },
                 {
                   "label": "Inspeção: Balde — volume, transporte e o gesto de regar",

@@ -564,7 +564,8 @@ function readInspecoesFilterFromHash() {
   var hash = String(location.hash || '').replace(/^#/, '');
   if (hash.indexOf('inspecoes-') !== 0) return '';
   var anchor = hash.replace(/^inspecoes-/, '');
-  return HUB_ANCHOR_TO_TIPO[anchor] || '';
+  var tipo = HUB_ANCHOR_TO_TIPO[anchor] || '';
+  return tipo;
 }
 
 function writeInspecoesHash(tipo) {
@@ -632,6 +633,7 @@ function renderInspecoesFilters(posts) {
 
   var chips = [{ id: 'all', label: postsT('pages.inspections.filterAll', 'Todas'), count: (posts || []).length }];
   INSPECAO_HUB_TIPOS.forEach(function (t) {
+    if (t.hidden) return;
     var n = countHubTipo(posts, t.id);
     if (t.special || t.keepVisible || (n && n > 0)) {
       chips.push({ id: t.id, label: postsT(t.labelKey, t.fallback), count: n });
@@ -674,7 +676,7 @@ function renderInspecoesFilters(posts) {
 function inspecoesContentTipoCount() {
   var n = 0;
   for (var i = 0; i < INSPECAO_HUB_TIPOS.length; i++) {
-    if (!INSPECAO_HUB_TIPOS[i].special) n++;
+    if (!INSPECAO_HUB_TIPOS[i].special && !INSPECAO_HUB_TIPOS[i].hidden) n++;
   }
   return Math.max(1, n);
 }
@@ -694,7 +696,7 @@ function hasMoreInspecoes(posts) {
   var take = perInspecaoTipoTake(inspecoesVisibleCount);
   for (var i = 0; i < INSPECAO_HUB_TIPOS.length; i++) {
     var t = INSPECAO_HUB_TIPOS[i];
-    if (t.special) continue;
+    if (t.special || t.hidden) continue;
     var list = filterByInspecaoTipo(posts, t.id);
     if (list.length > take) return true;
   }
@@ -747,7 +749,7 @@ function renderInspecoesGroupedList(container, posts, take) {
   var any = false;
   var limit = typeof take === 'number' ? take : Infinity;
   INSPECAO_HUB_TIPOS.forEach(function (t) {
-    if (t.special) return;
+    if (t.special || t.hidden) return;
     var list = sortedHubPosts(filterByInspecaoTipo(posts, t.id), t.id);
     if (!list.length) return;
     any = true;

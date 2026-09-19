@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { readPostsFrom } = require('../lib/publish-static.js');
+const { getPublicPosts } = require('../lib/posts-service.js');
 const { ROOT } = require('../lib/paths.js');
 const OUT = path.join(ROOT, 'search-index.json');
 
@@ -12,6 +13,7 @@ const STATIC_PAGES = [
   { url: '/', title: 'Início — Inspetor BudGanja', desc: 'Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP, inspeções e cultivo responsável.', keywords: 'home inicio laboratório fitoterapia plantas unifesp cultivo' },
   { url: '/inverno/', title: 'Bom dia, Inverno', desc: 'Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'inverno tamara klink livro gelo invernagem groenlandia circular' },
   { url: '/vida/', title: 'Vida', desc: 'Conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.', keywords: 'vida conto familiar plantas semente inspetor dona maria' },
+  { url: '/poemas/', title: 'Poemas do laboratório', desc: 'Versos originais do Laboratório BudGanja — ficar, cultivar, inspecionar.', keywords: 'poemas versos laboratório vida faça o melhor' },
   { url: '/origami/', title: 'Origami', desc: 'Aprender a dobrar papel — mãos reais, um modelo de cada vez. Aula do barquinho.', keywords: 'origami papel dobrar barquinho mãos aula ofício' },
   { url: '/origami/barquinho-de-papel/', title: 'Barquinho de papel', desc: 'Aula de origami: doze vincos, mãos reais. Filmar sem fala, áudio local.', keywords: 'barquinho papel origami aula vinco mara maravilha' },
   { url: '/laboratorio/', title: 'Mapa do laboratório', desc: 'Todas as salas do Laboratório BudGanja: biblioteca, plantas, ferramentas, comunidade e o conto Vida.', keywords: 'laboratório mapa fitoterapia plantas unifesp cultivo vida' },
@@ -52,7 +54,7 @@ function buildIndex() {
     text: [p.title, p.desc, p.keywords].join(' ')
   }));
 
-  const posts = readPostsFrom(ROOT).filter((p) => p.published !== false);
+  const posts = getPublicPosts(readPostsFrom(ROOT));
   posts.forEach((p) => {
     const url = p.url || (p.filename ? '/' + String(p.filename).replace(/^\/+/, '') : '');
     items.push({
@@ -140,9 +142,14 @@ function buildIndex() {
     const guia = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'guia-palavras.json'), 'utf8'));
     (guia.items || []).forEach((entry) => {
       if (!entry || !entry.word) return;
+      const href = String(entry.href || '');
+      if (/inspecao-expressao-|inspecao-ditado-/.test(href) &&
+          !/inspecao-expressao-(virou-carne-de-vaca|vinganca-mata-alma-envenena|faca-o-melhor|veneno-forma-de-acucar)\.html/.test(href)) {
+        return;
+      }
       items.push({
         title: entry.word,
-        url: entry.href || '/guia/palavras.html',
+        url: href || '/guia/palavras.html',
         excerpt: entry.simple || '',
         text: [entry.word, entry.simple, entry.group, 'guia palavras glossário', entry.id]
           .filter(Boolean)

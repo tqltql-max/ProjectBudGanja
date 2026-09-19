@@ -42,30 +42,16 @@
     "kind": "planta"
   },
   {
-    "slug": "inspecao-palavra-vida",
-    "url": "/posts/post-inspecao-palavra-vida.html",
-    "title": "Vida — facto, tempo, modo e Valeu !!!",
-    "titleEn": "Vida — fact, time, mode and Valeu !!!",
-    "titleEs": "Vida — hecho, tiempo, modo y ¡Valeu !!!",
-    "excerpt": "Palavras: «vida» (lat. *vīta*) — facto de viver, tempo e modo; distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança; Valeu !!!",
-    "excerptEn": "Words: “vida” (Lat. *vīta*) — fact of living, time and mode; distinct from the Vida trail and Tree of Life; alegria/coração/esperança links; Valeu !!!",
-    "excerptEs": "Palabras: «vida» (lat. *vīta*) — hecho de vivir, tiempo y modo; distinta de la trama /vida/ y del Árbol de la Vida; vínculos alegria/coração/esperança; ¡Valeu !!!",
-    "coverImage": "/imagens/inspecoes/vida-palavra-cover.jpg",
-    "date": "2026-08-03T21:45:00.000Z",
-    "series": "palavras-origem",
-    "kind": "palavra"
-  },
-  {
-    "slug": "inspecao-expressao-faca-o-melhor",
-    "url": "/posts/post-inspecao-expressao-faca-o-melhor.html",
-    "title": "Valeu !!! — mantra do laboratório",
-    "titleEn": "Valeu !!! — lab mantra",
-    "titleEs": "¡Valeu !!! — mantra del laboratorio",
-    "excerpt": "Expressões: «Valeu !!!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção.",
-    "excerptEn": "Sayings: “Valeu !!!” — Vida mantra; daily craft and a reply to theft and prohibition that try to silence the inspection project.",
-    "excerptEs": "Dichos: «¡Valeu !!!» — mantra Vida; oficio diario y respuesta al robo y a la prohibición que intentan callar el proyecto de inspección.",
-    "coverImage": "/imagens/inspecoes/vida-laboratorio-cover.jpg",
-    "date": "2026-08-02T22:30:00.000Z",
+    "slug": "inspecao-expressao-virou-carne-de-vaca",
+    "url": "/posts/post-inspecao-expressao-virou-carne-de-vaca.html",
+    "title": "Virou carne de vaca — ficou comum pra nós",
+    "titleEn": "Virou carne de vaca — it became ordinary for us",
+    "titleEs": "Virou carne de vaca — se volvió común para nosotros",
+    "excerpt": "Expressão BR: ficou comum pra nós — tão ordinário quanto o bife do dia. A vaca é a régua, não a vilã. Eco no lab: ofício × fábrica. Não é dieta prescrita.",
+    "excerptEn": "Brazilian saying: it became ordinary for us — as common as everyday beef. The cow is the measuring stick, not the villain. Lab echo: craft vs factory. Not a prescribed diet.",
+    "excerptEs": "Dicho BR: se volvió común para nosotros — tan ordinario como el bife del día. La vaca es la regla, no la villana. Eco en el lab: oficio × fábrica. No es dieta prescrita.",
+    "coverImage": "/imagens/inspecoes/virou-carne-de-vaca-cover.jpg",
+    "date": "2026-09-18T14:00:00.000Z",
     "series": "expressoes-ditados",
     "kind": "expressao"
   },
@@ -138,5 +124,19 @@
     "date": "2026-08-01T22:00:00.000Z",
     "series": "animais-catalogo",
     "kind": "animal"
+  },
+  {
+    "slug": "inspecao-planta-camomila",
+    "url": "/posts/post-inspecao-planta-camomila.html",
+    "title": "Camomila — apigenina e óleo azul",
+    "titleEn": "Chamomile — apigenin and blue oil",
+    "titleEs": "Manzanilla — apigenina y aceite azul",
+    "excerpt": "Capítulos florais ricos em flavonoides e óleo essencial — chá calmante clássico com perfil químico documentado.",
+    "excerptEn": "Floral heads rich in flavonoids and essential oil — classic calming tea with documented chemistry.",
+    "excerptEs": "Capítulos florales ricos en flavonoides y aceite esencial — infusión calmante clásica.",
+    "coverImage": "/imagens/plantas/camomila-cover.jpg",
+    "date": "2026-07-31T14:00:00.000Z",
+    "series": "plantas-medicinais",
+    "kind": "planta"
   }
 ]
