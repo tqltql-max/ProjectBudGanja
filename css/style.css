@@ -8986,7 +8986,68 @@ html[data-theme="light"] .footer-brand {
 }
 
 body[data-page="sobre"] .sobre-page {
-    max-width: 720px;
+    max-width: 760px;
+}
+
+body[data-page="sobre"] .sobre-hero {
+    margin-bottom: 0.35rem;
+}
+
+body[data-page="sobre"] .sobre-hero-art {
+    margin: 1rem 0 1.15rem;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(122, 150, 25, 0.22);
+    background: #071018;
+    line-height: 0;
+}
+
+body[data-page="sobre"] .sobre-hero-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body[data-page="sobre"] .sobre-mantra {
+    margin: 0 0 1.1rem;
+    padding: 1rem 1.15rem 1.15rem;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid rgba(223, 194, 98, 0.28);
+    background:
+        radial-gradient(ellipse 80% 90% at 50% 0%, rgba(110, 231, 197, 0.12), transparent 55%),
+        linear-gradient(165deg, rgba(22, 32, 14, 0.94), rgba(14, 18, 10, 0.96));
+}
+
+body[data-page="sobre"] .sobre-mantra .vida-mantra-label {
+    margin: 0 0 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #7ee8d2;
+}
+
+body[data-page="sobre"] .sobre-mantra .vida-mantra {
+    margin: 0;
+    font-size: clamp(1.7rem, 5.2vw, 2.35rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+body[data-page="sobre"] .sobre-mantra .vida-mantra-link {
+    color: #dfc262;
+    text-decoration: none;
+}
+
+body[data-page="sobre"] .sobre-mantra .vida-mantra-link:hover,
+body[data-page="sobre"] .sobre-mantra .vida-mantra-link:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+}
+
+body[data-page="sobre"] .sobre-hero-cta {
+    margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
 }
 
 body[data-page="sobre"] .sobre-author {
@@ -9001,17 +9062,6 @@ body[data-page="sobre"] .sobre-author .section-cta-inline {
     margin-top: 0.85rem;
 }
 
-body[data-page="sobre"] .sobre-story {
-    margin: 0 0 clamp(1.5rem, 3vw, 2rem);
-}
-
-body[data-page="sobre"] .sobre-story p {
-    margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.65;
-    color: var(--color-text-muted);
-}
-
 body[data-page="sobre"] .sobre-grid {
     margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
 }
@@ -9024,13 +9074,54 @@ body[data-page="sobre"] .info-panel {
 body[data-page="sobre"] .info-panel h2,
 body[data-page="sobre"] .info-panel h3,
 body[data-page="sobre"] .sobre-author h2,
-body[data-page="sobre"] .sobre-story h2 {
+body[data-page="sobre"] .sobre-method h2 {
     color: #dfc262;
 }
 
-body[data-page="sobre"] .sobre-story h2 {
-    margin: 0 0 0.65rem;
+body[data-page="sobre"] .sobre-method {
+    margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+    padding: clamp(1.15rem, 2.5vw, 1.5rem);
+    border-radius: 14px;
+    border: 1px solid rgba(122, 150, 25, 0.22);
+    background: rgba(14, 20, 10, 0.72);
+}
+
+body[data-page="sobre"] .sobre-method h2 {
+    margin: 0 0 0.9rem;
     font-size: 1.15rem;
+}
+
+body[data-page="sobre"] .sobre-method-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: sobre-step;
+    display: grid;
+    gap: 0.85rem;
+}
+
+body[data-page="sobre"] .sobre-method-list li {
+    counter-increment: sobre-step;
+    position: relative;
+    padding-left: 2.5rem;
+    color: #d4d4d4;
+    line-height: 1.55;
+}
+
+body[data-page="sobre"] .sobre-method-list li::before {
+    content: counter(sobre-step);
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: #071018;
+    background: #dfc262;
 }
 
 body[data-page="sobre"] .sobre-creditos h2 {
@@ -9059,6 +9150,22 @@ body[data-page="sobre"] .sobre-paths-list {
     gap: 0.65rem;
 }
 
+@media (min-width: 560px) {
+    body[data-page="sobre"] .sobre-paths-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+body[data-page="sobre"] .sobre-paths-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.18rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 10px;
+    background: rgba(8, 14, 8, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
 body[data-page="sobre"] .sobre-paths-list a {
     color: #dfc262;
     font-weight: 600;
@@ -9067,6 +9174,12 @@ body[data-page="sobre"] .sobre-paths-list a {
 
 body[data-page="sobre"] .sobre-paths-list a:hover {
     text-decoration: underline;
+}
+
+body[data-page="sobre"] .sobre-paths-list span {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: var(--color-text-muted, #b8b8b8);
 }
 
 body[data-page="sobre"] .sobre-limits,
